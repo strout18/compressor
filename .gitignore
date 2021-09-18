@@ -1,0 +1,5 @@
+*.o
+encoder
+decoder
+test_bitio
+.vscode/
