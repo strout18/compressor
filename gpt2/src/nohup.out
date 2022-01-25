@@ -1,0 +1,84 @@
+/Users/stella/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/Users/stella/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/Users/stella/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/Users/stella/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/Users/stella/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/Users/stella/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+/Users/stella/anaconda3/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/Users/stella/anaconda3/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/Users/stella/anaconda3/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/Users/stella/anaconda3/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/Users/stella/anaconda3/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/Users/stella/anaconda3/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING:tensorflow:From /Users/stella/Desktop/Thesis/compressor/gpt-2/src/ics_api.py:59: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2022-01-10 22:36:05.827430: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+WARNING:tensorflow:From /Users/stella/Desktop/Thesis/compressor/gpt-2/src/ics_api.py:60: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /Users/stella/Desktop/Thesis/compressor/gpt-2/src/ics_api.py:62: The name tf.set_random_seed is deprecated. Please use tf.compat.v1.set_random_seed instead.
+
+WARNING:tensorflow:From /Users/stella/Desktop/Thesis/compressor/gpt-2/src/sample.py:51: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+WARNING:tensorflow:From /Users/stella/Desktop/Thesis/compressor/gpt-2/src/model.py:148: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /Users/stella/Desktop/Thesis/compressor/gpt-2/src/sample.py:64: to_float (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+WARNING:tensorflow:From /Users/stella/Desktop/Thesis/compressor/gpt-2/src/sample.py:16: add_dispatch_support.<locals>.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /Users/stella/Desktop/Thesis/compressor/gpt-2/src/sample.py:67: multinomial (from tensorflow.python.ops.random_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.random.categorical` instead.
+WARNING:tensorflow:From /Users/stella/Desktop/Thesis/compressor/gpt-2/src/ics_api.py:70: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+WARNING:tensorflow:From /Users/stella/anaconda3/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+50
+100
+150
+Traceback (most recent call last):
+  File "predicter.py", line 14, in <module>
+    newwd = ics.run_model(txtrange, length=1, top_k=40)
+  File "/Users/stella/Desktop/Thesis/compressor/gpt-2/src/ics_api.py", line 67, in run_model
+    temperature=temperature, top_k=top_k, top_p=top_p
+  File "/Users/stella/Desktop/Thesis/compressor/gpt-2/src/sample.py", line 74, in sample_sequence
+    past, prev, output = body(None, context, context)
+  File "/Users/stella/Desktop/Thesis/compressor/gpt-2/src/sample.py", line 63, in body
+    next_outputs = step(hparams, prev, past=past)
+  File "/Users/stella/Desktop/Thesis/compressor/gpt-2/src/sample.py", line 51, in step
+    lm_output = model.model(hparams=hparams, X=tokens, past=past, reuse=tf.AUTO_REUSE)
+  File "/Users/stella/Desktop/Thesis/compressor/gpt-2/src/model.py", line 164, in model
+    h, present = block(h, 'h%d' % layer, past=past, hparams=hparams)
+  File "/Users/stella/Desktop/Thesis/compressor/gpt-2/src/model.py", line 126, in block
+    a, present = attn(norm(x, 'ln_1'), 'attn', nx, past=past, hparams=hparams)
+  File "/Users/stella/Desktop/Thesis/compressor/gpt-2/src/model.py", line 36, in norm
+    x = (x - u) * tf.rsqrt(s + epsilon)
+  File "/Users/stella/anaconda3/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py", line 888, in binary_op_wrapper
+    y, dtype_hint=x.dtype.base_dtype, name="y")
+  File "/Users/stella/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1145, in convert_to_tensor_v2
+    as_ref=False)
+  File "/Users/stella/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/ops.py", line 1209, in internal_convert_to_tensor
+    value, dtype=preferred_dtype, name=name, as_ref=as_ref)
+  File "/Users/stella/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 305, in _constant_tensor_conversion_function
+    return constant(v, dtype=dtype, name=name)
+  File "/Users/stella/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 246, in constant
+    allow_broadcast=True)
+  File "/Users/stella/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/constant_op.py", line 284, in _constant_impl
+    allow_broadcast=allow_broadcast))
+  File "/Users/stella/anaconda3/lib/python3.6/site-packages/tensorflow/python/framework/tensor_util.py", line 573, in make_tensor_proto
+    append_fn(tensor_proto, proto_values)
+KeyboardInterrupt

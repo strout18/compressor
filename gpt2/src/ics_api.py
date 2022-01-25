@@ -7,17 +7,19 @@ import tensorflow as tf
 
 import model, sample, encoder
 
+# stella's custom functions
+
 def run_model(
     txt,
     model_name='124M',
-    seed=None,
+    seed=32,
     nsamples=1,
     batch_size=1,
     length=None,
     temperature=1,
     top_k=0,
     top_p=1,
-    models_dir='models',
+    models_dir='../models',
 ):
     """
     Interactively run the model
@@ -77,3 +79,13 @@ def run_model(
             for i in range(batch_size):
                 guess = enc.decode(out[i])
         return guess
+
+def slice_window(winlen, txtarr, index):
+    # todo deal with when winlen = 0
+    # if index == 0:
+    #     return txtarr[0]
+    if index < winlen:  # slice from start of line til word if line (up til word) is shorter than window
+        return "".join(txtarr[:index])
+    else:
+        start = index - winlen
+        return "".join(txtarr[start:index])

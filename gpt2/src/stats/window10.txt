@@ -1,0 +1,548 @@
+Testing ./tests/test1
+Final encoding
+10,0,29,The man ate a delicious slice,2,0,1,.,3,0,5, like,1,0,6, much.,
+Correct guesses/total: 0.375
+Filesize of bz2/original: 1.4444444444444444
+Filesize of bz2/pre-bz2 intermediate: 1.2816901408450705
+The man ate a delicious slice of pizza. He didn't like it much.
+Testing ./tests/test2
+Final encoding
+10,0,3,The,2,0,5, sent,5,0,14, to allow some,2,0,8, her and,3,0,5, meet,1,0,17, families for her,1,
+Correct guesses/total: 0.56
+Filesize of bz2/original: 0.8666666666666667
+Filesize of bz2/pre-bz2 intermediate: 1.0505050505050506
+The will be sent out by September 30th to allow some time for her and her husband to meet their families for her wedding
+Testing ./tests/test3
+Final encoding
+10,0,165,Offices parties lasting outward nothing age few resolve. Impression to discretion understood to we interested he excellence. Him remarkably use projection collecting,
+Correct guesses/total: 0.0
+Filesize of bz2/original: 0.9939393939393939
+Filesize of bz2/pre-bz2 intermediate: 0.9371428571428572
+Offices parties lasting outward nothing age few resolve. Impression to discretion understood to we interested he excellence. Him remarkably use projection collecting
+Testing ./tests/test4
+Final encoding
+10,0,21,Frederick was the son,1,0,6, Crown,1,0,29, Frederick William of Prussia,1,0,4, his,1,0,17,, Sophia Dorothea,1,0,8, Hanover,1,0,7, He was,1,0,9, sometime,1,0,12, 11 and 12 p,3,0,19, on 24 January 1712,1,0,137, the Berlin City Palace and was baptised with the single name Friedrich by Benjamin Ursinus von Bär on 31 January. The birth was welcomed,1,0,85, his grandfather, Frederick I, as his two previous grandsons had both died in infancy,1,0,15, With the death,1,0,12, Frederick I,1,0,5, 1713,2,0,86, son Frederick William I became King in Prussia, thus making young Frederick the crown,1,0,11,. Frederick,1,0,69, nine siblings who lived to adulthood. He had six sisters. The eldest,1,0,12, Wilhelmine,,1,0,126, became his closest sibling. He also had three younger brothers, including Augustus William and Henry. The new king wished for,1,0,9, children,1,0,28, be educated not as royalty,,2,0,31, simple folk. They were tutored,1,0,36, a French woman, Madame de Montbail,,1,0,38, had also educated Frederick William.
+,1,0,9,Frederick,1,0,38, I, popularly dubbed the "Soldier King,2,0,29, created a large and powerful,2,0,20, included a regiment,1,0,59, his famous "Potsdam Giants", carefully managed the kingdom,1,0,84, wealth, and developed a strong centralised government. He also had a violent temper,1,0,40, ruled Brandenburg-Prussia with absolute,1,0,13,. In contrast,1,0,76, Frederick's mother Sophia, whose father, George Louis of Brunswick-Lüneburg,2,0,25, succeeded to the British,1,0,17, as King George I,1,0,30, 1714, was polite, charismatic,1,0,48, learned. The political and personal differences,1,0,63, Frederick's parents created tensions, which impacted Frederick,1,0,9, attitude,1,0,9, his role,1,0,9, a ruler,,1,0,9, attitude,1,0,13, culture, and,1,0,13, relationship,2,0,9, father.
+,1,0,6,During,1,0,12, early youth,1,0,16, Frederick lived,2,0,7, mother,2,0,57, Wilhelmine, although they regularly visited their father,1,0,8, hunting,1,0,64, at Königs Wusterhausen. Frederick and his older sister formed a,1,0,14, relationship,,1,0,17, lasted until her,2,0,5, 1758,1,0,39, Frederick and his sisters were brought,1,0,34, by a Huguenot governess and tutor,1,0,41, learned French and German simultaneously,1,0,9, In spite,1,0,11, his father,1,0,12, desire that,1,0,90, education be entirely religious and pragmatic, the young Frederick developed a preference,1,0,114, music, literature, and French culture. Frederick Wilhelm thought these interests were effeminate, as they clashed,1,0,26, his militarism, resulting,2,0,60, frequent beating and humiliation of Frederick. Nevertheless,1,0,25, Frederick, with the help,2,0,83, tutor in Latin, Jacques Duhan, procured for himself a three thousand volume secret,1,0,17, of poetry, Greek,1,0,68, Roman classics, and philosophy to supplement his official lessons.
+,1,0,8,Although,1,0,28, father, Frederick William I,2,0,33, been raised a Calvinist in spite,1,0,62, the Lutheran state faith in Prussia, he feared he was not one,1,0,4, God,1,0,6, elect,1,0,25, To avoid the possibility,1,0,34, his son Frederick being motivated,1,0,54, the same concerns, the king ordered that his heir not,1,0,7, taught,1,0,25, predestination. In spite,1,0,11, his father,1,0,33, intention, Frederick appeared to,1,0,16, adopted a sense,1,0,15, predestination,1,0,9, himself.,
+Correct guesses/total: 0.17553191489361702
+Filesize of bz2/original: 0.5057813016187644
+Filesize of bz2/pre-bz2 intermediate: 0.4596217352146503
+Frederick was the son of Crown Prince Frederick William of Prussia and his wife, Sophia Dorothea of Hanover. He was born sometime between 11 and 12 p.m. on 24 January 1712 in the Berlin City Palace and was baptised with the single name Friedrich by Benjamin Ursinus von Bär on 31 January. The birth was welcomed by his grandfather, Frederick I, as his two previous grandsons had both died in infancy. With the death of Frederick I in 1713, his son Frederick William I became King in Prussia, thus making young Frederick the crown prince. Frederick had nine siblings who lived to adulthood. He had six sisters. The eldest was Wilhelmine, who became his closest sibling. He also had three younger brothers, including Augustus William and Henry. The new king wished for his children to be educated not as royalty, but as simple folk. They were tutored by a French woman, Madame de Montbail, who had also educated Frederick William.
+
+Frederick William I, popularly dubbed the "Soldier King," had created a large and powerful army that included a regiment of his famous "Potsdam Giants", carefully managed the kingdom's wealth, and developed a strong centralised government. He also had a violent temper and ruled Brandenburg-Prussia with absolute authority. In contrast, Frederick's mother Sophia, whose father, George Louis of Brunswick-Lüneburg, had succeeded to the British throne as King George I in 1714, was polite, charismatic and learned. The political and personal differences between Frederick's parents created tensions, which impacted Frederick's attitude toward his role as a ruler, his attitude toward culture, and his relationship with his father.
+
+During his early youth, Frederick lived with his mother and sister Wilhelmine, although they regularly visited their father's hunting lodge at Königs Wusterhausen. Frederick and his older sister formed a close relationship, which lasted until her death in 1758. Frederick and his sisters were brought up by a Huguenot governess and tutor and learned French and German simultaneously. In spite of his father's desire that his education be entirely religious and pragmatic, the young Frederick developed a preference for music, literature, and French culture. Frederick Wilhelm thought these interests were effeminate, as they clashed with his militarism, resulting in his frequent beating and humiliation of Frederick. Nevertheless, Frederick, with the help of his tutor in Latin, Jacques Duhan, procured for himself a three thousand volume secret library of poetry, Greek and Roman classics, and philosophy to supplement his official lessons.
+
+Although his father, Frederick William I, had been raised a Calvinist in spite of the Lutheran state faith in Prussia, he feared he was not one of God's elect. To avoid the possibility of his son Frederick being motivated by the same concerns, the king ordered that his heir not be taught about predestination. In spite of his father's intention, Frederick appeared to have adopted a sense of predestination for himself.
+Testing ./tests/test5
+Final encoding
+10,0,54,In my younger and more vulnerable years my father gave,1,0,43, some advice that I've been turning over in,1,0,10, mind ever,1,0,2,.
+,1,0,9,"Whenever,1,0,5, feel,1,0,49, criticizing any one," he told me, "just remember,1,0,35, all the people in this world haven,1,0,37, had the advantages that you've had.",2,0,7,He didn,1,0,118, say any more, but we've always been unusually communicative in a reserved way, and I understood that he meant a great,1,0,5, more,1,0,5, that,1,0,18, In consequence, I,1,0,9, inclined,1,0,31, reserve all judgments, a habit,1,0,11, has opened,1,0,41, many curious natures to me and also made,1,0,11, the victim,1,0,52, not a few veteran bores. The abnormal mind is quick,1,0,25, detect and attach itself,1,0,70, this quality when it appears in a normal person, and so it came about,1,0,34, in college I was unjustly accused,1,0,28, being a politician, because,1,0,10, was privy,1,0,127, the secret griefs of wild, unknown men. Most of the confidences were unsought--frequently I have feigned sleep, preoccupation,,1,0,59, a hostile levity when I realized by some unmistakable sign,1,0,102, an intimate revelation was quivering on the horizon; for the intimate revelations of young men, or at,1,0,13, the terms in,2,0,50, express them, are usually plagiaristic and marred,2,0,46, suppressions. Reserving judgments is a matter,1,0,149, infinite hope. I am still a little afraid of missing something if I forget that, as my father snobbishly suggested, and I snobbishly repeat, a sense,1,0,39, the fundamental decencies is parcelled,1,0,21, unequally at birth.
+,1,0,69,And, after boasting this way of my tolerance, I come to the admission,1,0,39, it has a limit. Conduct may be founded,1,0,14, the hard rock,1,0,17, the wet marshes,,1,0,28, after a certain point I don,1,0,23, care what it's founded,1,0,13,. When I came,2,0,52, the East last autumn I felt that I wanted the world,1,0,28, be in uniform and at a sort,1,0,91, moral attention forever; I wanted no more riotous excursions with privileged glimpses into,1,0,34, human heart. Only Gatsby, the man,1,0,40, gives his name to this book, was exempt,1,0,85, my reaction--Gatsby, who represented everything for which I have an unaffected scorn,1,0,37, If personality is an unbroken series,1,0,55, successful gestures, then there was something gorgeous,1,0,80, him, some heightened sensitivity to the promises of life, as if he were related,1,0,4, one,1,0,25, those intricate machines,1,0,40, register earthquakes ten thousand miles,1,0,33,. This responsiveness had nothing,3,0,64, that flabby impressionability which is dignified under the name,1,0,32, the "creative temperament."--it,1,0,17, an extraordinary,1,0,36, for hope, a romantic readiness such,1,0,26, I have never found in any,1,0,42, person and which it is not likely I shall,1,0,5, find,1,0,27,. No--Gatsby turned out all,1,0,76, at the end; it is what preyed on Gatsby, what foul dust floated in the wake,2,0,47, dreams that temporarily closed out my interest,1,0,47, the abortive sorrows and short-winded elations,1,0,6, men.
+,1,0,30,My family have been prominent,,1,0,3,-to,2,0,89, people in this Middle Western city for three generations. The Carraways are something of,1,0,51, clan, and we have a tradition that we're descended,1,0,10, the Dukes,1,0,34, Buccleuch, but the actual founder,1,0,29, my line was my grandfather's,1,0,142,, who came here in fifty-one, sent a substitute to the Civil War, and started the wholesale hardware business that my father carries on to-day,1,0,36, I never saw this great-uncle, but I,1,0,9, supposed,1,0,5, look,1,0,28, him--with special reference,1,0,53, the rather hard-boiled painting that hangs in father,1,0,19, office I graduated,1,0,34, New Haven in 1915, just a quarter,1,0,61, a century after my father, and a little later I participated,1,0,38, that delayed Teutonic migration known,2,0,10, Great War,1,0,41, I enjoyed the counter-raid so thoroughly,2,0,5, came,1,0,18, restless. Instead,1,0,22, being the warm centre,1,0,38, the world, the Middle West now seemed,2,0,12, ragged edge,1,0,27, the universe--so I decided,1,0,8, go East,1,0,53, learn the bond business. Everybody I knew was in the,2,0,15,, so I supposed,1,0,69, could support one more single man. All my aunts and uncles talked it,1,0,6, as if,1,0,67, were choosing a prep school for me, and finally said, "Why--ye--es,1,0,32, with very grave, hesitant faces,1,0,65, Father agreed to finance me for a year, and after various delays,1,0,49, came East, permanently, I thought, in the spring,1,0,7, twenty,1,0,5,two.
+,1,0,120,The practical thing was to find rooms in the city, but it was a warm season, and I had just left a country of wide lawns,1,0,122, friendly trees, so when a young man at the office suggested that we take a house together in a commuting town, it sounded,1,0,8, a great,1,0,120,. He found the house, a weather-beaten cardboard bungalow at eighty a month, but at the last minute the firm ordered him,1,0,23, Washington, and I went,1,0,38, to the country alone. I had a dog--at,1,0,31, I had him for a few days until,1,0,48, ran away--and an old Dodge and a Finnish woman,,1,0,90, made my bed and cooked breakfast and muttered Finnish wisdom to herself over the electric,1,0,2,.
+,1,0,112,It was lonely for a day or so until one morning some man, more recently arrived than I, stopped me on the road.
+,1,0,7,"How do,1,0,24, get to West Egg village,1,0,3, he,1,0,11, helplessly,1,0,1,
+,1,0,6,I told,1,0,93,. And as I walked on I was lonely no longer. I was a guide, a pathfinder, an original settler,1,0,29, He had casually conferred on,1,0,12, the freedom,1,0,19, the neighborhood.
+,1,0,6,And so,1,0,34, the sunshine and the great bursts,1,0,18, leaves growing on,1,0,74, trees, just as things grow in fast movies, I had that familiar conviction,1,0,5, life,1,0,15, beginning over,1,0,18, with the summer.
+,1,0,12,There was so,1,0,17, to read, for one,1,0,47,, and so much fine health to be pulled down out,1,0,65, the young breath-giving air. I bought a dozen volumes on banking,1,0,222, credit and investment securities, and they stood on my shelf in red and gold like new money from the mint, promising to unfold the shining secrets that only Midas and Morgan and Maecenas knew. And I had the high intention,1,0,174, reading many other books besides. I was rather literary in college--one year I wrote a series of very solemn and obvious editorials for the "Yale News."--and now I was going,1,0,32, bring back all such things into,2,0,65, and become again that most limited of all specialists, the "well,1,0,22,rounded man." This isn,2,0,85, an epigram--life is much more successfully looked at from a single window, after all,1,0,1,
+,1,0,15,It was a matter,1,0,7, chance,1,0,23, I should have rented a,1,0,7, in one,1,0,26, the strangest communities,1,0,14, North America,3,0,90, on that slender riotous island which extends itself due east of New York--and where there,1,0,7,, among,1,0,20, natural curiosities,1,0,50, two unusual formations of land. Twenty miles from,1,0,12, city a pair,1,0,25, enormous eggs, identical,1,0,8, contour,1,0,15, separated only,1,0,29, a courtesy bay, jut out into,1,0,40, most domesticated body of salt water in,1,0,51, Western hemisphere, the great wet barnyard of Long,1,0,51, Sound. they are not perfect ovals--like the egg in,1,0,64, Columbus story, they are both crushed flat at the contact end--,1,0,44, their physical resemblance must be a source,1,0,152, perpetual confusion to the gulls that fly overhead. to the wingless a more arresting phenomenon is their dissimilarity in every particular except shape,1,0,5, size,1,0,1,
+,1,0,30,I lived at West Egg, the--well,1,0,24, the less fashionable of,2,0,97,, though this is a most superficial tag to express the bizarre and not a little sinister contrast,1,0,15, them. my house,1,0,16, at the very tip,2,0,27, egg, only fifty yards from,1,0,28, Sound, and squeezed between,1,0,151, huge places that rented for twelve or fifteen thousand a season. the one on my right was a colossal affair by any standard--it was a factual imitation,1,0,49, some Hotel de Ville in Normandy, with a tower on,2,0,67,, spanking new under a thin beard of raw ivy, and a marble swimming,1,0,10,, and more,1,0,12, forty acres,1,0,5, lawn,1,0,44, garden. it was Gatsby's mansion. Or, rather,1,0,10, as I didn,1,0,8, know Mr,1,0,35, Gatsby, it was a mansion inhabited,1,0,39, a gentleman of that name. My own house,1,0,12, an eyesore,,1,0,52, it was a small eyesore, and it had been overlooked,,1,0,37, I had a view of the water, a partial,2,0,12, my neighbor,1,0,34, lawn, and the consoling proximity,1,0,39, millionaires--all for eighty dollars a,1,0,2,.
+,1,0,6,Across,1,0,71, courtesy bay the white palaces of fashionable East Egg glittered along,1,0,23, water, and the history,1,0,67, the summer really begins on the evening I drove over there to have,2,0,90, the Tom Buchanans. Daisy was my second cousin once removed, and I'd known Tom in college.,1,0,5, just,1,0,20, the war I spent two,1,0,23, with them in Chicago.
+,1,0,51,Her husband, among various physical accomplishments,2,0,9, been one,2,0,104, most powerful ends that ever played football at New Haven--a national figure in a way, one of those men,1,0,94, reach such an acute limited excellence at twenty-one that everything afterward savors of anti,1,0,34,climax. His family were enormously,1,0,142,--even in college his freedom with money was a matter for reproach--but now he'd left Chicago and come East in a fashion that rather took your,2,0,14,: for instance,1,0,27, he'd brought down a string,1,0,42, polo ponies from Lake Forest. it was hard,1,0,59, realize that a man in my own generation was wealthy enough,1,0,10, do that.
+,1,0,24,Why they came East I don,4,0,27, had spent a year in France,1,0,14, no particular,1,0,27,, and then drifted here and,1,0,40, unrestfully wherever people played polo,1,0,19, were rich together,1,0,64, This was a permanent move, said Daisy over the telephone, but I,2,0,38, believe it--I had no sight into Daisy,1,0,7, heart,,1,0,134, I felt that Tom would drift on forever seeking, a little wistfully, for the dramatic turbulence of some irrecoverable football game.
+,1,0,60,And so it happened that on a warm windy evening I drove over,1,0,24, East Egg to see two old,1,0,16, whom I scarcely,1,0,3, at,1,0,13,. Their house,1,0,20, even more elaborate,1,0,2, I,1,0,20,, a cheerful red-and,1,0,44,white Georgian Colonial mansion, overlooking,1,0,35, bay. The lawn started at the beach,1,0,11, ran toward,1,0,6, front,1,0,19, for a quarter of a,1,0,24,, jumping over sun-dials,1,0,12, brick walks,1,0,116, burning gardens--finally when it reached the house drifting up the side in bright vines as though from the momentum,1,0,8, its run,1,0,62, The front was broken by a line of French windows, glowing now,1,0,15, reflected gold,1,0,92, wide open to the warm windy afternoon, and Tom Buchanan in riding clothes was standing with,1,0,14, legs apart on,1,0,14, front porch.
+,1,0,45,He had changed since his New Haven years. Now,1,0,65, was a sturdy straw-haired man of thirty with a rather hard mouth,1,0,75, a supercilious manner. Two shining arrogant eyes had established dominance,1,0,18, his face and gave,1,0,15, the appearance,1,0,41, always leaning aggressively forward. Not,1,0,43, the effeminate swank of his riding clothes,1,0,48, hide the enormous power of that body--he seemed,1,0,93, fill those glistening boots until he strained the top lacing, and you could see a great pack,1,0,60, muscle shifting when his shoulder moved under his thin coat,1,0,22, It was a body capable,1,0,34, enormous leverage--a cruel body.
+,1,0,112,His speaking voice, a gruff husky tenor, added to the impression of fractiousness he conveyed. There was a touch,1,0,86, paternal contempt in it, even toward people he liked--and there were men at New Haven,1,0,21, had hated his guts.
+,1,0,9,"Now, don,1,0,17, think my opinion,1,0,35, these matters is final," he seemed,1,0,21, say, "just because I,1,0,21, stronger and more of,1,0,4, man,1,0,8, you are,1,0,97, We were in the same senior society, and while we were never intimate I always had the impression,1,0,12, he approved,1,0,17, me and wanted me,1,0,5, like,1,0,44, with some harsh, defiant wistfulness of his,2,0,1,
+,1,0,19,We talked for a few,1,0,21, on the sunny porch.
+,1,0,5,"I've,1,0,66, a nice place here," he said, his eyes flashing about restlessly.
+,1,0,10,Turning me,1,0,12, by one arm,,1,0,107, moved a broad flat hand along the front vista, including in its sweep a sunken Italian garden, a half acre,1,0,81, deep, pungent roses, and a snub-nosed motor-boat that bumped the tide offshore.
+,1,0,12,"It belonged,1,0,36, Demaine, the oil man." He turned me,1,0,29, again, politely and abruptly,2,0,15,We'll go inside,1,0,1,
+,1,0,87,We walked through a high hallway into a bright rosy-colored space, fragilely bound into,1,0,51, house by French windows at either end. The windows,1,0,32, ajar and gleaming white against,1,0,32, fresh grass outside that seemed,2,0,2, a,1,0,29, way into the house. A breeze,3,0,34, room, blew curtains in at one end,1,0,8, out the,1,0,174, like pale flags, twisting them up toward the frosted wedding-cake of the ceiling, and then rippled over the wine-colored rug, making a shadow on it as wind does on the sea.
+,1,0,40,The only completely stationary object in,1,0,5, room,1,0,3, an,1,0,9, couch on,1,0,110, two young women were buoyed up as though upon an anchored balloon. They were both in white, and their dresses,1,0,27, rippling and fluttering as,3,0,109, just been blown back in after a short flight around the house. I must have stood for a few moments listening,1,0,18, the whip and snap,1,0,43, the curtains and the groan of a picture on,2,0,12,. Then there,1,0,45, a boom as Tom Buchanan shut the rear windows,1,0,75, the caught wind died out about the room, and the curtains and the rugs and,1,0,48, two young women ballooned slowly to the floor.
+,1,0,14,The younger of,2,0,15, was a stranger,1,0,47, me. She was extended full length at her end of,1,0,68, divan, completely motionless, and with her chin raised a little, as,2,0,88, were balancing something on it which was quite likely to fall. If she saw me out of the,3,0,86, eyes she gave no hint of it--indeed, I was almost surprised into murmuring an apology,1,0,17, having disturbed,1,0,15, by coming in.
+,1,0,21,The other girl, Daisy,1,0,16, made an attempt,1,0,26, rise--she leaned slightly,1,0,136, with a conscientious expression--then she laughed, an absurd, charming little laugh, and I laughed too and came forward into the room.
+,1,0,2,"I,1,0,54, p-paralyzed with happiness." She laughed again, as if,1,0,39, said something very witty, and held my,1,0,6, for a,1,0,36,, looking up into my face, promising,1,0,42, there was no one in the world she so much,2,0,10, see. That,1,0,15, a way she had.,1,0,19, hinted in a murmur,1,0,65, the surname of the balancing girl was Baker. (I've heard it said,1,0,51, Daisy's murmur was only to make people lean toward,1,0,25,; an irrelevant criticism,1,0,28, made it no less charming.)
+,1,0,6,At any,2,0,72, Miss Baker's lips fluttered, she nodded at me almost imperceptibly, and,1,0,15, quickly tipped,3,0,78, again--the object she was balancing had obviously tottered a little and given,1,0,36, something of a fright. Again a sort,1,0,17, apology arose to,1,0,45, lips. Almost any exhibition of complete self,1,0,45,sufficiency draws a stunned tribute from me.
+,1,0,8,I looked,3,0,8, cousin,,1,0,48, began to ask me questions in her low, thrilling,2,0,16, It was the kind,2,0,37, that the ear follows up and down, as,1,0,39, each speech is an arrangement of notes,1,0,5, will,2,0,13, played again,1,0,17, Her face was sad,1,0,45, lovely with bright things in it, bright eyes,1,0,27, a bright passionate mouth,,1,0,6, there,1,0,17, an excitement in,3,0,22, men who had cared for,1,0,16, found difficult,1,0,94, forget: a singing compulsion, a whispered "Listen," a promise that she had done gay, exciting,1,0,72, just a while since and that there were gay, exciting things hovering in,1,0,12, next hour.
+,1,0,125,I told her how I had stopped off in Chicago for a day on my way East, and how a dozen people had sent their love through me.
+,1,0,13,"Do they miss,2,0,23, she cried ecstatically,1,0,1,
+,1,0,167,"The whole town is desolate. All the cars have the left rear wheel painted black as a mourning wreath, and there's a persistent wail all night along the north shore."
+,1,0,18,"How gorgeous! Let,1,0,18, go back, Tom. To-,1,0,30,!" Then she added irrelevantly,2,0,9,You ought,1,0,13, see the baby,1,0,1,
+,1,0,9,"I'd like,1,0,3,."
+,1,0,14,"She's asleep.,1,0,14,'s three years,1,0,7,. Haven,1,0,21, you ever seen her?"
+,1,0,8,"Never.",2,0,16,"Well, you ought,1,0,9, see her.,1,0,8,'s----"
+,1,0,81,Tom Buchanan, who had been hovering restlessly about the room, stopped and rested,1,0,5, hand,1,0,3, my,2,0,1,
+,1,0,21,"What you doing, Nick,1,0,1,
+,1,0,2,"I,1,0,13, a bond man.",2,0,12,"Who with?"
+,1,0,6,I told,1,0,2,.
+,1,0,12,"Never heard,1,0,30, them," he remarked decisively,1,0,1,
+,1,0,17,This annoyed me.
+,1,0,31,"You will," I answered shortly.,1,0,3,You,1,0,3, if,1,0,20, stay in the East."
+,1,0,31,"Oh, I'll stay in the East, don,1,0,10, you worry,1,0,41, he said, glancing at Daisy and then back,1,0,7, me, as,1,0,85, he were alert for something more. "I'd be a God damned fool to live anywhere else."
+,1,0,7,At this,1,0,17, Miss Baker said:,1,0,33,Absolutely!" with such suddenness,1,0,67, I started--it was the first word she uttered since I came into the,1,0,24,. Evidently it surprised,1,0,8, as much,1,0,44, it did me, for she yawned and with a series,1,0,28, rapid, deft movements stood,1,0,5, into,1,0,7, room.
+,1,0,2,"I,1,0,6, stiff,2,0,49, complained, "I've been lying on that sofa for as,3,0,4, can,1,0,3,."
+,1,0,4,"Don,1,0,8, look at,1,0,36,," Daisy retorted, "I've been trying,1,0,15, get you to New,1,0,17, all afternoon."
+,1,0,11,"No, thanks,1,0,66, said Miss Baker to the four cocktails just in from the pantry, "I,1,0,26, absolutely in training."
+,1,0,36,Her host looked at her incredulously,1,0,1,
+,1,0,23,"You are!" He took down,1,0,9, drink as,3,0,10, a drop in,1,0,7, bottom,1,0,51, a glass. "How you ever get anything done is beyond,1,0,3,."
+,1,0,33,I looked at Miss Baker, wondering,1,0,44, it was she "got done." I enjoyed looking at,1,0,1,.,1,0,30, was a slender, small-breasted,1,0,31,, with an erect carriage, which,1,0,12, accentuated,1,0,9, throwing,1,0,90, body backward at the shoulders like a young cadet. Her gray sun-strained eyes looked back,1,0,3, me,1,0,32, polite reciprocal curiosity out,1,0,35, a wan, charming, discontented face,1,0,12, It occurred,1,0,7, me now,1,0,29, I had seen her, or a picture,2,0,20,, somewhere before.
+,1,0,21,"You live in West Egg,2,0,24, remarked contemptuously,2,0,24,I know somebody there."
+,1,0,6,"I don,1,0,20, know a single----"
+,1,0,9,"You must,1,0,9, Gatsby.",2,0,7,"Gatsby,1,0,15, demanded Daisy,2,0,11,What Gatsby,1,0,1,
+,1,0,35,Before I could reply that he was my,1,0,119, dinner was announced; wedging his tense arm imperatively under mine, Tom Buchanan compelled me from the room as though,1,0,42, were moving a checker to another square.
+,1,0,48,Slenderly, languidly, their hands set lightly on,2,0,9,, the two,1,0,61, women preceded us out onto a rosy-colored porch, open toward,1,0,40, sunset, where four candles flickered on,1,0,29, table in the diminished wind,1,0,1,
+,1,0,12,"Why CANDLES,1,0,52, objected Daisy, frowning. She snapped them out with,2,0,1,.,1,0,6,In two,1,0,6, it'll,1,0,61, the longest day in the year." She looked at us all radiantly,2,0,2,Do,1,0,36, always watch for the longest day of,1,0,5, year,2,0,5, miss,1,0,52,? I always watch for the longest day in the year and,1,0,5, miss,1,0,2,.",2,0,9,"We ought,1,0,44, plan something," yawned Miss Baker, sitting,2,0,16, the table as if,1,0,24, were getting into bed.
+,1,0,4,"All,2,0,11, said Daisy,2,0,7,What'll,1,0,11, plan?" She,1,0,18, to me helplessly:,1,0,22,What do people plan?"
+,1,0,14,Before I could,1,0,45, her eyes fastened with an awed expression on,1,0,14, little finger,1,0,1,
+,1,0,7,"Look!",1,0,26, complained; "I hurt it."
+,1,0,36,We all looked--the knuckle was black,1,0,7, blue.
+,1,0,16,"You did it, Tom,2,0,16, said accusingly,2,0,15,I know you didn,1,0,9, mean to,,1,0,11, you DID do,1,0,81,. That's what I get for marrying a brute of a man, a great, big, hulking physical,1,0,11, of a----"
+,1,0,12,"I hate that,1,0,52, hulking," objected Tom crossly, "even in kidding."
+,1,0,8,"Hulking,1,0,15, insisted Daisy,1,0,1,
+,1,0,140,Sometimes she and Miss Baker talked at once, unobtrusively and with a bantering inconsequence that was never quite chatter, that was as cool,1,0,61, their white dresses and their impersonal eyes in the absence,1,0,95, all desire. They were here, and they accepted Tom and me, making only a polite pleasant effort,1,0,19, entertain or to be,1,0,33,. They knew that presently dinner,1,0,8, be over,1,0,45, a little later the evening too would be over,1,0,44, casually put away. It was sharply different,1,0,10, the West,,1,0,37, an evening was hurried from phase to,1,0,92, toward its close, in a continually disappointed anticipation or else in sheer nervous dread,1,0,18, the moment itself,1,0,1,
+,1,0,36,"You make me feel uncivilized, Daisy,1,0,15, I confessed on,1,0,13, second glass,1,0,52, corky but rather impressive claret. "Can't you talk,1,0,19, crops or something,1,0,1,
+,1,0,45,I meant nothing in particular by this remark,,1,0,39, it was taken up in an unexpected way.
+,1,0,21,"Civilization's going,1,0,7, pieces,1,0,6, broke,1,0,15, Tom violently.,1,0,38,I've gotten to be a terrible pessimist,2,0,6,. Have,1,0,7, read ',1,0,29, Rise of the Colored Empires',1,0,20, this man Goddard?"
+,1,0,8,"Why, no,1,0,36, I answered, rather surprised by his,2,0,1,
+,1,0,44,"Well, it's a fine book, and everybody ought,3,0,23,. The idea is if we don,2,0,85, out the white race will be--will be utterly submerged. It's all scientific stuff; it,1,0,14, been proved.",2,0,28,"Tom's getting very profound,1,0,17, said Daisy, with,1,0,36, expression of unthoughtful sadness.,1,0,38,He reads deep books with long words in,1,0,29,. What was that word we----"
+,1,0,81,"Well, these books are all scientific," insisted Tom, glancing at her impatiently,2,0,51,This fellow has worked out the whole thing. It's up,1,0,65, us, who are the dominant race, to watch out or these other races,1,0,25, have control of things.",2,0,6,"We've,2,0,5, beat,1,0,5, down,1,0,60, whispered Daisy, winking ferociously toward the fervent sun,1,0,1,
+,1,0,10,"You ought,1,0,60, live in California--" began Miss Baker, but Tom interrupted,1,0,35, by shifting heavily in his chair.
+,1,0,65,"This idea is that we're Nordics. I am, and you are, and you are,,1,0,71,----" After an infinitesimal hesitation he included Daisy with a slight,1,0,16,, and she winked,1,0,9, me again,1,0,10, "--And we,1,0,57, produced all the things that go to make civilization--oh,1,0,25, science and art, and all,1,0,15,. Do you see?"
+,1,0,53,There was something pathetic in his concentration, as,1,0,28, his complacency, more acute,1,0,7, of old,1,0,15, was not enough,1,0,13, him any more,1,0,40, When, almost immediately, the telephone,1,0,7, inside,1,0,94, the butler left the porch Daisy seized upon the momentary interruption and leaned toward me.
+,1,0,10,"I'll tell,1,0,16, a family secret,2,0,27, whispered enthusiastically,2,0,32,It's about the butler's nose. Do,1,0,40, want to hear about the butler's nose?"
+,1,0,5,"That,1,0,27, why I came over to-night.",2,0,14,"Well, he wasn,1,0,17, always a butler;,1,0,5, used,1,0,134, be the silver polisher for some people in New York that had a silver service for two hundred people. He had to polish it from morning,2,0,15,, until finally,1,0,6, began,1,0,22, affect his nose----"
+,1,0,17,"Things went from,3,0,23,," suggested Miss Baker,1,0,1,
+,1,0,22,"Yes. Things went from,3,0,30,, until finally he had to give,1,0,15, his position.",2,0,64,For a moment the last sunshine fell with romantic affection upon,1,0,192, glowing face; her voice compelled me forward breathlessly as I listened--then the glow faded, each light deserting her with lingering regret, like children leaving a pleasant street at dusk.
+,1,0,15,The butler came,1,0,29, and murmured something close,1,0,46, Tom's ear, whereupon Tom frowned, pushed back,1,0,7, chair,,1,0,10, without a,1,0,76, went inside. As if his absence quickened something within her, Daisy leaned,1,0,39, again, her voice glowing and singing.
+,1,0,37,"I love to see you at my table, Nick.,1,0,7, remind,1,0,41, of a--of a rose, an absolute rose. Doesn,1,0,48, he?" She turned to Miss Baker for confirmation:,1,0,19,An absolute rose?"
+,1,0,15,This was untrue,1,0,97, I am not even faintly like a rose. She was only extemporizing, but a stirring warmth flowed from,1,0,28,, as if her heart was trying,1,0,109, come out to you concealed in one of those breathless, thrilling words. Then suddenly she threw her napkin on,1,0,6, table,1,0,8, excused,1,0,14, and went into,1,0,8, house.
+,1,0,60,Miss Baker and I exchanged a short glance consciously devoid,1,0,21, meaning. I was about,1,0,30, speak when she sat up alertly,1,0,30, said "Sh!" in a warning voice,1,0,44, A subdued impassioned murmur was audible in,1,0,61, room beyond, and Miss Baker leaned forward unashamed, trying,1,0,39, hear. The murmur trembled on the verge,1,0,68, coherence, sank down, mounted excitedly, and then ceased altogether,1,0,1,
+,1,0,8,"This Mr,1,0,17, Gatsby you spoke,1,0,29, is my neighbor----" I said.
+,1,0,4,"Don,1,0,36, talk. I want to hear what happens.",2,0,23,"Is something happening,1,0,22, I inquired innocently,1,0,1,
+,1,0,16,"You mean to say,1,0,4, don,1,0,44, know?" said Miss Baker, honestly surprised.,1,0,27,I thought everybody knew."
+,1,0,6,"I don,1,0,3,."
+,1,0,37,"Why----" she said hesitantly, "Tom's,1,0,18, some woman in New,1,0,3,."
+,1,0,36,"Got some woman?" I repeated blankly,1,0,1,
+,1,0,19,Miss Baker nodded.
+,1,0,31,"She might have the decency not,1,0,34, telephone him at dinner time. Don,1,0,13, you think?"
+,1,0,27,Almost before I had grasped,1,0,14, meaning there,1,0,12, the flutter,1,0,23, a dress and the crunch,1,0,33, leather boots, and Tom and Daisy,1,0,5, back,1,0,12, the table.
+,1,0,10,"It couldn,1,0,42, be helped!" cried Daisy with tense gaiety,1,0,1,
+,1,0,7,She sat,1,0,21,, glanced searchingly,1,0,11, Miss Baker,1,0,111, then at me, and continued: "I looked outdoors for a minute, and it's very romantic outdoors. There's a bird on,1,0,111, lawn that I think must be a nightingale come over on the Cunard or White Star Line. He's singing away----" Her,1,0,6, sang:,1,0,2,It,1,0,14, romantic, isn,2,0,5,, Tom,1,0,1,
+,1,0,14,"Very romantic,1,0,35, he said, and then miserably to me:,1,0,41,If it's light enough after dinner, I want,1,0,14, take you down,1,0,14, the stables.",2,0,13,The telephone,1,0,40, inside, startlingly, and as Daisy shook,2,0,30, decisively at Tom the subject,1,0,98, the stables, in fact all subjects, vanished into air. Among the broken fragments of the last five,1,0,38, at table I remember the candles being,1,0,51, again, pointlessly, and I was conscious of wanting,1,0,14, look squarely,1,0,47, every one, and yet to avoid all eyes. I couldn,1,0,6, guess,1,0,61, Daisy and Tom were thinking, but I doubt if even Miss Baker,,1,0,10, seemed to,1,0,11, mastered a,1,0,35, hardy scepticism, was able utterly,1,0,59, put this fifth guest's shrill metallic urgency out of mind,1,0,5, To a,1,0,118, temperament the situation might have seemed intriguing--my own instinct was to telephone immediately for the police.
+,1,0,20,The horses, needless,4,0,79, not mentioned again. Tom and Miss Baker, with several feet of twilight between,1,0,15,, strolled back,2,0,12, library, as,1,0,59, to a vigil beside a perfectly tangible body, while, trying,1,0,149, look pleasantly interested and a little deaf, I followed Daisy around a chain of connecting verandas to the porch in front. In its deep gloom we sat,1,0,5, side,2,0,21, on a wicker settee.
+,1,0,22,Daisy took her face in,2,0,70, as if feeling its lovely shape, and her eyes moved gradually out into,1,0,12, velvet dusk,1,0,128, I saw that turbulent emotions possessed her, so I asked what I thought would be some sedative questions about her little girl.
+,1,0,3,"We,2,0,10, know each,1,0,5, very,1,0,8,, Nick,",1,0,14, said suddenly,2,0,32,Even if we are cousins. You didn,1,0,22, come to my wedding."
+,1,0,7,"I wasn,1,0,21, back from the war."
+,1,0,1,",2,0,22, true." She hesitated.,1,0,4,Well,1,0,55, I've had a very bad time, Nick, and I'm pretty cynical,1,0,13, everything.",2,0,24,Evidently she had reason,1,0,26, be. I waited but she didn,1,0,8, say any,1,0,45,, and after a moment I returned rather feebly,1,0,12, the subject,1,0,15, her daughter.
+,1,0,50,"I suppose she talks, and--eats, and everything."
+,1,0,36,"Oh, yes." She looked at me absently,2,0,20,Listen, Nick; let me,2,0,37, what I said when she was born. Would,1,0,5, like,1,0,8, hear?"
+,1,0,13,"Very much."
+,1,0,59,"It'll show you how I've gotten to feel about--things. Well,1,0,66, she was less than an hour old and Tom was God knows where. I woke,1,0,4, out,1,0,71, the ether with an utterly abandoned feeling, and asked the nurse right,2,0,3, it,1,0,6, a boy,1,0,2, a,1,0,5,. She,1,0,6, me it,1,0,2, a,1,0,61,, and so I turned my head away and wept. 'all right,' I said,,1,0,21,I'm glad it's a girl.,1,0,103, I hope she'll be a fool--that's the best thing a girl can be in this world, a beautiful little fool."
+,1,0,47,"You see I think everything's terrible anyhow,",1,0,5, went,1,0,19, in a convinced way,2,0,79,Everybody thinks so--the most advanced people. And I KNOW. I've been everywhere,1,0,5, seen,2,0,5, done,1,0,147,." Her eyes flashed around her in a defiant way, rather like Tom's, and she laughed with thrilling scorn. "Sophisticated--God, I'm sophisticated!"
+,1,0,15,The instant her,1,0,10, broke off,1,0,8, ceasing,1,0,10, compel my,1,0,110,, my belief, I felt the basic insincerity of what she had said. It made me uneasy, as though the whole evening,1,0,21, been a trick of some,1,0,32, to exact a contributory emotion,1,0,23, me. I waited, and sure,2,0,29, in a moment she looked at me,1,0,21, an absolute smirk on,1,0,7, lovely,1,0,7,, as if,1,0,28, had asserted her membership,1,0,30, a rather distinguished secret,1,0,9, to which,1,0,17, and Tom belonged,1,0,1,
+,1,0,32,Inside, the crimson room bloomed,1,0,8, light.
+,1,0,36,Tom and Miss Baker sat at either end,2,0,11, long couch,1,0,175, she read aloud to him from the SATURDAY EVENING POST.--the words, murmurous and uninflected, running together in a soothing tune. The lamp-light, bright on his boots and dull,1,0,63, the autumn-leaf yellow of her hair, glinted along the paper as,1,0,29, turned a page with a flutter,1,0,19, slender muscles in,1,0,5, arms,1,0,1,
+,1,0,34,When we came in she held us silent,1,0,2, a,1,0,21, with a lifted hand.
+,1,0,16,"To be continued,1,0,72, she said, tossing the magazine on the table, "in our very next issue."
+,1,0,81,Her body asserted itself with a restless movement of her knee, and she stood up.
+,1,0,6,"Ten o,3,0,64, she remarked, apparently finding the time on the ceiling. "Time,1,0,15, this good girl,1,0,6, go to,1,0,3,."
+,1,0,9,"Jordan's,2,0,76, play in the tournament to-morrow," explained Daisy, "over at Westchester."
+,1,0,26,"Oh--you're Jordan BAKER.",2,0,168,I knew now why her face was familiar--its pleasing contemptuous expression had looked out at me from many rotogravure pictures of the sporting life at Asheville and Hot,1,0,118, and Palm Beach. I had heard some story of her too, a critical, unpleasant story, but what it was I had forgotten long,1,0,2,.
+,1,0,17,"Good night," she,1,0,7, softly,2,0,21,Wake me at eight, won,2,0,3,."
+,1,0,3,"If,1,0,10,'ll get up,3,0,23,"I will. Good night, Mr,1,0,14, Carraway. See,1,0,8, anon."
+,1,0,3,"Of,1,0,9, you will,1,0,16, confirmed Daisy,2,0,2,In,1,0,62, I think I'll arrange a marriage. Come over often, Nick, and I,1,0,33, sort of--oh--fling you together.,1,0,15, know--lock you,1,0,30, accidentally in linen closets,1,0,49, push you out to sea in a boat, and all that sort,1,0,12, thing----"
+,1,0,47,"Good night," called Miss Baker from the stairs,2,0,7,I haven,1,0,13, heard a word,1,0,1,
+,1,0,13,"She's a nice,3,0,12, Tom after a,1,0,1,.,1,0,11,They oughtn,1,0,15, to let her run,1,0,23, the country this way.",2,0,11,"Who oughtn,1,0,27, to?" inquired Daisy coldly,1,0,1,
+,1,0,14,"Her family."
+,1,0,46,"Her family is one aunt about a thousand years,1,0,23,. Besides, Nick's going,1,0,11, look after,1,0,6,, aren,1,0,23, you, Nick? She's going,1,0,11, spend lots,1,0,24, week-ends out here this,1,0,46,. I think the home influence will be very good,1,0,6, her.",2,0,20,Daisy and Tom looked,6,0,13, in silence.
+,1,0,21,"Is she from New York,1,0,2, I,1,0,8, quickly,1,0,1,
+,1,0,36,"From Louisville. Our white girlhood,1,0,49, passed together there. Our beautiful white----"
+,1,0,4,"Did,1,0,78, give Nick a little heart to heart talk on the veranda?" demanded Tom suddenly,1,0,1,
+,1,0,12,"Did I?" She,1,0,8, at me.
+,1,0,13,"I can't seem,1,0,10, remember,,1,0,8, I think,1,0,7, talked,1,0,21, the Nordic race. Yes,1,0,2, I,1,0,21, sure we did. It sort,1,0,9, crept up,2,0,10, and first,1,0,15, you know----"
+,1,0,4,"Don,1,0,19, believe everything,2,0,6,, Nick,1,0,14, he advised me,1,0,1,
+,1,0,42,I said lightly that I had heard nothing at,1,0,11,, and a few,2,0,38, I got up to go home. They came to the,1,0,8, with me,1,0,11, stood side,2,0,80, in a cheerful square of light. As I started my motor Daisy peremptorily called:,1,0,7,Wait!"
+,1,0,99,"I forgot to ask you something, and it's important. We heard you were engaged to a girl out West."
+,1,0,1,",1,0,8,'s right,1,0,24, corroborated Tom kindly,2,0,33,We heard that you were engaged."
+,1,0,14,"It's libel. I,1,0,11, too poor.",2,0,48,"But we heard it," insisted Daisy, surprising me,1,0,85, opening up again in a flower-like way. "We heard it from three people, so it must be,1,0,2,.",2,0,2,Of,1,0,32, I knew what they were referring,1,0,1,,,1,0,7, I wasn,1,0,31, even vaguely engaged. The fact,1,0,39, gossip had published the banns was one,3,0,68, I had come East. You can't stop going with an old friend on account,1,0,25, rumors, and on the other,2,0,17, had no intention,1,0,30, being rumored into marriage.
+,1,0,79,Their interest rather touched me and made them less remotely rich--nevertheless,1,0,41, I was confused and a little disgusted as,1,0,25, drove away. It seemed to,1,0,28, that the thing for Daisy to,2,0,86, to rush out of the house, child in arms--but apparently there were no such intentions,1,0,31, her head. As for Tom, the fact,1,0,26, he "had some woman in New,1,0,61,." was really less surprising than that he had been depressed,1,0,29, a book. Something was making,1,0,7, nibble,1,0,9, the edge,1,0,49, stale ideas as if his sturdy physical egotism no,1,0,31, nourished his peremptory heart,1,0,1,
+,1,0,45,Already it was deep summer on roadhouse roofs,1,0,9, in front,1,0,276, wayside garages, where new red gas-pumps sat out in pools of light, and when I reached my estate at West Egg I ran the car under its shed and sat for a while on an abandoned grass roller in the yard. The wind had blown off, leaving a loud, bright night, with wings beating in,1,0,58, trees and a persistent organ sound as the full bellows of,1,0,50, earth blew the frogs full of life. The silhouette,1,0,28, a moving cat wavered across,1,0,65, moonlight, and turning my head to watch it, I saw that I was not,1,0,12,--fifty feet,1,0,21, a figure had emerged,2,0,7, shadow,1,0,12, my neighbor,1,0,8, mansion,1,0,31, was standing with his hands in,2,0,69, regarding the silver pepper of the stars. Something in his leisurely,1,0,27, and the secure position of,1,0,10, feet upon,1,0,20, lawn suggested that,1,0,7, was Mr,1,0,38, Gatsby himself, come out to determine,1,0,37, share was his of our local heavens.
+,1,0,9,I decided,1,0,24, call to him. Miss Baker,1,0,75, mentioned him at dinner, and that would do for an introduction. But I didn,1,0,45, call to him, for he gave a sudden intimation,1,0,21, he was content to be,1,0,14,--he stretched,3,0,67, toward the dark water in a curious way, and, far as I was from him,1,0,19, I could have sworn,1,0,140, was trembling. Involuntarily I glanced seaward--and distinguished nothing except a single green light, minute and far away, that might have,1,0,8, the end,1,0,108, a dock. When I looked once more for Gatsby he had vanished, and I was alone again in the unquiet darkness.
+,1,0,124,About half way between West Egg and New York the motor road hastily joins the railroad and runs beside it for a quarter of a,1,0,1,,,1,0,3, as,1,0,12, shrink away,1,0,117, a certain desolate area of land. This is a valley of ashes--a fantastic farm where ashes grow like wheat into ridges,1,0,56, hills and grotesque gardens; where ashes take the forms,1,0,7, houses,1,0,39, chimneys and rising smoke and, finally,1,0,117, with a transcendent effort, of men who move dimly and already crumbling through the powdery air. Occasionally a line,1,0,70, gray cars crawls along an invisible track, gives out a ghastly creak,,1,0,76, comes to rest, and immediately the ash-gray men swarm up with leaden spades,1,0,86, stir up an impenetrable cloud, which screens their obscure operations from your sight,1,0,39, But above the gray land and the spasms,1,0,81, bleak dust which drift endlessly over it, you perceive, after a moment, the eyes,1,0,48, Doctor T. J. Eckleburg. The eyes of Doctor T. J,1,0,19, Eckleburg are blue,1,0,42, gigantic--their irises are one yard high.,1,0,47, look out of no face, but, instead, from a pair,1,0,139, enormous yellow spectacles which pass over a nonexistent nose. Evidently some wild wag of an oculist set them there to fatten his practice,1,0,50, the borough of Queens, and then sank down himself,1,0,50, eternal blindness, or forgot them and moved away.,1,0,60, his eyes, dimmed a little by many paintless days, under sun,1,0,39, rain, brood on over the solemn dumping,1,0,2,.
+,1,0,37,The valley of ashes is bounded on one,2,0,144, a small foul river, and, when the drawbridge is up to let barges through, the passengers on waiting trains can stare at the dismal scene for as,2,0,5, half,2,0,36,. There is always a halt there of at,1,0,37, a minute, and it was because of this,1,0,38, I first met Tom Buchanan's mistress.
+,1,0,8,The fact,1,0,24, he had one was insisted,1,0,9, wherever,1,0,47, was known. His acquaintances resented the fact,1,0,36, he turned up in popular restaurants,1,0,17, her and, leaving,1,0,38, at a table, sauntered about, chatting,1,0,44, whomsoever he knew. Though I was curious to,1,0,11, her, I had,1,0,7, desire,1,0,5, meet,1,0,2,--,1,0,9, I did. I,1,0,10, up to New,2,0,36, Tom on the train one afternoon, and,1,0,40, we stopped by the ashheaps he jumped to,3,0,13,, taking hold,1,0,9, my elbow,1,0,35, literally forced me from the car.
+,1,0,32,"We're getting off," he insisted,2,0,10,I want you,1,0,13, meet my girl,1,0,1,
+,1,0,29,I think he'd tanked up a good,1,0,108, at luncheon, and his determination to have my company bordered on violence. The supercilious assumption was,1,0,41, on Sunday afternoon I had nothing better,2,0,2,.
+,1,0,82,I followed him over a low whitewashed railroad fence, and we walked back a hundred,1,0,6, along,1,0,28, road under Doctor Eckleburg,1,0,17, persistent stare,1,0,27, The only building in sight,1,0,14, a small block,1,0,21, yellow brick sitting,2,0,5, edge,2,0,19, waste land, a sort,1,0,13, compact Main,1,0,93, ministering to it, and contiguous to absolutely nothing. One of the three shops it contained,1,0,21, for rent and another,1,0,36, an all-night restaurant, approached,1,0,120, a trail of ashes; the third was a garage--Repairs. GEORGE B. WILSON. Cars bought and sold.--and I followed Tom inside.
+,1,0,12,The interior,1,0,13, unprosperous,1,0,27, bare; the only car visible,2,0,6, dust-,1,0,6, wreck,1,0,55, a Ford which crouched in a dim corner. It had occurred,1,0,3, me,1,0,158, this shadow of a garage must be a blind, and that sumptuous and romantic apartments were concealed overhead, when the proprietor himself appeared in the door,1,0,39, an office, wiping his hands on a piece,1,0,69, waste. He was a blond, spiritless man, anaemic, and faintly handsome,1,0,5, When,2,0,36, us a damp gleam of hope sprang into,1,0,11, light blue,2,0,1,
+,1,0,23,"Hello, Wilson, old man,1,0,32, said Tom, slapping him jovially,5,0,14,How's business,1,0,1,
+,1,0,17,"I can't complain,1,0,31, answered Wilson unconvincingly,2,0,12,When are you,2,0,17, sell me that car,1,0,1,
+,1,0,16,"Next week; I've,1,0,27, my man working on it now.",2,0,23,"Works pretty slow, don,1,0,3, he,1,0,1,
+,1,0,13,"No, he doesn,1,0,18,," said Tom coldly,2,0,20,And if you feel that,2,0,3, it,1,0,35, maybe I'd better sell it somewhere,1,0,6, after,2,
+Correct guesses/total: 0.1466859833393698
+Filesize of bz2/original: 0.39182268946270354
+Filesize of bz2/pre-bz2 intermediate: 0.3521404568255978
+In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.
+
+"Whenever you feel like criticizing any one," he told me, "just remember that all the people in this world haven't had the advantages that you've had."
+
+He didn't say any more, but we've always been unusually communicative in a reserved way, and I understood that he meant a great deal more than that. In consequence, I'm inclined to reserve all judgments, a habit that has opened up many curious natures to me and also made me the victim of not a few veteran bores. The abnormal mind is quick to detect and attach itself to this quality when it appears in a normal person, and so it came about that in college I was unjustly accused of being a politician, because I was privy to the secret griefs of wild, unknown men. Most of the confidences were unsought--frequently I have feigned sleep, preoccupation, or a hostile levity when I realized by some unmistakable sign that an intimate revelation was quivering on the horizon; for the intimate revelations of young men, or at least the terms in which they express them, are usually plagiaristic and marred by obvious suppressions. Reserving judgments is a matter of infinite hope. I am still a little afraid of missing something if I forget that, as my father snobbishly suggested, and I snobbishly repeat, a sense of the fundamental decencies is parcelled out unequally at birth.
+
+And, after boasting this way of my tolerance, I come to the admission that it has a limit. Conduct may be founded on the hard rock or the wet marshes, but after a certain point I don't care what it's founded on. When I came back from the East last autumn I felt that I wanted the world to be in uniform and at a sort of moral attention forever; I wanted no more riotous excursions with privileged glimpses into the human heart. Only Gatsby, the man who gives his name to this book, was exempt from my reaction--Gatsby, who represented everything for which I have an unaffected scorn. If personality is an unbroken series of successful gestures, then there was something gorgeous about him, some heightened sensitivity to the promises of life, as if he were related to one of those intricate machines that register earthquakes ten thousand miles away. This responsiveness had nothing to do with that flabby impressionability which is dignified under the name of the "creative temperament."--it was an extraordinary gift for hope, a romantic readiness such as I have never found in any other person and which it is not likely I shall ever find again. No--Gatsby turned out all right at the end; it is what preyed on Gatsby, what foul dust floated in the wake of his dreams that temporarily closed out my interest in the abortive sorrows and short-winded elations of men.
+
+My family have been prominent, well-to-do people in this Middle Western city for three generations. The Carraways are something of a clan, and we have a tradition that we're descended from the Dukes of Buccleuch, but the actual founder of my line was my grandfather's brother, who came here in fifty-one, sent a substitute to the Civil War, and started the wholesale hardware business that my father carries on to-day. I never saw this great-uncle, but I'm supposed to look like him--with special reference to the rather hard-boiled painting that hangs in father's office I graduated from New Haven in 1915, just a quarter of a century after my father, and a little later I participated in that delayed Teutonic migration known as the Great War. I enjoyed the counter-raid so thoroughly that I came back restless. Instead of being the warm centre of the world, the Middle West now seemed like the ragged edge of the universe--so I decided to go East and learn the bond business. Everybody I knew was in the bond business, so I supposed it could support one more single man. All my aunts and uncles talked it over as if they were choosing a prep school for me, and finally said, "Why--ye--es," with very grave, hesitant faces. Father agreed to finance me for a year, and after various delays I came East, permanently, I thought, in the spring of twenty-two.
+
+The practical thing was to find rooms in the city, but it was a warm season, and I had just left a country of wide lawns and friendly trees, so when a young man at the office suggested that we take a house together in a commuting town, it sounded like a great idea. He found the house, a weather-beaten cardboard bungalow at eighty a month, but at the last minute the firm ordered him to Washington, and I went out to the country alone. I had a dog--at least I had him for a few days until he ran away--and an old Dodge and a Finnish woman, who made my bed and cooked breakfast and muttered Finnish wisdom to herself over the electric stove.
+
+It was lonely for a day or so until one morning some man, more recently arrived than I, stopped me on the road.
+
+"How do you get to West Egg village?" he asked helplessly.
+
+I told him. And as I walked on I was lonely no longer. I was a guide, a pathfinder, an original settler. He had casually conferred on me the freedom of the neighborhood.
+
+And so with the sunshine and the great bursts of leaves growing on the trees, just as things grow in fast movies, I had that familiar conviction that life was beginning over again with the summer.
+
+There was so much to read, for one thing, and so much fine health to be pulled down out of the young breath-giving air. I bought a dozen volumes on banking and credit and investment securities, and they stood on my shelf in red and gold like new money from the mint, promising to unfold the shining secrets that only Midas and Morgan and Maecenas knew. And I had the high intention of reading many other books besides. I was rather literary in college--one year I wrote a series of very solemn and obvious editorials for the "Yale News."--and now I was going to bring back all such things into my life and become again that most limited of all specialists, the "well-rounded man." This isn't just an epigram--life is much more successfully looked at from a single window, after all.
+
+It was a matter of chance that I should have rented a house in one of the strangest communities in North America. It was on that slender riotous island which extends itself due east of New York--and where there are, among other natural curiosities, two unusual formations of land. Twenty miles from the city a pair of enormous eggs, identical in contour and separated only by a courtesy bay, jut out into the most domesticated body of salt water in the Western hemisphere, the great wet barnyard of Long Island Sound. they are not perfect ovals--like the egg in the Columbus story, they are both crushed flat at the contact end--but their physical resemblance must be a source of perpetual confusion to the gulls that fly overhead. to the wingless a more arresting phenomenon is their dissimilarity in every particular except shape and size.
+
+I lived at West Egg, the--well, the less fashionable of the two, though this is a most superficial tag to express the bizarre and not a little sinister contrast between them. my house was at the very tip of the egg, only fifty yards from the Sound, and squeezed between two huge places that rented for twelve or fifteen thousand a season. the one on my right was a colossal affair by any standard--it was a factual imitation of some Hotel de Ville in Normandy, with a tower on one side, spanking new under a thin beard of raw ivy, and a marble swimming pool, and more than forty acres of lawn and garden. it was Gatsby's mansion. Or, rather, as I didn't know Mr. Gatsby, it was a mansion inhabited by a gentleman of that name. My own house was an eyesore, but it was a small eyesore, and it had been overlooked, so I had a view of the water, a partial view of my neighbor's lawn, and the consoling proximity of millionaires--all for eighty dollars a month.
+
+Across the courtesy bay the white palaces of fashionable East Egg glittered along the water, and the history of the summer really begins on the evening I drove over there to have dinner with the Tom Buchanans. Daisy was my second cousin once removed, and I'd known Tom in college. And just after the war I spent two days with them in Chicago.
+
+Her husband, among various physical accomplishments, had been one of the most powerful ends that ever played football at New Haven--a national figure in a way, one of those men who reach such an acute limited excellence at twenty-one that everything afterward savors of anti-climax. His family were enormously wealthy--even in college his freedom with money was a matter for reproach--but now he'd left Chicago and come East in a fashion that rather took your breath away: for instance, he'd brought down a string of polo ponies from Lake Forest. it was hard to realize that a man in my own generation was wealthy enough to do that.
+
+Why they came East I don't know. They had spent a year in France for no particular reason, and then drifted here and there unrestfully wherever people played polo and were rich together. This was a permanent move, said Daisy over the telephone, but I didn't believe it--I had no sight into Daisy's heart, but I felt that Tom would drift on forever seeking, a little wistfully, for the dramatic turbulence of some irrecoverable football game.
+
+And so it happened that on a warm windy evening I drove over to East Egg to see two old friends whom I scarcely knew at all. Their house was even more elaborate than I expected, a cheerful red-and-white Georgian Colonial mansion, overlooking the bay. The lawn started at the beach and ran toward the front door for a quarter of a mile, jumping over sun-dials and brick walks and burning gardens--finally when it reached the house drifting up the side in bright vines as though from the momentum of its run. The front was broken by a line of French windows, glowing now with reflected gold and wide open to the warm windy afternoon, and Tom Buchanan in riding clothes was standing with his legs apart on the front porch.
+
+He had changed since his New Haven years. Now he was a sturdy straw-haired man of thirty with a rather hard mouth and a supercilious manner. Two shining arrogant eyes had established dominance over his face and gave him the appearance of always leaning aggressively forward. Not even the effeminate swank of his riding clothes could hide the enormous power of that body--he seemed to fill those glistening boots until he strained the top lacing, and you could see a great pack of muscle shifting when his shoulder moved under his thin coat. It was a body capable of enormous leverage--a cruel body.
+
+His speaking voice, a gruff husky tenor, added to the impression of fractiousness he conveyed. There was a touch of paternal contempt in it, even toward people he liked--and there were men at New Haven who had hated his guts.
+
+"Now, don't think my opinion on these matters is final," he seemed to say, "just because I'm stronger and more of a man than you are." We were in the same senior society, and while we were never intimate I always had the impression that he approved of me and wanted me to like him with some harsh, defiant wistfulness of his own.
+
+We talked for a few minutes on the sunny porch.
+
+"I've got a nice place here," he said, his eyes flashing about restlessly.
+
+Turning me around by one arm, he moved a broad flat hand along the front vista, including in its sweep a sunken Italian garden, a half acre of deep, pungent roses, and a snub-nosed motor-boat that bumped the tide offshore.
+
+"It belonged to Demaine, the oil man." He turned me around again, politely and abruptly. "We'll go inside."
+
+We walked through a high hallway into a bright rosy-colored space, fragilely bound into the house by French windows at either end. The windows were ajar and gleaming white against the fresh grass outside that seemed to grow a little way into the house. A breeze blew through the room, blew curtains in at one end and out the other like pale flags, twisting them up toward the frosted wedding-cake of the ceiling, and then rippled over the wine-colored rug, making a shadow on it as wind does on the sea.
+
+The only completely stationary object in the room was an enormous couch on which two young women were buoyed up as though upon an anchored balloon. They were both in white, and their dresses were rippling and fluttering as if they had just been blown back in after a short flight around the house. I must have stood for a few moments listening to the whip and snap of the curtains and the groan of a picture on the wall. Then there was a boom as Tom Buchanan shut the rear windows and the caught wind died out about the room, and the curtains and the rugs and the two young women ballooned slowly to the floor.
+
+The younger of the two was a stranger to me. She was extended full length at her end of the divan, completely motionless, and with her chin raised a little, as if she were balancing something on it which was quite likely to fall. If she saw me out of the corner of her eyes she gave no hint of it--indeed, I was almost surprised into murmuring an apology for having disturbed her by coming in.
+
+The other girl, Daisy, made an attempt to rise--she leaned slightly forward with a conscientious expression--then she laughed, an absurd, charming little laugh, and I laughed too and came forward into the room.
+
+"I'm p-paralyzed with happiness." She laughed again, as if she said something very witty, and held my hand for a moment, looking up into my face, promising that there was no one in the world she so much wanted to see. That was a way she had. She hinted in a murmur that the surname of the balancing girl was Baker. (I've heard it said that Daisy's murmur was only to make people lean toward her; an irrelevant criticism that made it no less charming.)
+
+At any rate, Miss Baker's lips fluttered, she nodded at me almost imperceptibly, and then quickly tipped her head back again--the object she was balancing had obviously tottered a little and given her something of a fright. Again a sort of apology arose to my lips. Almost any exhibition of complete self-sufficiency draws a stunned tribute from me.
+
+I looked back at my cousin, who began to ask me questions in her low, thrilling voice. It was the kind of voice that the ear follows up and down, as if each speech is an arrangement of notes that will never be played again. Her face was sad and lovely with bright things in it, bright eyes and a bright passionate mouth, but there was an excitement in her voice that men who had cared for her found difficult to forget: a singing compulsion, a whispered "Listen," a promise that she had done gay, exciting things just a while since and that there were gay, exciting things hovering in the next hour.
+
+I told her how I had stopped off in Chicago for a day on my way East, and how a dozen people had sent their love through me.
+
+"Do they miss me?" she cried ecstatically.
+
+"The whole town is desolate. All the cars have the left rear wheel painted black as a mourning wreath, and there's a persistent wail all night along the north shore."
+
+"How gorgeous! Let's go back, Tom. To-morrow!" Then she added irrelevantly: "You ought to see the baby."
+
+"I'd like to."
+
+"She's asleep. She's three years old. Haven't you ever seen her?"
+
+"Never."
+
+"Well, you ought to see her. She's----"
+
+Tom Buchanan, who had been hovering restlessly about the room, stopped and rested his hand on my shoulder.
+
+"What you doing, Nick?"
+
+"I'm a bond man."
+
+"Who with?"
+
+I told him.
+
+"Never heard of them," he remarked decisively.
+
+This annoyed me.
+
+"You will," I answered shortly. "You will if you stay in the East."
+
+"Oh, I'll stay in the East, don't you worry," he said, glancing at Daisy and then back at me, as if he were alert for something more. "I'd be a God damned fool to live anywhere else."
+
+At this point Miss Baker said: "Absolutely!" with such suddenness that I started--it was the first word she uttered since I came into the room. Evidently it surprised her as much as it did me, for she yawned and with a series of rapid, deft movements stood up into the room.
+
+"I'm stiff," she complained, "I've been lying on that sofa for as long as I can remember."
+
+"Don't look at me," Daisy retorted, "I've been trying to get you to New York all afternoon."
+
+"No, thanks," said Miss Baker to the four cocktails just in from the pantry, "I'm absolutely in training."
+
+Her host looked at her incredulously.
+
+"You are!" He took down his drink as if it were a drop in the bottom of a glass. "How you ever get anything done is beyond me."
+
+I looked at Miss Baker, wondering what it was she "got done." I enjoyed looking at her. She was a slender, small-breasted girl, with an erect carriage, which she accentuated by throwing her body backward at the shoulders like a young cadet. Her gray sun-strained eyes looked back at me with polite reciprocal curiosity out of a wan, charming, discontented face. It occurred to me now that I had seen her, or a picture of her, somewhere before.
+
+"You live in West Egg," she remarked contemptuously. "I know somebody there."
+
+"I don't know a single----"
+
+"You must know Gatsby."
+
+"Gatsby?" demanded Daisy. "What Gatsby?"
+
+Before I could reply that he was my neighbor dinner was announced; wedging his tense arm imperatively under mine, Tom Buchanan compelled me from the room as though he were moving a checker to another square.
+
+Slenderly, languidly, their hands set lightly on their hips, the two young women preceded us out onto a rosy-colored porch, open toward the sunset, where four candles flickered on the table in the diminished wind.
+
+"Why CANDLES?" objected Daisy, frowning. She snapped them out with her fingers. "In two weeks it'll be the longest day in the year." She looked at us all radiantly. "Do you always watch for the longest day of the year and then miss it? I always watch for the longest day in the year and then miss it."
+
+"We ought to plan something," yawned Miss Baker, sitting down at the table as if she were getting into bed.
+
+"All right," said Daisy. "What'll we plan?" She turned to me helplessly: "What do people plan?"
+
+Before I could answer her eyes fastened with an awed expression on her little finger.
+
+"Look!" she complained; "I hurt it."
+
+We all looked--the knuckle was black and blue.
+
+"You did it, Tom," she said accusingly. "I know you didn't mean to, but you DID do it. That's what I get for marrying a brute of a man, a great, big, hulking physical specimen of a----"
+
+"I hate that word hulking," objected Tom crossly, "even in kidding."
+
+"Hulking," insisted Daisy.
+
+Sometimes she and Miss Baker talked at once, unobtrusively and with a bantering inconsequence that was never quite chatter, that was as cool as their white dresses and their impersonal eyes in the absence of all desire. They were here, and they accepted Tom and me, making only a polite pleasant effort to entertain or to be entertained. They knew that presently dinner would be over and a little later the evening too would be over and casually put away. It was sharply different from the West, where an evening was hurried from phase to phase toward its close, in a continually disappointed anticipation or else in sheer nervous dread of the moment itself.
+
+"You make me feel uncivilized, Daisy," I confessed on my second glass of corky but rather impressive claret. "Can't you talk about crops or something?"
+
+I meant nothing in particular by this remark, but it was taken up in an unexpected way.
+
+"Civilization's going to pieces," broke out Tom violently. "I've gotten to be a terrible pessimist about things. Have you read 'The Rise of the Colored Empires' by this man Goddard?"
+
+"Why, no," I answered, rather surprised by his tone.
+
+"Well, it's a fine book, and everybody ought to read it. The idea is if we don't look out the white race will be--will be utterly submerged. It's all scientific stuff; it's been proved."
+
+"Tom's getting very profound," said Daisy, with an expression of unthoughtful sadness. "He reads deep books with long words in them. What was that word we----"
+
+"Well, these books are all scientific," insisted Tom, glancing at her impatiently. "This fellow has worked out the whole thing. It's up to us, who are the dominant race, to watch out or these other races will have control of things."
+
+"We've got to beat them down," whispered Daisy, winking ferociously toward the fervent sun.
+
+"You ought to live in California--" began Miss Baker, but Tom interrupted her by shifting heavily in his chair.
+
+"This idea is that we're Nordics. I am, and you are, and you are, and----" After an infinitesimal hesitation he included Daisy with a slight nod, and she winked at me again. "--And we've produced all the things that go to make civilization--oh, science and art, and all that. Do you see?"
+
+There was something pathetic in his concentration, as if his complacency, more acute than of old, was not enough to him any more. When, almost immediately, the telephone rang inside and the butler left the porch Daisy seized upon the momentary interruption and leaned toward me.
+
+"I'll tell you a family secret," she whispered enthusiastically. "It's about the butler's nose. Do you want to hear about the butler's nose?"
+
+"That's why I came over to-night."
+
+"Well, he wasn't always a butler; he used to be the silver polisher for some people in New York that had a silver service for two hundred people. He had to polish it from morning till night, until finally it began to affect his nose----"
+
+"Things went from bad to worse," suggested Miss Baker.
+
+"Yes. Things went from bad to worse, until finally he had to give up his position."
+
+For a moment the last sunshine fell with romantic affection upon her glowing face; her voice compelled me forward breathlessly as I listened--then the glow faded, each light deserting her with lingering regret, like children leaving a pleasant street at dusk.
+
+The butler came back and murmured something close to Tom's ear, whereupon Tom frowned, pushed back his chair, and without a word went inside. As if his absence quickened something within her, Daisy leaned forward again, her voice glowing and singing.
+
+"I love to see you at my table, Nick. You remind me of a--of a rose, an absolute rose. Doesn't he?" She turned to Miss Baker for confirmation: "An absolute rose?"
+
+This was untrue. I am not even faintly like a rose. She was only extemporizing, but a stirring warmth flowed from her, as if her heart was trying to come out to you concealed in one of those breathless, thrilling words. Then suddenly she threw her napkin on the table and excused herself and went into the house.
+
+Miss Baker and I exchanged a short glance consciously devoid of meaning. I was about to speak when she sat up alertly and said "Sh!" in a warning voice. A subdued impassioned murmur was audible in the room beyond, and Miss Baker leaned forward unashamed, trying to hear. The murmur trembled on the verge of coherence, sank down, mounted excitedly, and then ceased altogether.
+
+"This Mr. Gatsby you spoke of is my neighbor----" I said.
+
+"Don't talk. I want to hear what happens."
+
+"Is something happening?" I inquired innocently.
+
+"You mean to say you don't know?" said Miss Baker, honestly surprised. "I thought everybody knew."
+
+"I don't."
+
+"Why----" she said hesitantly, "Tom's got some woman in New York."
+
+"Got some woman?" I repeated blankly.
+
+Miss Baker nodded.
+
+"She might have the decency not to telephone him at dinner time. Don't you think?"
+
+Almost before I had grasped her meaning there was the flutter of a dress and the crunch of leather boots, and Tom and Daisy were back at the table.
+
+"It couldn't be helped!" cried Daisy with tense gaiety.
+
+She sat down, glanced searchingly at Miss Baker and then at me, and continued: "I looked outdoors for a minute, and it's very romantic outdoors. There's a bird on the lawn that I think must be a nightingale come over on the Cunard or White Star Line. He's singing away----" Her voice sang: "It's romantic, isn't it, Tom?"
+
+"Very romantic," he said, and then miserably to me: "If it's light enough after dinner, I want to take you down to the stables."
+
+The telephone rang inside, startlingly, and as Daisy shook her head decisively at Tom the subject of the stables, in fact all subjects, vanished into air. Among the broken fragments of the last five minutes at table I remember the candles being lit again, pointlessly, and I was conscious of wanting to look squarely at every one, and yet to avoid all eyes. I couldn't guess what Daisy and Tom were thinking, but I doubt if even Miss Baker, who seemed to have mastered a certain hardy scepticism, was able utterly to put this fifth guest's shrill metallic urgency out of mind. To a certain temperament the situation might have seemed intriguing--my own instinct was to telephone immediately for the police.
+
+The horses, needless to say, were not mentioned again. Tom and Miss Baker, with several feet of twilight between them, strolled back into the library, as if to a vigil beside a perfectly tangible body, while, trying to look pleasantly interested and a little deaf, I followed Daisy around a chain of connecting verandas to the porch in front. In its deep gloom we sat down side by side on a wicker settee.
+
+Daisy took her face in her hands as if feeling its lovely shape, and her eyes moved gradually out into the velvet dusk. I saw that turbulent emotions possessed her, so I asked what I thought would be some sedative questions about her little girl.
+
+"We don't know each other very well, Nick," she said suddenly. "Even if we are cousins. You didn't come to my wedding."
+
+"I wasn't back from the war."
+
+"That's true." She hesitated. "Well, I've had a very bad time, Nick, and I'm pretty cynical about everything."
+
+Evidently she had reason to be. I waited but she didn't say any more, and after a moment I returned rather feebly to the subject of her daughter.
+
+"I suppose she talks, and--eats, and everything."
+
+"Oh, yes." She looked at me absently. "Listen, Nick; let me tell you what I said when she was born. Would you like to hear?"
+
+"Very much."
+
+"It'll show you how I've gotten to feel about--things. Well, she was less than an hour old and Tom was God knows where. I woke up out of the ether with an utterly abandoned feeling, and asked the nurse right away if it was a boy or a girl. She told me it was a girl, and so I turned my head away and wept. 'all right,' I said, 'I'm glad it's a girl. And I hope she'll be a fool--that's the best thing a girl can be in this world, a beautiful little fool."
+
+"You see I think everything's terrible anyhow," she went on in a convinced way. "Everybody thinks so--the most advanced people. And I KNOW. I've been everywhere and seen everything and done everything." Her eyes flashed around her in a defiant way, rather like Tom's, and she laughed with thrilling scorn. "Sophisticated--God, I'm sophisticated!"
+
+The instant her voice broke off, ceasing to compel my attention, my belief, I felt the basic insincerity of what she had said. It made me uneasy, as though the whole evening had been a trick of some sort to exact a contributory emotion from me. I waited, and sure enough, in a moment she looked at me with an absolute smirk on her lovely face, as if she had asserted her membership in a rather distinguished secret society to which she and Tom belonged.
+
+Inside, the crimson room bloomed with light.
+
+Tom and Miss Baker sat at either end of the long couch and she read aloud to him from the SATURDAY EVENING POST.--the words, murmurous and uninflected, running together in a soothing tune. The lamp-light, bright on his boots and dull on the autumn-leaf yellow of her hair, glinted along the paper as she turned a page with a flutter of slender muscles in her arms.
+
+When we came in she held us silent for a moment with a lifted hand.
+
+"To be continued," she said, tossing the magazine on the table, "in our very next issue."
+
+Her body asserted itself with a restless movement of her knee, and she stood up.
+
+"Ten o'clock," she remarked, apparently finding the time on the ceiling. "Time for this good girl to go to bed."
+
+"Jordan's going to play in the tournament to-morrow," explained Daisy, "over at Westchester."
+
+"Oh--you're Jordan BAKER."
+
+I knew now why her face was familiar--its pleasing contemptuous expression had looked out at me from many rotogravure pictures of the sporting life at Asheville and Hot Springs and Palm Beach. I had heard some story of her too, a critical, unpleasant story, but what it was I had forgotten long ago.
+
+"Good night," she said softly. "Wake me at eight, won't you."
+
+"If you'll get up."
+
+"I will. Good night, Mr. Carraway. See you anon."
+
+"Of course you will," confirmed Daisy. "In fact I think I'll arrange a marriage. Come over often, Nick, and I'll sort of--oh--fling you together. You know--lock you up accidentally in linen closets and push you out to sea in a boat, and all that sort of thing----"
+
+"Good night," called Miss Baker from the stairs. "I haven't heard a word."
+
+"She's a nice girl," said Tom after a moment. "They oughtn't to let her run around the country this way."
+
+"Who oughtn't to?" inquired Daisy coldly.
+
+"Her family."
+
+"Her family is one aunt about a thousand years old. Besides, Nick's going to look after her, aren't you, Nick? She's going to spend lots of week-ends out here this summer. I think the home influence will be very good for her."
+
+Daisy and Tom looked at each other for a moment in silence.
+
+"Is she from New York?" I asked quickly.
+
+"From Louisville. Our white girlhood was passed together there. Our beautiful white----"
+
+"Did you give Nick a little heart to heart talk on the veranda?" demanded Tom suddenly.
+
+"Did I?" She looked at me.
+
+"I can't seem to remember, but I think we talked about the Nordic race. Yes, I'm sure we did. It sort of crept up on us and first thing you know----"
+
+"Don't believe everything you hear, Nick," he advised me.
+
+I said lightly that I had heard nothing at all, and a few minutes later I got up to go home. They came to the door with me and stood side by side in a cheerful square of light. As I started my motor Daisy peremptorily called: "Wait!"
+
+"I forgot to ask you something, and it's important. We heard you were engaged to a girl out West."
+
+"That's right," corroborated Tom kindly. "We heard that you were engaged."
+
+"It's libel. I'm too poor."
+
+"But we heard it," insisted Daisy, surprising me by opening up again in a flower-like way. "We heard it from three people, so it must be true."
+
+Of course I knew what they were referring to, but I wasn't even vaguely engaged. The fact that gossip had published the banns was one of the reasons I had come East. You can't stop going with an old friend on account of rumors, and on the other hand I had no intention of being rumored into marriage.
+
+Their interest rather touched me and made them less remotely rich--nevertheless, I was confused and a little disgusted as I drove away. It seemed to me that the thing for Daisy to do was to rush out of the house, child in arms--but apparently there were no such intentions in her head. As for Tom, the fact that he "had some woman in New York." was really less surprising than that he had been depressed by a book. Something was making him nibble at the edge of stale ideas as if his sturdy physical egotism no longer nourished his peremptory heart.
+
+Already it was deep summer on roadhouse roofs and in front of wayside garages, where new red gas-pumps sat out in pools of light, and when I reached my estate at West Egg I ran the car under its shed and sat for a while on an abandoned grass roller in the yard. The wind had blown off, leaving a loud, bright night, with wings beating in the trees and a persistent organ sound as the full bellows of the earth blew the frogs full of life. The silhouette of a moving cat wavered across the moonlight, and turning my head to watch it, I saw that I was not alone--fifty feet away a figure had emerged from the shadow of my neighbor's mansion and was standing with his hands in his pockets regarding the silver pepper of the stars. Something in his leisurely movements and the secure position of his feet upon the lawn suggested that it was Mr. Gatsby himself, come out to determine what share was his of our local heavens.
+
+I decided to call to him. Miss Baker had mentioned him at dinner, and that would do for an introduction. But I didn't call to him, for he gave a sudden intimation that he was content to be alone--he stretched out his arms toward the dark water in a curious way, and, far as I was from him, I could have sworn he was trembling. Involuntarily I glanced seaward--and distinguished nothing except a single green light, minute and far away, that might have been the end of a dock. When I looked once more for Gatsby he had vanished, and I was alone again in the unquiet darkness.
+
+About half way between West Egg and New York the motor road hastily joins the railroad and runs beside it for a quarter of a mile, so as to shrink away from a certain desolate area of land. This is a valley of ashes--a fantastic farm where ashes grow like wheat into ridges and hills and grotesque gardens; where ashes take the forms of houses and chimneys and rising smoke and, finally, with a transcendent effort, of men who move dimly and already crumbling through the powdery air. Occasionally a line of gray cars crawls along an invisible track, gives out a ghastly creak, and comes to rest, and immediately the ash-gray men swarm up with leaden spades and stir up an impenetrable cloud, which screens their obscure operations from your sight. But above the gray land and the spasms of bleak dust which drift endlessly over it, you perceive, after a moment, the eyes of Doctor T. J. Eckleburg. The eyes of Doctor T. J. Eckleburg are blue and gigantic--their irises are one yard high. They look out of no face, but, instead, from a pair of enormous yellow spectacles which pass over a nonexistent nose. Evidently some wild wag of an oculist set them there to fatten his practice in the borough of Queens, and then sank down himself into eternal blindness, or forgot them and moved away. But his eyes, dimmed a little by many paintless days, under sun and rain, brood on over the solemn dumping ground.
+
+The valley of ashes is bounded on one side by a small foul river, and, when the drawbridge is up to let barges through, the passengers on waiting trains can stare at the dismal scene for as long as half an hour. There is always a halt there of at least a minute, and it was because of this that I first met Tom Buchanan's mistress.
+
+The fact that he had one was insisted upon wherever he was known. His acquaintances resented the fact that he turned up in popular restaurants with her and, leaving her at a table, sauntered about, chatting with whomsoever he knew. Though I was curious to see her, I had no desire to meet her--but I did. I went up to New York with Tom on the train one afternoon, and when we stopped by the ashheaps he jumped to his feet and, taking hold of my elbow, literally forced me from the car.
+
+"We're getting off," he insisted. "I want you to meet my girl."
+
+I think he'd tanked up a good deal at luncheon, and his determination to have my company bordered on violence. The supercilious assumption was that on Sunday afternoon I had nothing better to do.
+
+I followed him over a low whitewashed railroad fence, and we walked back a hundred yards along the road under Doctor Eckleburg's persistent stare. The only building in sight was a small block of yellow brick sitting on the edge of the waste land, a sort of compact Main Street ministering to it, and contiguous to absolutely nothing. One of the three shops it contained was for rent and another was an all-night restaurant, approached by a trail of ashes; the third was a garage--Repairs. GEORGE B. WILSON. Cars bought and sold.--and I followed Tom inside.
+
+The interior was unprosperous and bare; the only car visible was the dust-covered wreck of a Ford which crouched in a dim corner. It had occurred to me that this shadow of a garage must be a blind, and that sumptuous and romantic apartments were concealed overhead, when the proprietor himself appeared in the door of an office, wiping his hands on a piece of waste. He was a blond, spiritless man, anaemic, and faintly handsome. When he saw us a damp gleam of hope sprang into his light blue eyes.
+
+"Hello, Wilson, old man," said Tom, slapping him jovially on the shoulder. "How's business?"
+
+"I can't complain," answered Wilson unconvincingly. "When are you going to sell me that car?"
+
+"Next week; I've got my man working on it now."
+
+"Works pretty slow, don't he?"
+
+"No, he doesn't," said Tom coldly. "And if you feel that way about it, maybe I'd better sell it somewhere else after all."
+Testing ./tests/test6
+Final encoding
+10,0,36,Although Fuegians from Patagonia may,1,0,21, visited the Falkland,1,0,15, in prehistoric,1,0,13,, the islands,1,0,42, uninhabited when Europeans first explored,1,0,35,. European claims of discovery date,2,0,7, the 16,2,0,74,, but no consensus exists on whether early explorers sighted the Falklands,1,0,17, other islands in,1,0,6, South,1,0,59,. The first undisputed landing on the islands is attributed,1,0,29, English captain John Strong,,1,0,4,, en,2,0,103, Peru and Chile's littoral in 1690, explored the Falkland Sound and noted the islands' water and game.
+,1,0,63,The Falklands remained uninhabited until the 1764 establishment,1,0,31, Port Louis on East Falkland by,1,0,38, captain Louis Antoine de Bougainville,1,0,96, the 1766 foundation of Port Egmont on Saunders Island by British captain John MacBride. Whether,2,0,16, the settlements,1,0,6, aware,1,0,5, each,2,0,64, existence is debated by historians. In 1766, France surrendered,1,0,23, claim on the Falklands,1,0,68, Spain, which renamed the French colony Puerto Soledad the following,2,0,68, Problems began when Spain detected and captured Port Egmont in 1770,1,0,63, War was narrowly avoided by its restitution to Britain in 1771,1,0,1,
+,1,0,81,Both the British and Spanish settlements coexisted in the archipelago until 1774,,1,0,59, Britain's new economic and strategic considerations led it,1,0,21, voluntarily withdraw,2,0,101, islands, leaving a plaque claiming the Falklands for King George III. Spain's Viceroyalty of the Río,1,0,185, la Plata became the only governmental presence in the territory. West Falkland was left abandoned, and Puerto Soledad became mostly a prison camp. Amid the British invasions of the Río,1,0,16, la Plata during,1,0,150, Napoleonic Wars in Europe, the islands' governor evacuated the archipelago in 1806; Spain's remaining colonial garrison followed suit in 1811, except,1,0,8, gauchos,1,0,10, fishermen,1,0,23, remained voluntarily.
+,1,0,10,Thereafter,1,0,16, the archipelago,1,0,52, visited only by fishing ships; its political status,1,0,23, undisputed until 1820,,1,0,56, Colonel David Jewett, an American privateer working for,1,0,17, United Provinces,1,0,58, the Río de la Plata, informed anchored ships about Buenos,1,0,12,' 1816 claim,1,0,20, Spain's territories,1,0,10, the South,1,0,23,. Since the islands had,1,0,22, permanent inhabitants,1,0,15, in 1823 Buenos,1,0,52, granted German-born merchant Luis Vernet permission,1,0,99, conduct fishing activities and exploit feral cattle in the archipelago.Vernet settled at the ruins,1,0,83, Puerto Soledad in 1826, and accumulated resources on the islands until the venture,1,0,14, secure enough,1,0,50, bring settlers and form a permanent colony.Buenos,1,0,45, named Vernet military and civil commander of,1,0,8, islands,1,0,23, 1829, and he attempted,1,0,40, regulate sealing to stop the activities,1,0,16, foreign whalers,1,0,81, sealers. Vernet's venture lasted until a dispute over fishing and hunting rights,2,0,7, a raid,1,0,21, the American warship,1,0,31, Lexington in 1831, when United,1,0,53, Navy commander Silas Duncan declared the dissolution,2,0,7, island,1,0,13, government.
+,1,0,6,Buenos,1,0,10, attempted,1,0,17, retain influence,1,0,15, the settlement,1,0,48, installing a garrison, but a mutiny in 1832 was,1,0,14, the next year,2,0,8, arrival,1,0,38, British forces who reasserted Britain,1,0,42, rule. The Argentine Confederation (headed,1,0,7, Buenos,1,0,57, Governor Juan Manuel de Rosas) protested against Britain,2,0,52,,and Argentine governments have continued since then,1,0,27, register official protests,1,0,13, Britain. The,1,0,33, troops departed after completing,1,0,100, mission, leaving the area without formal government. Vernet's deputy, the Scotsman Matthew Brisbane,1,0,149, returned to the islands that year to restore the business, but his efforts ended after, amid unrest at Port Louis, gaucho Antonio Rivero led a group,1,0,105, dissatisfied individuals to murder Brisbane and the settlement's senior leaders; survivors hid in a cave,1,0,43, a nearby island until the British returned,1,0,61, restored order. In 1840, the Falklands became a Crown colony,1,0,86, Scottish settlers subsequently established an official pastoral community. Four years,1,0,27,, nearly everyone relocated,1,0,34, Port Jackson, considered a better,2,0,91, government, and merchant Samuel Lafone began a venture to encourage British colonisation.
+,1,0,60,Stanley, as Port Jackson was soon renamed, officially became,1,0,5, seat,1,0,11, government,1,0,5, 1845,1,0,6, Early,1,0,12, its history,1,0,23, Stanley had a negative,1,0,4, due,1,0,69, cargo-shipping losses; only in emergencies would ships rounding Cape,1,0,5, stop,1,0,23, the port. Nevertheless,1,0,48, the Falklands' geographic location proved ideal,1,0,110, ship repairs and the "Wrecking Trade", the business of selling and buying shipwrecks and their cargoes. Aside,1,0,67, this trade, commercial interest in the archipelago was minimal due,1,0,23, the low-value hides of,1,0,62, feral cattle roaming the pastures. Economic growth began only,2,0,9, Falkland,1,0,9, Company,,1,0,39, bought out Lafone's failing enterprise,1,0,83, 1851, successfully introduced Cheviot sheep for wool farming, spurring other farms,1,0,7, follow,2,0,14, The high cost,1,0,30, importing materials, combined,1,0,13, the shortage,1,0,7, labour,1,0,16, consequent high,1,0,108,, meant the ship repair trade became uncompetitive. After 1870, it declined as the replacement of sail ships,1,0,27, steamships was accelerated,2,0,9, low cost,1,0,49, coal in South America; by 1914, with the opening,2,0,7, Panama,1,0,38,, the trade effectively ended. In 1881,1,0,13, the Falkland,1,0,52, became financially independent of Britain. For more,1,0,24, a century, the Falkland,1,0,28, Company dominated the trade,1,0,43, employment of the archipelago; in addition,2,0,55, owned most housing in Stanley, which greatly benefited,1,0,27, the wool trade with the UK,1,0,1,
+,1,0,17,In the first half,1,0,7, the 20,3,0,24, the Falklands served an,3,0,8, Britain,1,0,43, territorial claims to subantarctic islands,1,0,10, a section,1,0,69, Antarctica. The Falklands governed these territories as the Falkland,1,0,49, Dependencies starting in 1908, and retained them,1,0,18, their dissolution,1,0,5, 1985,1,0,34, The Falklands also played a minor,3,0,10, two world,1,0,34, as a military base aiding control,1,0,20, the South Atlantic.,1,0,10, the First,2,0,7, Battle,1,0,13, the Falkland,1,0,3, in,1,0,14, 1914, a Royal,2,0,58, defeated an Imperial German squadron. In the Second World,1,0,11,, following,1,0,21, December 1939 Battle,1,0,109, the River Plate, the battle-damaged HMS Exeter steamed to the Falklands for repairs. In 1942, a battalion en,1,0,88, to India was redeployed to the Falklands as a garrison amid fears of a Japanese seizure,1,0,73, the archipelago. After the war ended, the Falklands economy was affected,1,0,15, declining wool,2,0,36, the political uncertainty resulting,1,0,59, the revived sovereignty dispute between the United Kingdom,1,0,12, Argentina.
+,1,0,33,Simmering tensions between the UK,1,0,27, Argentina increased during,1,0,12, second half,1,0,70, the century, when Argentine President Juan Perón asserted sovereignty,1,0,60, the archipelago. The sovereignty dispute intensified during,1,0,5, 1960,1,0,9,, shortly,1,0,28, the United Nations passed a,1,0,46, on decolonisation which Argentina interpreted,1,0,11, favourable,2,0,18, position. In 1965,1,0,15, the UN General,1,0,32, passed Resolution 2065, calling,1,0,12, both states,1,0,65, conduct bilateral negotiations to reach a peaceful settlement of,1,0,30, dispute. From 1966 until 1968,1,0,60, the UK confidentially discussed with Argentina the transfer,1,0,56, the Falklands, assuming its judgement would be accepted,1,0,103, the islanders. An agreement on trade ties between the archipelago and the mainland was reached in 1971,1,0,14,, consequently,1,0,37, Argentina built a temporary airfield,1,0,29, Stanley in 1972. Nonetheless,1,0,33, Falklander dissent, as expressed,1,0,54, their strong lobby in the UK Parliament, and tensions,1,0,7, the UK,1,0,66, Argentina effectively limited sovereignty negotiations until 1977,1,0,1,
+,1,0,24,Concerned at the expense,1,0,25, maintaining the Falkland,3,0,4, era,1,0,219, budget cuts, the UK again considered transferring sovereignty to Argentina in the early Thatcher government. Substantive sovereignty talks again ended by 1981, and the dispute escalated with passing time. In April 1982,1,0,14, the Falklands,1,0,59, began when Argentine military forces invaded the Falklands,1,0,39, other British territories in the South,1,0,49,, briefly occupying them until a UK expeditionary,1,0,23, retook the territories,1,0,20, June. After the war,1,0,28, the United Kingdom expanded,1,0,9, military,1,0,29,, building RAF Mount Pleasant,1,0,20, increasing the size,2,0,69, garrison. The war also left some 117 minefields containing nearly 20,3,0,3, of,1,0,7, types,,1,0,5, anti,1,0,11,vehicle and,2,0,15,personnel mines,1,0,4, Due,1,0,17, the large number,1,0,71, deminer casualties, initial attempts to clear the mines ceased in 1983,1,0,32, Demining operations recommenced,1,0,24, 2009 and were completed,1,0,13, October 2020,1,0,1,
+,1,0,5,Based,1,0,16, Lord Shackleton,1,0,16, recommendations,1,0,84, the Falklands diversified from a sheep-based monoculture into an economy of tourism,1,0,24,, with the establishment,2,0,20, Falklands Exclusive,2,0,80,, fisheries. The road network was also made more extensive, and the construction,1,0,34, RAF Mount Pleasant allowed access,1,0,58, long haul flights. Oil exploration also began in the 2010,1,0,64,, with indications of possible commercially exploitable deposits,1,0,78, the Falklands basin. Landmine clearance work restarted in 2009, in accordance,1,0,21, the UK's obligations,1,0,88, the Ottawa Treaty, and Sapper Hill Corral was cleared of mines in 2012, allowing access,1,0,47, an important historical landmark for the first,2,0,3, 30,2,0,36, Argentina and the UK re-established,2,0,45, in 1990, but neither has agreed on the terms,1,0,31, future sovereignty discussions,1,0,33, Disputes between the governments,1,0,21, led "some analysts [,1,0,31,] predict a growing conflict of,1,0,18, between Argentina,1,0,6, Great,1,0,36, ... because of the recent expansion,1,0,12, the fishing,2,0,39, the waters surrounding the Falklands".,
+Correct guesses/total: 0.16362566215420835
+Filesize of bz2/original: 0.4212867190732313
+Filesize of bz2/pre-bz2 intermediate: 0.39009673402930756
+Although Fuegians from Patagonia may have visited the Falkland Islands in prehistoric times, the islands were uninhabited when Europeans first explored them. European claims of discovery date back to the 16th century, but no consensus exists on whether early explorers sighted the Falklands or other islands in the South Atlantic. The first undisputed landing on the islands is attributed to English captain John Strong, who, en route to Peru and Chile's littoral in 1690, explored the Falkland Sound and noted the islands' water and game.
+
+The Falklands remained uninhabited until the 1764 establishment of Port Louis on East Falkland by French captain Louis Antoine de Bougainville and the 1766 foundation of Port Egmont on Saunders Island by British captain John MacBride. Whether or not the settlements were aware of each other's existence is debated by historians. In 1766, France surrendered its claim on the Falklands to Spain, which renamed the French colony Puerto Soledad the following year. Problems began when Spain detected and captured Port Egmont in 1770. War was narrowly avoided by its restitution to Britain in 1771.
+
+Both the British and Spanish settlements coexisted in the archipelago until 1774, when Britain's new economic and strategic considerations led it to voluntarily withdraw from the islands, leaving a plaque claiming the Falklands for King George III. Spain's Viceroyalty of the Río de la Plata became the only governmental presence in the territory. West Falkland was left abandoned, and Puerto Soledad became mostly a prison camp. Amid the British invasions of the Río de la Plata during the Napoleonic Wars in Europe, the islands' governor evacuated the archipelago in 1806; Spain's remaining colonial garrison followed suit in 1811, except for gauchos and fishermen who remained voluntarily.
+
+Thereafter, the archipelago was visited only by fishing ships; its political status was undisputed until 1820, when Colonel David Jewett, an American privateer working for the United Provinces of the Río de la Plata, informed anchored ships about Buenos Aires' 1816 claim to Spain's territories in the South Atlantic. Since the islands had no permanent inhabitants, in 1823 Buenos Aires granted German-born merchant Luis Vernet permission to conduct fishing activities and exploit feral cattle in the archipelago.Vernet settled at the ruins of Puerto Soledad in 1826, and accumulated resources on the islands until the venture was secure enough to bring settlers and form a permanent colony.Buenos Aires named Vernet military and civil commander of the islands in 1829, and he attempted to regulate sealing to stop the activities of foreign whalers and sealers. Vernet's venture lasted until a dispute over fishing and hunting rights led to a raid by the American warship USS Lexington in 1831, when United States Navy commander Silas Duncan declared the dissolution of the island's government.
+
+Buenos Aires attempted to retain influence over the settlement by installing a garrison, but a mutiny in 1832 was followed the next year by the arrival of British forces who reasserted Britain's rule. The Argentine Confederation (headed by Buenos Aires Governor Juan Manuel de Rosas) protested against Britain's actions,and Argentine governments have continued since then to register official protests against Britain. The British troops departed after completing their mission, leaving the area without formal government. Vernet's deputy, the Scotsman Matthew Brisbane, returned to the islands that year to restore the business, but his efforts ended after, amid unrest at Port Louis, gaucho Antonio Rivero led a group of dissatisfied individuals to murder Brisbane and the settlement's senior leaders; survivors hid in a cave on a nearby island until the British returned and restored order. In 1840, the Falklands became a Crown colony and Scottish settlers subsequently established an official pastoral community. Four years later, nearly everyone relocated to Port Jackson, considered a better location for government, and merchant Samuel Lafone began a venture to encourage British colonisation.
+
+Stanley, as Port Jackson was soon renamed, officially became the seat of government in 1845. Early in its history, Stanley had a negative reputation due to cargo-shipping losses; only in emergencies would ships rounding Cape Horn stop at the port. Nevertheless, the Falklands' geographic location proved ideal for ship repairs and the "Wrecking Trade", the business of selling and buying shipwrecks and their cargoes. Aside from this trade, commercial interest in the archipelago was minimal due to the low-value hides of the feral cattle roaming the pastures. Economic growth began only after the Falkland Islands Company, which bought out Lafone's failing enterprise in 1851, successfully introduced Cheviot sheep for wool farming, spurring other farms to follow suit. The high cost of importing materials, combined with the shortage of labour and consequent high wages, meant the ship repair trade became uncompetitive. After 1870, it declined as the replacement of sail ships by steamships was accelerated by the low cost of coal in South America; by 1914, with the opening of the Panama Canal, the trade effectively ended. In 1881, the Falkland Islands became financially independent of Britain. For more than a century, the Falkland Islands Company dominated the trade and employment of the archipelago; in addition, it owned most housing in Stanley, which greatly benefited from the wool trade with the UK.
+
+In the first half of the 20th century, the Falklands served an important role in Britain's territorial claims to subantarctic islands and a section of Antarctica. The Falklands governed these territories as the Falkland Islands Dependencies starting in 1908, and retained them until their dissolution in 1985. The Falklands also played a minor role in the two world wars as a military base aiding control of the South Atlantic. In the First World War Battle of the Falkland Islands in December 1914, a Royal Navy fleet defeated an Imperial German squadron. In the Second World War, following the December 1939 Battle of the River Plate, the battle-damaged HMS Exeter steamed to the Falklands for repairs. In 1942, a battalion en route to India was redeployed to the Falklands as a garrison amid fears of a Japanese seizure of the archipelago. After the war ended, the Falklands economy was affected by declining wool prices and the political uncertainty resulting from the revived sovereignty dispute between the United Kingdom and Argentina.
+
+Simmering tensions between the UK and Argentina increased during the second half of the century, when Argentine President Juan Perón asserted sovereignty over the archipelago. The sovereignty dispute intensified during the 1960s, shortly after the United Nations passed a resolution on decolonisation which Argentina interpreted as favourable to its position. In 1965, the UN General Assembly passed Resolution 2065, calling for both states to conduct bilateral negotiations to reach a peaceful settlement of the dispute. From 1966 until 1968, the UK confidentially discussed with Argentina the transfer of the Falklands, assuming its judgement would be accepted by the islanders. An agreement on trade ties between the archipelago and the mainland was reached in 1971 and, consequently, Argentina built a temporary airfield at Stanley in 1972. Nonetheless, Falklander dissent, as expressed by their strong lobby in the UK Parliament, and tensions between the UK and Argentina effectively limited sovereignty negotiations until 1977.
+
+Concerned at the expense of maintaining the Falkland Islands in an era of budget cuts, the UK again considered transferring sovereignty to Argentina in the early Thatcher government. Substantive sovereignty talks again ended by 1981, and the dispute escalated with passing time. In April 1982, the Falklands War began when Argentine military forces invaded the Falklands and other British territories in the South Atlantic, briefly occupying them until a UK expeditionary force retook the territories in June. After the war, the United Kingdom expanded its military presence, building RAF Mount Pleasant and increasing the size of its garrison. The war also left some 117 minefields containing nearly 20,000 mines of various types, including anti-vehicle and anti-personnel mines. Due to the large number of deminer casualties, initial attempts to clear the mines ceased in 1983. Demining operations recommenced in 2009 and were completed in October 2020.
+
+Based on Lord Shackleton's recommendations, the Falklands diversified from a sheep-based monoculture into an economy of tourism and, with the establishment of the Falklands Exclusive Economic Zone, fisheries. The road network was also made more extensive, and the construction of RAF Mount Pleasant allowed access to long haul flights. Oil exploration also began in the 2010s, with indications of possible commercially exploitable deposits in the Falklands basin. Landmine clearance work restarted in 2009, in accordance with the UK's obligations under the Ottawa Treaty, and Sapper Hill Corral was cleared of mines in 2012, allowing access to an important historical landmark for the first time in 30 years. Argentina and the UK re-established diplomatic relations in 1990, but neither has agreed on the terms of future sovereignty discussions. Disputes between the governments have led "some analysts [to] predict a growing conflict of interest between Argentina and Great Britain ... because of the recent expansion of the fishing industry in the waters surrounding the Falklands".
