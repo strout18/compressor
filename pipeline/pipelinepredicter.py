@@ -14,8 +14,10 @@ with open('roberta-large_med_w8.txt', 'a') as f:
         # print(str(split))
         txtrange = utils.slice_window(8, split, x, tkzer)
         # txtrange = ics.slice_window(8, split, x)
-        # print ("Calling with prev " + txtrange)
+        print ("Calling with prev " + txtrange)
         guess = unmasker(txtrange + f"{tkzer.mask_token}")[0]["token_str"]
+        if not guess.isalpha() or guess != ".":
+            guess = "The"
         words += guess
         # print ("words " + words)
         f.write(guess)

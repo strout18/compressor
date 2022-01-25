@@ -11,7 +11,6 @@ TEST_FOLDERS = [
     "orwell_af", "woolf_essays"
 ]
 
-# GET GPT MED W8 BEFORE ANY COPYING
 progressf = "runprogress.txt"
 WINDOW = 8
 PIPELINE_MODELS = ["roberta-base", "roberta-large", "google/electra-large-generator", "albert-base-v2", "microsoft/mpnet-base"]
