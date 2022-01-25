@@ -21,7 +21,7 @@ def run_gpt():
         for folder in TEST_FOLDERS:
             pf.write('Running GPT test on ' + folder + "\n")
             gpt_encode(["tests/" + folder + "/" + folder + ".txt", str(WINDOW)])
-            gpt_decode(["../../tests/" + folder + "/" + folder + ".txt.comp"])
+            gpt_decode(["tests/" + folder + "/" + folder + ".txt.comp"])
             comparison = filecmp.cmp(
                 "tests" + folder + "/" + folder + ".txt", "tests" + folder + "/" + folder + ".txt.comp.plaintext", shallow=False
             )
@@ -39,8 +39,8 @@ def run_pipeline():
             pf.write('Testing ' + model + ' model')
             for folder in TEST_FOLDERS:
                 pf.write('Running ' + model + ' test on ' + folder)
-                pipeline_encode(["../tests/" + folder + "/" + folder + ".txt", model, str(WINDOW)])
-                pipeline_decode(["../tests/" + folder + "/" + folder + ".txt.comp", model])
+                pipeline_encode(["/tests/" + folder + "/" + folder + ".txt", model, str(WINDOW)])
+                pipeline_decode(["/tests/" + folder + "/" + folder + ".txt.comp", model])
                 comparison = filecmp.cmp(
                 "tests" + folder + "/" + folder + ".txt", "tests" + folder + "/" + folder + ".txt.comp.plaintext", shallow=False
                 )
