@@ -86,6 +86,7 @@ def pipeline_encode(argv):
             print ("Tk is " + tk)
             print ("Word version is " + tkzer.convert_tokens_to_string([tk]))
             prev = utils.slice_window(int(window), splat, ct, tkzer)
+            print ("prev is " + prev)
             extend_encoding(tkzer.convert_tokens_to_string([tk]), prev, unmasker, tkzer.mask_token)  # the model name and tkzer are usually the same
         #print ("Final dump of correct")
         dump_correct()

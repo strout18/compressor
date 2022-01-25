@@ -1,11 +1,11 @@
 import window as utils
 from transformers import pipeline
-words = "The dog" # TODO INITIALIZE FILE WITH THESE WORDS
+words = "The dog was very big so" # TODO INITIALIZE FILE WITH THESE WORDS
 modelname = "roberta-large"
 tkzer = utils.get_tkzer(modelname)
 unmasker = pipeline('fill-mask', model=modelname)
 with open('roberta-large_med_w8.txt', 'a') as f:
-    for x in range(2, 5002):
+    for x in range(6, 5006):
         if (x % 50 == 0):
             print (str(x))
         # if (len(words) > 125):
