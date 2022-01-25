@@ -1,7 +1,7 @@
 import sys, os, csv
-import ics_api as ics
+from gpt2.src import ics_api as ics
 import regex as re
-import intermediateencoding as ie
+from gpt2.src import intermediateencoding as ie
 
 total_encoding = ""
 incorrect = "" # buffer for storing incorrect guesses continuously

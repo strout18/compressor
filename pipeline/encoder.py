@@ -1,6 +1,6 @@
 from transformers import pipeline
 import os, sys
-from pipeline import intermediateencoding as ie
+from pipeline import intermediateencoding as ie # make sure it's not confused
 from pipeline import window as utils
 
 # TO DO DECIDE TOP K

@@ -1,8 +1,8 @@
 import sys, filecmp, os
-from .gpt2.src.gpt_encoder import gpt_encode
-from .gpt2.src.gpt_decoder import gpt_decode
-from .pipeline.encoder import pipeline_encode
-from .pipeline.decoder import pipeline_decode
+from gpt2.src.gpt_encoder import gpt_encode
+from gpt2.src.gpt_decoder import gpt_decode
+from pipeline.encoder import pipeline_encode
+from pipeline.decoder import pipeline_decode
 from glob import glob
 
 TEST_FOLDERS = [

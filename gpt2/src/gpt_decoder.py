@@ -1,7 +1,7 @@
 import sys
-import ics_api as ics
+from gpt2.src import ics_api as ics
 import regex as re
-import intermediateencoding as ie
+from gpt2.src import intermediateencoding as ie
 
 total_decoding = "" 
 
