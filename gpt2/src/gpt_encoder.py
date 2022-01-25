@@ -8,7 +8,7 @@ incorrect = "" # buffer for storing incorrect guesses continuously
 guessct = 0
 compressed = 0
 total = 0
-statfile = "../../allstats.txt"
+statfile = "allstats.txt"
 TOP_K = 40
 
 def write_window(window):

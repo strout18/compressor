@@ -19,14 +19,14 @@ PIPELINE_MODELS = ["roberta-base", "roberta-large", "google/electra-large-genera
 def run_gpt():
     with open(progressf, 'a') as pf:
         for folder in TEST_FOLDERS:
-            pf.write('Running GPT test on ' + folder)
+            pf.write('Running GPT test on ' + folder + "\n")
             gpt_encode(["tests/" + folder + "/" + folder + ".txt", str(WINDOW)])
             gpt_decode(["../../tests/" + folder + "/" + folder + ".txt.comp"])
             comparison = filecmp.cmp(
                 "tests" + folder + "/" + folder + ".txt", "tests" + folder + "/" + folder + ".txt.comp.plaintext", shallow=False
             )
             if not comparison:
-                pf.write("Diff test failed on " + folder)
+                pf.write("Diff test failed on " + folder + "\n")
         pf.write("GPT tests complete!")
 
 def clear_files():
