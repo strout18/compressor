@@ -1,7 +1,7 @@
 from transformers import pipeline
 import sys
-import intermediateencoding as ie
-import window as utils
+from pipeline import intermediateencoding as ie
+from pipeline import window as utils
 
 total_decoding = "" 
 # todo UNIFORMIZE TOP K - IT'S 40 IN GPT BUT 5 DEFAULT HERE

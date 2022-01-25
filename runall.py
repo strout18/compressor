@@ -20,7 +20,7 @@ def run_gpt():
     with open(progressf, 'a') as pf:
         for folder in TEST_FOLDERS:
             pf.write('Running GPT test on ' + folder)
-            gpt_encode(["../../tests/" + folder + "/" + folder + ".txt", str(WINDOW)])
+            gpt_encode(["tests/" + folder + "/" + folder + ".txt", str(WINDOW)])
             gpt_decode(["../../tests/" + folder + "/" + folder + ".txt.comp"])
             comparison = filecmp.cmp(
                 "tests" + folder + "/" + folder + ".txt", "tests" + folder + "/" + folder + ".txt.comp.plaintext", shallow=False

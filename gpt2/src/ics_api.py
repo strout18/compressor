@@ -5,7 +5,7 @@ import os
 import numpy as np
 import tensorflow as tf
 
-import model, sample, encoder
+from gpt2.src import model, sample, encoder
 
 # stella's custom functions
 
@@ -19,7 +19,7 @@ def run_model(
     temperature=1,
     top_k=0,
     top_p=1,
-    models_dir='../models',
+    models_dir='gpt2/models',
 ):
     """
     Interactively run the model
