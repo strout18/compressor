@@ -23,7 +23,7 @@ def run_gpt():
             gpt_encode(["tests/" + folder + "/" + folder + ".txt", str(WINDOW)])
             gpt_decode(["tests/" + folder + "/" + folder + ".txt.comp"])
             comparison = filecmp.cmp(
-                "tests" + folder + "/" + folder + ".txt", "tests" + folder + "/" + folder + ".txt.comp.plaintext", shallow=False
+                "tests" + "/" + folder + "/" + folder + ".txt", "tests" + "/" + folder + "/" + folder + ".txt.comp.plaintext", shallow=False
             )
             if not comparison:
                 pf.write("Diff test failed on " + folder + "\n")
@@ -55,10 +55,10 @@ def main(argv):
         run_gpt()
         pf.write('Clearing files...')
         clear_files()
-        pf.write('Running pipeline tests')
-        run_pipeline()
+       # pf.write('Running pipeline tests')
+        # run_pipeline()
         pf.write('Clearing files...')
-        clear_files()
+       # clear_files()
         pf.write('All tests complete!')
 
 if __name__ == "__main__":
