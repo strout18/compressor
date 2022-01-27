@@ -83,15 +83,15 @@ def gpt_encode(argv):
                 print ("Guess was incorrect")
                 # print ("Guess count:" + str(guessct))
                 print ("Dumping correct")
-                dump_correct(guessct, total_encoding)
+                guessct, total_encoding = dump_correct(guessct, total_encoding)
                 incorrect += wd
                 print ("incorrect is now " + incorrect)
                 total += 1
             # extend_encoding(wd, prev, guessct, incorrect, total, compressed)  # bitarray
         #print ("Final dump of correct")
-        dump_correct(guessct, total_encoding)
+        guessct, total_encoding = dump_correct(guessct, total_encoding)
         #print ("Final dump of incorrect")
-        dump_incorrect(incorrect, total_encoding) # clear buffer after each line
+        incorrect, total_encoding = dump_incorrect(incorrect, total_encoding) # clear buffer after each line
 
     # print("Final encoding")
     # print(total_encoding)
@@ -110,6 +110,7 @@ def gpt_encode(argv):
     ie.crunch_bz2(ftxt, infile + ".bz2")    # crunch for comparison's sake
     bzogsize = os.path.getsize(infile + ".bz2")
     print ("Size of bzipped original file: " + str(bzogsize))
+    print ("final encoding is " + total_encoding)
 
     # writing stuff to stats
     # Test,Window,Top_K,Correct Gs,Total Gs,OG size,Interm size,Final size,Bzip OG size

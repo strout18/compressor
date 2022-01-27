@@ -70,7 +70,7 @@ def main(argv):
         basic_test_gpt()
         # run_gpt()
         pf.write('Clearing files...')
-        clear_files()
+        # clear_files()
        # pf.write('Running pipeline tests')
         # run_pipeline()
         pf.write('Clearing files...')

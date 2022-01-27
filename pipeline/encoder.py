@@ -68,20 +68,20 @@ def pipeline_encode(argv):
                 print ("Guesscount " + str(guessct))
                 print ("Dumping incorrect")
                 print (incorrect)
-                dump_incorrect(incorrect, total_encoding)  # clear out incorrect buffer before logging correct
+                incorrect, total_encoding = dump_incorrect(incorrect, total_encoding)  # clear out incorrect buffer before logging correct
                 print ("encoding is now " + total_encoding)
             else:
                 print ("Guess was incorrect")
                 # print ("Guess count:" + str(guessct))
                 print ("Dumping correct")
-                dump_correct(guessct, total_encoding)
+                guessct, total_encoding = dump_correct(guessct, total_encoding)
                 incorrect += tkzer.convert_tokens_to_string([tk])
                 print ("incorrect is now " + incorrect)
             total += 1
         #print ("Final dump of correct")
-        dump_correct(guessct, total_encoding)
+        guessct, total_encoding = dump_correct(guessct, total_encoding)
         #print ("Final dump of incorrect")
-        dump_incorrect(incorrect, total_encoding) # clear buffer after each line
+        incorrect, total_encoding = dump_incorrect(incorrect, total_encoding) # clear buffer after each line
     # print("Final encoding")
     # print(total_encoding)
     # print("Correct guesses/total: " + str(compressed / total))
