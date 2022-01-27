@@ -33,6 +33,19 @@ def clear_files():
     for f in glob('./tests/*/*.txt.*'):
         os.remove(f)
 
+def basic_test_gpt():
+    with open(progressf, 'a') as pf:
+        folder = "simple_custom"
+        pf.write('Running GPT test on ' + folder + "\n")
+        gpt_encode(["tests/" + folder + "/" + folder + ".txt", str(WINDOW)])
+        gpt_decode(["tests/" + folder + "/" + folder + ".txt.comp"])
+        comparison = filecmp.cmp(
+                "tests" + "/" + folder + "/" + folder + ".txt", "tests" + "/" + folder + "/" + folder + ".txt.comp.plaintext", shallow=False
+            )
+        if not comparison:
+            pf.write("Diff test failed on " + folder + "\n")
+        pf.write("GPT tests complete!")
+
 def run_pipeline():
     with open(progressf, 'a') as pf:
         for model in PIPELINE_MODELS:
@@ -52,7 +65,8 @@ def run_pipeline():
 def main(argv):
     with open(progressf, 'a') as pf:
         pf.write('Running GPT tests')
-        run_gpt()
+        basic_test_gpt()
+        # run_gpt()
         pf.write('Clearing files...')
         clear_files()
        # pf.write('Running pipeline tests')
