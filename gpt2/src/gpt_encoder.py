@@ -3,49 +3,15 @@ from gpt2.src import ics_api as ics
 import regex as re
 from gpt2.src import intermediateencoding as ie
 
-total_encoding = ""
-incorrect = "" # buffer for storing incorrect guesses continuously
-guessct = 0
-compressed = 0
-total = 0
 statfile = "allstats.txt"
 TOP_K = 40
 
-def write_window(window):
-    global total_encoding
+def write_window(window, total_encoding):
     total_encoding += window + ","
+    return total_encoding
 
-def extend_encoding(wd, prev):
-    global guessct
-    global incorrect
-    global total
-    global compressed
-    # print ("The current word is " + wd + "and the previous word is " + prev)
-    if prev:
-        guess = ics.run_model(prev, length=1, top_k=TOP_K)
-        # print ("The guess is " + guess)
-    if prev and guess == wd:
-        # print ("Guess was correct")
-        guessct += 1
-        compressed += 1
-        # print ("Guesscount " + str(guessct))
-        # print ("Dumping incorrect")
-        # print (incorrect)
-        dump_incorrect()  # clear out incorrect buffer before logging correct
-        # print ("encoding is now " + total_encoding)
-    else:
-        # print ("Guess was incorrect")
-        # print ("Guess count:" + str(guessct))
-        # print ("Dumping correct")
-        dump_correct()
-        incorrect += wd
-        # print ("incorrect is now " + incorrect)
-    total += 1
-
-def dump_incorrect():
+def dump_incorrect(incorrect, total_encoding):
     # dump the buffer of incorrects into encoding
-    global incorrect
-    global total_encoding
     if len(incorrect) > 0:
         txt = '0,'
         txt += str(len(incorrect)) + ","
@@ -55,15 +21,15 @@ def dump_incorrect():
         total_encoding += txt
         # print ("Extending from incorrect. Total encoding is now " + total_encoding)
         incorrect = ""
+    return incorrect, total_encoding
 
-def dump_correct():
+def dump_correct(guessct, total_encoding):
     # how much to pad to?
-    global guessct
     if guessct > 0:
-        global total_encoding
         total_encoding += str(guessct) + ","
         # print ("Total encoding now " + total_encoding)
         guessct = 0
+    return guessct, total_encoding
 
 # splits array according to decided standards - talk about this in thesis?
 def cleansplit(txtstr):
@@ -74,6 +40,14 @@ def cleansplit(txtstr):
 
 # args = infile, window
 def gpt_encode(argv):
+    # global total_encoding, incorrect, guessct, compressed, total
+    #reset globals
+    total_encoding = ""
+    incorrect = ""
+    guessct = 0
+    compressed = 0
+    total = 0
+
     infile = argv[0]    # file name
     window = argv[1] if len(argv) == 2 else "1"  # window of prev words (0 = from last period?)  
     # should prob error check command line args
@@ -81,7 +55,7 @@ def gpt_encode(argv):
     with open(infile, 'r') as inf:
         ftxt = inf.read()
         #print("Writing window")
-        write_window(window)
+        total_encoding = write_window(window)
         #print ("Encoding now " + total_encoding)
         splat = cleansplit(ftxt)
         print(splat)
@@ -89,11 +63,33 @@ def gpt_encode(argv):
             prev = ics.slice_window(int(window), splat, ct) #preceding text
             # print("#" * 40)
             # print("Calling extend_encoding on wd \"" + wd + "\" with prev \"" + prev)
-            extend_encoding(wd, prev)  # bitarray
+            # global guessct, incorrect, total, compressed
+            # print ("The current word is " + wd + "and the previous word is " + prev)
+            if prev:
+                guess = ics.run_model(prev, length=1, top_k=TOP_K)
+                # print ("The guess is " + guess)
+            if prev and guess == wd:
+                # print ("Guess was correct")
+                guessct += 1
+                compressed += 1
+                # print ("Guesscount " + str(guessct))
+                # print ("Dumping incorrect")
+                # print (incorrect)
+                incorrect, total_encoding = dump_incorrect(incorrect, total_encoding)  # clear out incorrect buffer before logging correct
+                # print ("encoding is now " + total_encoding)
+            else:
+                # print ("Guess was incorrect")
+                # print ("Guess count:" + str(guessct))
+                # print ("Dumping correct")
+                dump_correct(guessct, total_encoding)
+                incorrect += wd
+                # print ("incorrect is now " + incorrect)
+                total += 1
+            # extend_encoding(wd, prev, guessct, incorrect, total, compressed)  # bitarray
         #print ("Final dump of correct")
-        dump_correct()
+        dump_correct(guessct, total_encoding)
         #print ("Final dump of incorrect")
-        dump_incorrect() # clear buffer after each line
+        dump_incorrect(incorrect, total_encoding) # clear buffer after each line
 
     # print("Final encoding")
     # print(total_encoding)

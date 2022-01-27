@@ -3,7 +3,6 @@ import sys
 from pipeline import intermediateencoding as ie
 from pipeline import window as utils
 
-total_decoding = "" 
 # todo UNIFORMIZE TOP K - IT'S 40 IN GPT BUT 5 DEFAULT HERE
 
 def read_window(txt):
@@ -12,7 +11,7 @@ def read_window(txt):
     return int(win)
 
 def pipeline_decode(argv):
-    global total_decoding
+    total_decoding = ""
     infile = argv[0]    # file name
     # window = int(argv[1])    # do error checking
     outfile = infile + ".plaintext"  # file name

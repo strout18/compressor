@@ -2,8 +2,7 @@ import sys
 from gpt2.src import ics_api as ics
 import regex as re
 from gpt2.src import intermediateencoding as ie
-
-total_decoding = "" 
+ 
 
 def read_window(txt):
     cutoff = txt.index(',')
@@ -11,7 +10,7 @@ def read_window(txt):
     return int(win)
 
 def gpt_decode(argv):
-    global total_decoding
+    total_decoding = ""
     infile = argv[0]    # file name
     # window = int(argv[1])    # do error checking
     outfile = infile + ".plaintext"  # file name
