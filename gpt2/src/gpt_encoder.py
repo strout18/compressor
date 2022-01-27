@@ -76,15 +76,16 @@ def gpt_encode(argv):
                 # print ("Guesscount " + str(guessct))
                 # print ("Dumping incorrect")
                 # print (incorrect)
+                print("Dumping incorrect, guess was correct")
                 incorrect, total_encoding = dump_incorrect(incorrect, total_encoding)  # clear out incorrect buffer before logging correct
-                # print ("encoding is now " + total_encoding)
+                print ("encoding is now " + total_encoding)
             else:
-                # print ("Guess was incorrect")
+                print ("Guess was incorrect")
                 # print ("Guess count:" + str(guessct))
-                # print ("Dumping correct")
+                print ("Dumping correct")
                 dump_correct(guessct, total_encoding)
                 incorrect += wd
-                # print ("incorrect is now " + incorrect)
+                print ("incorrect is now " + incorrect)
                 total += 1
             # extend_encoding(wd, prev, guessct, incorrect, total, compressed)  # bitarray
         #print ("Final dump of correct")
