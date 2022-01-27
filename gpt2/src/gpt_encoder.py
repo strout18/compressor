@@ -63,7 +63,7 @@ def gpt_encode(argv):
         for ct, wd in enumerate(splat):  
             prev = ics.slice_window(int(window), splat, ct) #preceding text
             # print("#" * 40)
-            # print("Calling extend_encoding on wd \"" + wd + "\" with prev \"" + prev)
+            print("Calling extend_encoding on wd \"" + wd + "\" with prev \"" + prev)
             # global guessct, incorrect, total, compressed
             # print ("The current word is " + wd + "and the previous word is " + prev)
             if prev:

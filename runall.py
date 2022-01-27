@@ -37,6 +37,8 @@ def basic_test_gpt():
     with open(progressf, 'a') as pf:
         folder = "simple_custom"
         pf.write('Running GPT test on ' + folder + "\n")
+        print('Running GPT test on ' + folder + "\n")
+        pf.flush()
         gpt_encode(["tests/" + folder + "/" + folder + ".txt", str(WINDOW)])
         gpt_decode(["tests/" + folder + "/" + folder + ".txt.comp"])
         comparison = filecmp.cmp(
