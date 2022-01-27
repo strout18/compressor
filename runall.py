@@ -20,6 +20,7 @@ def run_gpt():
     with open(progressf, 'a') as pf:
         for folder in TEST_FOLDERS:
             pf.write('Running GPT test on ' + folder + "\n")
+            pf.flush()
             gpt_encode(["tests/" + folder + "/" + folder + ".txt", str(WINDOW)])
             gpt_decode(["tests/" + folder + "/" + folder + ".txt.comp"])
             comparison = filecmp.cmp(
@@ -27,7 +28,9 @@ def run_gpt():
             )
             if not comparison:
                 pf.write("Diff test failed on " + folder + "\n")
+                pf.flush()
         pf.write("GPT tests complete!")
+        pf.flush()
 
 def clear_files():
     for f in glob('./tests/*/*.txt.*'):
@@ -46,7 +49,9 @@ def basic_test_gpt():
             )
         if not comparison:
             pf.write("Diff test failed on " + folder + "\n")
+            pf.flush()
         pf.write("GPT tests complete!")
+        pf.flush()
 
 def run_pipeline():
     with open(progressf, 'a') as pf:
@@ -61,19 +66,22 @@ def run_pipeline():
                 )
                 if not comparison:
                     pf.write("Diff test failed on " + folder)
+                    pf.flush()
         pf.write("Pipeline tests complete!")
 
 
 def main(argv):
     with open(progressf, 'a') as pf:
         pf.write('Running GPT tests')
-        basic_test_gpt()
-        # run_gpt()
-        pf.write('Clearing files...')
+        pf.flush()
+        # basic_test_gpt()
+        run_gpt()
+        # pf.write('Clearing files...')
+        # pf.flush()
         # clear_files()
        # pf.write('Running pipeline tests')
         # run_pipeline()
-        pf.write('Clearing files...')
+        # pf.write('Clearing files...')
        # clear_files()
         pf.write('All tests complete!')
 

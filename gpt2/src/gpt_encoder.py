@@ -6,6 +6,8 @@ from gpt2.src import intermediateencoding as ie
 statfile = "allstats.txt"
 TOP_K = 40
 
+# TODO trim off final comma?
+
 def write_window(window, total_encoding):
     total_encoding += window + ","
     return total_encoding
