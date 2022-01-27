@@ -47,6 +47,7 @@ def gpt_encode(argv):
     guessct = 0
     compressed = 0
     total = 0
+    print ("HERE 123")
 
     infile = argv[0]    # file name
     window = argv[1] if len(argv) == 2 else "1"  # window of prev words (0 = from last period?)  
@@ -55,7 +56,7 @@ def gpt_encode(argv):
     with open(infile, 'r') as inf:
         ftxt = inf.read()
         #print("Writing window")
-        total_encoding = write_window(window)
+        total_encoding = write_window(window, total_encoding)
         #print ("Encoding now " + total_encoding)
         splat = cleansplit(ftxt)
         print(splat)
