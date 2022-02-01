@@ -5,15 +5,12 @@ from pipeline.encoder import pipeline_encode
 from pipeline.decoder import pipeline_decode
 from glob import glob
 
-TEST_FOLDERS = [
-    "dde_unspeech", "gpt_gen_small_w8", "random_small", "random_med", "falklands_wiki", "mlk_vietnam",
-    "sherlock_bpp", "frederick_wiki", "obama_inaug", "simple_custom", "gatsby_intro", 
-    "orwell_af", "woolf_essays"
-]
+TEST_FOLDERS = ["gpt_med_w8"]
 
-progressf = "runprogress.txt"
+progressf = "deletemelater.txt"
 WINDOW = 8
-PIPELINE_MODELS = ["roberta-large", "google/electra-large-generator", "albert-base-v2", "microsoft/mpnet-base"]
+PIPELINE_MODELS = []
+# PIPELINE_MODELS = ["roberta-base", "roberta-large", "google/electra-large-generator", "albert-base-v2", "microsoft/mpnet-base"]
 # TODO- TEST IF MPNET SOLO WILL WORK WITH PIPELINE
 
 def run_gpt():
@@ -72,6 +69,9 @@ def run_pipeline():
 
 def main(argv):
     with open(progressf, 'a') as pf:
+        pf.write('Clearing files...')
+        pf.flush()
+        clear_files()
         pf.write('Running GPT tests')
         pf.flush()
         # basic_test_gpt()
