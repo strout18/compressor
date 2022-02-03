@@ -3,3 +3,5 @@ encoder
 decoder
 test_bitio
 .vscode/
+*.txt.*
+*.out
