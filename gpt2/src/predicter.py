@@ -1,4 +1,4 @@
-import gpt_encoder
+import gpt2.src.gpt_encoder as enc
 import ics_api as ics
 from itertools import cycle
 # words = "The dog"
@@ -10,7 +10,7 @@ with open('gpt_med_w8_v2.txt', 'a') as f:
         for x in range(1, 350):     # guessing this is a good number to stop the train from going off the rails
             if (x % 50 == 0):
                 print (str(x))
-            split = gpt_encoder.cleansplit(words)
+            split = enc.cleansplit(words)
             # print(str(split))
             txtrange = ics.slice_window(8, split, x)
             # print ("Calling with prev " + txtrange)
