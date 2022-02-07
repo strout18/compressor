@@ -1,4 +1,4 @@
-from transformers import RobertaTokenizer, ElectraTokenizer, AlbertTokenizer, MPNetTokenizer
+from transformers import RobertaTokenizer, ElectraTokenizer, AlbertTokenizer, MPNetTokenizer, BertTokenizer
 
 def get_tkzer(modelname):
     if modelname[:7] == "roberta": # todo add other models
@@ -10,6 +10,11 @@ def get_tkzer(modelname):
     if modelname[:15] == "microsoft/mpnet":
         return MPNetTokenizer.from_pretrained(modelname)
         # shitty tokenizers
+    if modelname[:4] == "bert":
+        return BertTokenizer.from_pretrained(modelname)
+    return MPNetTokenizer.from_pretrained(modelname)
+    # shitty tokenizers
+
 
 def slice_window(winlen, tkarr, index, tkzer):
     # todo deal with when winlen = 0
