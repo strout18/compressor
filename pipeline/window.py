@@ -12,9 +12,7 @@ def get_tkzer(modelname):
         # shitty tokenizers
     if modelname[:4] == "bert":
         return BertTokenizer.from_pretrained(modelname)
-    return MPNetTokenizer.from_pretrained(modelname)
     # shitty tokenizers
-
 
 def slice_window(winlen, tkarr, index, tkzer):
     # todo deal with when winlen = 0

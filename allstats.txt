@@ -1,15 +1,15 @@
-Test,Window,Top_K,Correct Gs,Total Gs,OG size,Interm size,Final size,Bzip OG size
-tests/dde_unspeech/dde_unspeech.txt,8,40,569,2971,18174,19646,6838,6484
-tests/gpt_gen_small_w8/gpt_gen_small_w8.txt,8,40,23,2,120,25,61,121
-tests/random_small/random_small.txt,8,40,0,24,165,174,165,152
-tests/random_med/random_med.txt,8,40,51,4298,23721,24103,8724,8528
-tests/falklands_wiki/falklands_wiki.txt,8,40,256,1443,9668,10391,4065,3902
-tests/mlk_vietnam/mlk_vietnam.txt,8,40,747,4629,27383,29448,10121,9614
-tests/sherlock_bpp/sherlock_bpp.txt,8,40,1629,13035,60966,65426,21751,20387
-tests/frederick_wiki/frederick_wiki.txt,8,40,92,472,3027,3315,1515,1472
-tests/obama_inaug/obama_inaug.txt,8,40,285,1427,8288,9004,3570,3446
-tests/simple_custom/simple_custom.txt,8,40,4,12,63,78,97,91
-tests/gatsby_intro/gatsby_intro.txt,8,40,1166,7117,36907,41004,14474,13524
-tests/orwell_af/orwell_af.txt,8,40,1889,14579,73708,79769,25743,24121
-tests/gpt_med_w8/gpt_med_w8.txt,8,40,2263,2737,24982,22995,1295,1717
-tests/woolf_essays/woolf_essays.txt,8,40,2355,18471,99466,107138,35569,33836
+Model,Test,Window,Top_K,Correct Gs,Total Gs,OG size,Interm size,Final size,Bzip OG size
+gpt,tests/dde_unspeech/dde_unspeech.txt,8,40,569,2971,18174,19646,6838,6484
+gpt,tests/gpt_gen_small_w8/gpt_gen_small_w8.txt,8,40,23,2,120,25,61,121
+gpt,tests/random_small/random_small.txt,8,40,0,24,165,174,165,152
+gpt,tests/random_med/random_med.txt,8,40,51,4298,23721,24103,8724,8528
+gpt,tests/falklands_wiki/falklands_wiki.txt,8,40,256,1443,9668,10391,4065,3902
+gpt,tests/mlk_vietnam/mlk_vietnam.txt,8,40,747,4629,27383,29448,10121,9614
+gpt,tests/sherlock_bpp/sherlock_bpp.txt,8,40,1629,13035,60966,65426,21751,20387
+gpt,tests/frederick_wiki/frederick_wiki.txt,8,40,92,472,3027,3315,1515,1472
+gpt,tests/obama_inaug/obama_inaug.txt,8,40,285,1427,8288,9004,3570,3446
+gpt,tests/simple_custom/simple_custom.txt,8,40,4,12,63,78,97,91
+gpt,tests/gatsby_intro/gatsby_intro.txt,8,40,1166,7117,36907,41004,14474,13524
+gpt,tests/orwell_af/orwell_af.txt,8,40,1889,14579,73708,79769,25743,24121
+gpt,tests/gpt_med_w8/gpt_med_w8.txt,8,40,2263,2737,24982,22995,1295,1717
+gpt,tests/woolf_essays/woolf_essays.txt,8,40,2355,18471,99466,107138,35569,33836

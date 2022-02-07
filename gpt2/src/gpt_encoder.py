@@ -115,10 +115,10 @@ def gpt_encode(argv):
     print ("final encoding is " + total_encoding)
 
     # writing stuff to stats
-    # Test,Window,Top_K,Correct Gs,Total Gs,OG size,Interm size,Final size,Bzip OG size
+    # Model,Test,Window,Top_K,Correct Gs,Total Gs,OG size,Interm size,Final size,Bzip OG size
     with open(statfile, 'a') as csvfile:
         csvwriter = csv.writer(csvfile)
-        csvwriter.writerow([infile, window, TOP_K, compressed, total, ogsize, intermsize, finalsize, bzogsize])
+        csvwriter.writerow(["gpt", infile, window, TOP_K, compressed, total, ogsize, intermsize, finalsize, bzogsize])
 
     
 
