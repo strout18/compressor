@@ -46,7 +46,7 @@ def basic_test_gpt():
         gpt_encode(["tests/" + folder + "/" + folder + ".txt", str(WINDOW)])
         gpt_decode(["tests/" + folder + "/" + folder + ".txt.comp"])
         comparison = filecmp.cmp(
-                "tests" + "/" + folder + "/" + folder + ".txt", "tests" + "/" + folder + "/" + folder + ".txt.comp.plaintext", shallow=False
+                "tests/" + folder + "/" + folder + ".txt", "tests/" + folder + "/" + folder + ".txt.comp.plaintext", shallow=False
             )
         if not comparison:
             pf.write("Diff test failed on " + folder + "\n")
@@ -63,7 +63,7 @@ def run_pipeline():
                 pipeline_encode(["tests/" + folder + "/" + folder + ".txt", model, str(WINDOW)])
                 pipeline_decode(["tests/" + folder + "/" + folder + ".txt.comp", model])
                 comparison = filecmp.cmp(
-                "tests" + folder + "/" + folder + ".txt", "tests" + folder + "/" + folder + ".txt.comp.plaintext", shallow=False
+                "tests/" + folder + "/" + folder + ".txt", "tests/" + folder + "/" + folder + ".txt.comp.plaintext", shallow=False
                 )
                 if not comparison:
                     pf.write("Diff test failed on " + folder)
