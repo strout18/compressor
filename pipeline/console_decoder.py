@@ -27,8 +27,10 @@ def pipeline_decode(argv):
     mask_token = tkzer.mask_token
     unmasker = pipeline('fill-mask', model=modelname)
     print("Starting off!")
+    print(ftxt)
     while pointer < len(ftxt):
-        guess_cutoff = ftxt.index(',', pointer)  
+        guess_cutoff = ftxt.index(',', pointer)
+        print (str(guess_cutoff))  
         guessc = ftxt[pointer:guess_cutoff]
         print ("Guessc is " + str(guessc))
         guesslen = len(guessc)
