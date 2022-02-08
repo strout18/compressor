@@ -45,7 +45,7 @@ def pipeline_encode(argv):
     with open(infile, 'r') as inf:
         ftxt = inf.read()
         #print("Writing window")
-        write_window(window, total_encoding)
+        total_encoding = write_window(window, total_encoding)
         #print ("Encoding now " + total_encoding)
         tkzer = utils.get_tkzer(modelname)
         splat = tkzer.tokenize(ftxt)    # if we can feed in tokenized stream to pipeline then we can speed this up
