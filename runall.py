@@ -13,7 +13,8 @@ TEST_FOLDERS = [
 
 progressf = "runprogress.txt"
 WINDOW = 8
-PIPELINE_MODELS = ["roberta-large", "google/electra-large-generator", "albert-base-v2", "microsoft/mpnet-base"]
+# PIPELINE_MODELS = ["roberta-large", "google/electra-large-generator", "albert-base-v2", "microsoft/mpnet-base"]
+PIPELINE_MODELS = ["roberta-large"]
 # TODO- TEST IF MPNET SOLO WILL WORK WITH PIPELINE
 
 def run_gpt():
@@ -59,8 +60,8 @@ def run_pipeline():
             pf.write('Testing ' + model + ' model')
             for folder in TEST_FOLDERS:
                 pf.write('Running ' + model + ' test on ' + folder)
-                pipeline_encode(["/tests/" + folder + "/" + folder + ".txt", model, str(WINDOW)])
-                pipeline_decode(["/tests/" + folder + "/" + folder + ".txt.comp", model])
+                pipeline_encode(["tests/" + folder + "/" + folder + ".txt", model, str(WINDOW)])
+                pipeline_decode(["tests/" + folder + "/" + folder + ".txt.comp", model])
                 comparison = filecmp.cmp(
                 "tests" + folder + "/" + folder + ".txt", "tests" + folder + "/" + folder + ".txt.comp.plaintext", shallow=False
                 )
@@ -72,15 +73,16 @@ def run_pipeline():
 
 def main(argv):
     with open(progressf, 'a') as pf:
-        pf.write('Running GPT tests')
-        pf.flush()
+       # pf.write('Running GPT tests')
+       # pf.flush()
         # basic_test_gpt()
-        run_gpt()
+       # run_gpt()
         # pf.write('Clearing files...')
         # pf.flush()
         # clear_files()
-       # pf.write('Running pipeline tests')
-        # run_pipeline()
+        pf.write('Running pipeline tests')
+        pf.flush()
+        run_pipeline()
         # pf.write('Clearing files...')
        # clear_files()
         pf.write('All tests complete!')
