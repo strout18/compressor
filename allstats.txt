@@ -13,3 +13,16 @@ gpt,tests/gatsby_intro/gatsby_intro.txt,8,40,1166,7117,36907,41004,14474,13524
 gpt,tests/orwell_af/orwell_af.txt,8,40,1889,14579,73708,79769,25743,24121
 gpt,tests/gpt_med_w8/gpt_med_w8.txt,8,40,2263,2737,24982,22995,1295,1717
 gpt,tests/woolf_essays/woolf_essays.txt,8,40,2355,18471,99466,107138,35569,33836
+roberta-large,tests/dde_unspeech/dde_unspeech.txt,8,5,541,3675,18174,19729,6854,6484
+roberta-large,tests/gpt_gen_small_w8/gpt_gen_small_w8.txt,8,5,2,25,120,135,138,121
+roberta-large,tests/random_small/random_small.txt,8,5,3,26,165,187,168,152
+roberta-large,tests/random_med/random_med.txt,8,5,308,4975,23721,25682,9161,8528
+roberta-large,tests/falklands_wiki/falklands_wiki.txt,8,5,321,1894,9668,10561,4061,3902
+roberta-large,tests/mlk_vietnam/mlk_vietnam.txt,8,5,671,5551,27383,29595,10049,9614
+roberta-large,tests/sherlock_bpp/sherlock_bpp.txt,8,5,1526,15387,60966,65844,21696,20387
+roberta-large,tests/frederick_wiki/frederick_wiki.txt,8,5,96,619,3027,3342,1527,1472
+roberta-large,tests/obama_inaug/obama_inaug.txt,8,5,267,1756,8288,9075,3570,3446
+roberta-large,tests/simple_custom/simple_custom.txt,8,5,5,16,63,81,98,91
+roberta-large,tests/gatsby_intro/gatsby_intro.txt,8,5,1163,8754,36907,41250,14382,13524
+roberta-large,tests/orwell_af/orwell_af.txt,8,5,2080,17729,73708,81313,25995,24121
+roberta-large,tests/woolf_essays/woolf_essays.txt,8,5,2871,22275,99466,109899,35771,33836

@@ -11,7 +11,7 @@ seeds = ["The dog", "The carpenter saw the fog", "So the walrus said", "On a bal
 ]
 # seedpool = cycle(seeds)
 # words = ""
-for seed, ct in enumerate(seeds):
+for ct, seed in enumerate(seeds):
     with open('gpt_med_w8_seed' + str(ct) + ".txt", 'a+') as f:
         words = seed
         f.write(seed)

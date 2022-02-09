@@ -12,7 +12,7 @@ TEST_FOLDERS = [
 ]
 
 progressf = "runprogress.txt"
-WINDOW = 8
+WINDOW = 10
 # PIPELINE_MODELS = ["roberta-large", "google/electra-large-generator", "albert-base-v2", "microsoft/mpnet-base"]
 PIPELINE_MODELS = ["roberta-large"]
 # TODO- TEST IF MPNET SOLO WILL WORK WITH PIPELINE
@@ -30,7 +30,7 @@ def run_gpt():
             if not comparison:
                 pf.write("Diff test failed on " + folder + "\n")
                 pf.flush()
-        pf.write("GPT tests complete!")
+        pf.write("GPT tests complete!\n")
         pf.flush()
 
 def clear_files():
@@ -51,36 +51,38 @@ def basic_test_gpt():
         if not comparison:
             pf.write("Diff test failed on " + folder + "\n")
             pf.flush()
-        pf.write("GPT tests complete!")
+        pf.write("GPT tests complete!\n")
         pf.flush()
 
 def run_pipeline():
     with open(progressf, 'a') as pf:
         for model in PIPELINE_MODELS:
-            pf.write('Testing ' + model + ' model')
+            pf.write('Testing ' + model + ' model\n')
             for folder in TEST_FOLDERS:
-                pf.write('Running ' + model + ' test on ' + folder)
+                pf.write('Running ' + model + ' test on ' + folder + "\n")
+                pf.flush()
                 pipeline_encode(["tests/" + folder + "/" + folder + ".txt", model, str(WINDOW)])
                 pipeline_decode(["tests/" + folder + "/" + folder + ".txt.comp", model])
                 comparison = filecmp.cmp(
                 "tests/" + folder + "/" + folder + ".txt", "tests/" + folder + "/" + folder + ".txt.comp.plaintext", shallow=False
                 )
                 if not comparison:
-                    pf.write("Diff test failed on " + folder)
+                    pf.write("Diff test failed on " + folder + "\n")
                     pf.flush()
-        pf.write("Pipeline tests complete!")
+        pf.write("Pipeline tests complete!\n")
 
 
 def main(argv):
     with open(progressf, 'a') as pf:
-       # pf.write('Running GPT tests')
-       # pf.flush()
+        clear_files()
+        pf.write('Running GPT tests\n')
+        pf.flush()
         # basic_test_gpt()
-       # run_gpt()
-        # pf.write('Clearing files...')
-        # pf.flush()
-        # clear_files()
-        pf.write('Running pipeline tests')
+        run_gpt()
+        pf.write('Clearing files...\n')
+        pf.flush()
+        clear_files()
+        pf.write('Running pipeline tests\n')
         pf.flush()
         run_pipeline()
         # pf.write('Clearing files...')
