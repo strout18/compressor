@@ -5,7 +5,7 @@ from pipeline.encoder import pipeline_encode
 from pipeline.decoder import pipeline_decode
 from glob import glob
 
-TEST_FOLDERS = ["gpt_med_w8"]
+TEST_FOLDERS = ["gpt_med_w8_v5"]
 
 progressf = "deletemelater.txt"
 WINDOW = 8
@@ -69,9 +69,9 @@ def run_pipeline():
 
 def main(argv):
     with open(progressf, 'a') as pf:
-        pf.write('Clearing files...')
-        pf.flush()
-        clear_files()
+        # pf.write('Clearing files...')
+        # pf.flush()
+        # clear_files()
         pf.write('Running GPT tests')
         pf.flush()
         # basic_test_gpt()
