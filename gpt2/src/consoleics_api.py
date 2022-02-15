@@ -5,7 +5,8 @@ import os
 import numpy as np
 import tensorflow as tf
 
-import model, sample, encoder
+import model, encoder
+import consolesample as sample
 
 # stella's custom functions
 
