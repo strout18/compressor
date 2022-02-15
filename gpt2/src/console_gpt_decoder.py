@@ -1,5 +1,5 @@
 import sys
-import ics_api as ics
+import consoleics_api as ics
 import regex as re
 import intermediateencoding as ie
  
