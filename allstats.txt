@@ -26,3 +26,15 @@ roberta-large,tests/simple_custom/simple_custom.txt,8,5,5,16,63,81,98,91
 roberta-large,tests/gatsby_intro/gatsby_intro.txt,8,5,1163,8754,36907,41250,14382,13524
 roberta-large,tests/orwell_af/orwell_af.txt,8,5,2080,17729,73708,81313,25995,24121
 roberta-large,tests/woolf_essays/woolf_essays.txt,8,5,2871,22275,99466,109899,35771,33836
+gpt,tests/dde_unspeech/dde_unspeech.txt,10,40,602,2938,18174,19637,6832,6484
+gpt,tests/gpt_gen_small_w8/gpt_gen_small_w8.txt,10,40,14,11,120,99,104,121
+gpt,tests/random_small/random_small.txt,10,40,0,24,165,175,164,152
+gpt,tests/random_med/random_med.txt,10,40,60,4289,23721,24178,8740,8528
+gpt,tests/falklands_wiki/falklands_wiki.txt,10,40,278,1421,9668,10441,4073,3902
+gpt,tests/mlk_vietnam/mlk_vietnam.txt,10,40,799,4577,27383,29590,10115,9614
+gpt,tests/sherlock_bpp/sherlock_bpp.txt,10,40,1746,12918,60966,65746,21756,20387
+gpt,tests/frederick_wiki/frederick_wiki.txt,10,40,99,465,3027,3331,1531,1472
+gpt,tests/obama_inaug/obama_inaug.txt,10,40,303,1409,8288,8956,3577,3446
+gpt,tests/simple_custom/simple_custom.txt,10,40,6,10,63,71,91,91
+gpt,tests/gatsby_intro/gatsby_intro.txt,10,40,1215,7068,36907,41066,14461,13524
+gpt,tests/orwell_af/orwell_af.txt,10,40,2038,14430,73708,79890,25718,24121
