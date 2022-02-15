@@ -26,7 +26,7 @@ def gpt_decode(argv):
         guessc = ftxt[pointer:guess_cutoff]
         guesslen = len(guessc)
         if int(guessc) == 0:
-            # print("Guess char was 0")
+            print("Guess char was 0")
             pointer += guesslen + 1 # move pointer to beginning of number bits, comma
             len_cutoff = ftxt.index(',', pointer)
             lenchars = ftxt[pointer : len_cutoff]
@@ -37,20 +37,20 @@ def gpt_decode(argv):
             txtchars = ftxt[pointer:pointer+txtlen]    # chunk of unguessed text
             # print ("txtchars " + txtchars)
             decoded = "".join(txtchars)
-            # print("decoded as " + decoded)
+            print("decoded as " + decoded)
             total_decoding += decoded
             # print ("total decoding now " + total_decoding)
             pointer += txtlen + 1 #push pointer to next section, with comma
         else:
-            # print ("Guess char was " + guessc)
+            print ("Guess char was " + guessc)
             pat = re.compile(r"""'s|'t|'re|'ve|'m|'ll|'d| ?\p{L}+| ?\p{N}+| ?[^\s\p{L}\p{N}]+|\s+(?!\S)|\s+""") # from encoder.py
             for _ in range(int(guessc)):
                 decoding_arr = re.findall(pat, total_decoding)
-                # print ("decoding arr " + str(decoding_arr))
+                print ("decoding arr " + str(decoding_arr))
                 prev = ics.slice_window(window, decoding_arr, len(decoding_arr))
-                # print ("Running with prev " + prev)
+                print ("Running with prev " + prev)
                 guess = ics.run_model(prev, length=1, top_k=40)
-                # print ("Guess is " + guess)
+                print ("Guess is " + guess)
                 total_decoding += guess
                 # print ("Total decoding now " + total_decoding)
             pointer += guesslen + 1 # push pointer to next section, comma
