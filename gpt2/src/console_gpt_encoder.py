@@ -27,10 +27,12 @@ def dump_incorrect(incorrect, total_encoding):
 
 def dump_correct(guessct, total_encoding):
     # how much to pad to?
+    print("guessct a " + str(guessct))
     if guessct > 0:
         total_encoding += str(guessct) + ","
         # print ("Total encoding now " + total_encoding)
         guessct = 0
+    print("guessct b " + str(guessct))
     return guessct, total_encoding
 
 # splits array according to decided standards - talk about this in thesis?
@@ -68,14 +70,15 @@ def gpt_encode(argv):
             print("Calling extend_encoding on wd \"" + wd + "\" with prev \"" + prev)
             # global guessct, incorrect, total, compressed
             # print ("The current word is " + wd + "and the previous word is " + prev)
+            # print ("Guesscount is " + str(guessct))
             if prev:
                 guess = ics.run_model(prev, length=1, top_k=TOP_K)
-                # print ("The guess is " + guess)
+                print ("The guess is " + guess)
             if prev and guess == wd:
                 # print ("Guess was correct")
                 guessct += 1
                 compressed += 1
-                # print ("Guesscount " + str(guessct))
+                print ("Guesscount " + str(guessct))
                 # print ("Dumping incorrect")
                 # print (incorrect)
                 print("Dumping incorrect, guess was correct")
@@ -83,7 +86,7 @@ def gpt_encode(argv):
                 print ("encoding is now " + total_encoding)
             else:
                 print ("Guess was incorrect")
-                # print ("Guess count:" + str(guessct))
+                print ("Guess count:" + str(guessct))
                 print ("Dumping correct")
                 guessct, total_encoding = dump_correct(guessct, total_encoding)
                 incorrect += wd
