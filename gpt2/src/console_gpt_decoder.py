@@ -43,7 +43,7 @@ def gpt_decode(argv):
             pointer += txtlen + 1 #push pointer to next section, with comma
         else:
             print ("Guess char was " + guessc)
-            pat = re.compile(r"""'s|'t|'re|'ve|'m|'ll|'d| ?\p{L}+| ?\p{N}+| ?[^\s\p{L}\p{N}]+|\s+(?!\S)|\s+""") # from encoder.py
+            pat = re.compile(r"""'s|'t|'re|'ve|'m|'ll|\n|'d| ?\p{L}+| ?\p{N}+| ?[^\s\p{L}\p{N}]+|\s+(?!\S)|\s+""") # from encoder.py
             for _ in range(int(guessc)):
                 decoding_arr = re.findall(pat, total_decoding)
                 print ("decoding arr " + str(decoding_arr))

@@ -37,7 +37,7 @@ def dump_correct(guessct, total_encoding):
 
 # splits array according to decided standards - talk about this in thesis?
 def cleansplit(txtstr):
-    pat = re.compile(r"""'s|'t|'re|'ve|'m|'ll|'d| ?\p{L}+| ?\p{N}+| ?[^\s\p{L}\p{N}]+|\s+(?!\S)|\s+""") # from encoder.py
+    pat = re.compile(r"""'s|'t|'re|'ve|'m|'ll|\n|'d| ?\p{L}+| ?\p{N}+| ?[^\s\p{L}\p{N}]+|\s+(?!\S)|\s+""") # from encoder.py
     return re.findall(pat, txtstr)
 
 # NOTE : test file that ends in new line
