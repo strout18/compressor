@@ -46,7 +46,7 @@ def gpt_decode(argv):
             pat = re.compile(r"""'s|'t|'re|'ve|'m|'ll|'d| ?\p{L}+| ?\p{N}+| ?[^\s\p{L}\p{N}]+|\s+(?!\S)|\s+""") # from encoder.py
             for _ in range(int(guessc)):
                 decoding_arr = re.findall(pat, total_decoding)
-                # print ("decoding arr " + str(decoding_arr))
+                print ("decoding arr " + str(decoding_arr))
                 prev = ics.slice_window(window, decoding_arr, len(decoding_arr))
                 print ("Running with prev " + prev)
                 guess = ics.run_model(prev, length=1, top_k=40)
