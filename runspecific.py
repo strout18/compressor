@@ -34,15 +34,16 @@ def clear_files():
         os.remove(f)
 
 def basic_test_gpt():
+    # nb PATH IS DIFFERENT
     with open(progressf, 'a') as pf:
-        folder = "simple_custom"
+        folder = "gpt_med_w8_v5"
         pf.write('Running GPT test on ' + folder + "\n")
         print('Running GPT test on ' + folder + "\n")
         pf.flush()
-        gpt_encode(["tests/" + folder + "/" + folder + ".txt", str(WINDOW)])
-        gpt_decode(["tests/" + folder + "/" + folder + ".txt.comp"])
+        gpt_encode([folder + "/" + folder + ".txt", str(WINDOW)])
+        gpt_decode([folder + "/" + folder + ".txt.comp"])
         comparison = filecmp.cmp(
-                "tests" + "/" + folder + "/" + folder + ".txt", "tests" + "/" + folder + "/" + folder + ".txt.comp.plaintext", shallow=False
+                folder + "/" + folder + ".txt", folder + "/" + folder + ".txt.comp.plaintext", shallow=False
             )
         if not comparison:
             pf.write("Diff test failed on " + folder + "\n")
@@ -74,8 +75,8 @@ def main(argv):
         # clear_files()
         pf.write('Running GPT tests')
         pf.flush()
-        # basic_test_gpt()
-        run_gpt()
+        basic_test_gpt()
+        # run_gpt()
         # pf.write('Clearing files...')
         # pf.flush()
         # clear_files()
