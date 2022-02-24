@@ -13,6 +13,7 @@ TEST_FOLDERS = [
 
 progressf = "runprogress.txt"
 WINDOW = 5
+failf = "failures.txt"
 # PIPELINE_MODELS = ["roberta-large", "google/electra-large-generator", "albert-base-v2", "microsoft/mpnet-base"]
 PIPELINE_MODELS = ["roberta-large"]
 # TODO- TEST IF MPNET SOLO WILL WORK WITH PIPELINE
@@ -28,6 +29,8 @@ def run_gpt():
                 "tests" + "/" + folder + "/" + folder + ".txt", "tests" + "/" + folder + "/" + folder + ".txt.comp.plaintext", shallow=False
             )
             if not comparison:
+                with open(failf, 'a') as ff:
+                    ff.write("Failure with model gpt on folder "  + folder +  "with a top_k of ? and a window of " + str(WINDOW))
                 pf.write("Diff test failed on " + folder + "\n")
                 pf.flush()
         pf.write("GPT tests complete!\n")
@@ -49,6 +52,8 @@ def basic_test_gpt():
                 "tests/" + folder + "/" + folder + ".txt", "tests/" + folder + "/" + folder + ".txt.comp.plaintext", shallow=False
             )
         if not comparison:
+            with open(failf, 'a') as ff:
+                ff.write("Failure with model gpt on folder "  + folder +  "with a top_k of ? and a window of " + str(WINDOW))
             pf.write("Diff test failed on " + folder + "\n")
             pf.flush()
         pf.write("GPT tests complete!\n")
@@ -67,6 +72,8 @@ def run_pipeline():
                 "tests/" + folder + "/" + folder + ".txt", "tests/" + folder + "/" + folder + ".txt.comp.plaintext", shallow=False
                 )
                 if not comparison:
+                    with open(failf, 'a') as ff:
+                        ff.write("Failure with model " + model + " on folder "  + folder +  "with a top_k of ? and a window of " + str(WINDOW))
                     pf.write("Diff test failed on " + folder + "\n")
                     pf.flush()
         pf.write("Pipeline tests complete!\n")
