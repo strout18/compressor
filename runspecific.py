@@ -36,7 +36,7 @@ def clear_files():
 def basic_test_gpt():
     # nb PATH IS DIFFERENT
     with open(progressf, 'a') as pf:
-        folder = "gpt_med_w8_v5"
+        folder = "mne_gptw8"
         pf.write('Running GPT test on ' + folder + "\n")
         print('Running GPT test on ' + folder + "\n")
         pf.flush()

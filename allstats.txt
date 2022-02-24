@@ -63,3 +63,10 @@ gpt,tests/frederick_wiki/frederick_wiki.txt,16,40,107,457,3027,3339,1524,1472
 gpt,tests/obama_inaug/obama_inaug.txt,16,40,340,1372,8288,9015,3552,3446
 gpt,tests/simple_custom/simple_custom.txt,16,40,6,10,63,71,90,91
 gpt,tests/gatsby_intro/gatsby_intro.txt,16,40,1414,6869,36907,41248,14453,13524
+gpt,tests/dde_unspeech/dde_unspeech.txt,5,40,504,3036,18174,19635,6860,6484
+gpt,tests/gpt_gen_small_w8/gpt_gen_small_w8.txt,5,40,7,18,120,139,134,121
+gpt,tests/random_small/random_small.txt,5,40,0,24,165,174,163,152
+gpt,tests/random_med/random_med.txt,5,40,30,4319,23721,23949,8689,8528
+gpt,tests/falklands_wiki/falklands_wiki.txt,5,40,243,1456,9668,10395,4065,3902
+gpt,tests/orwell_af/orwell_af.txt,16,40,2410,14058,73708,80458,25749,24121
+gpt,tests/mlk_vietnam/mlk_vietnam.txt,5,40,667,4709,27383,29464,10076,9614

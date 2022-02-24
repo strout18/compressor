@@ -12,7 +12,7 @@ TEST_FOLDERS = [
 ]
 
 progressf = "runprogress.txt"
-WINDOW = 10
+WINDOW = 5
 # PIPELINE_MODELS = ["roberta-large", "google/electra-large-generator", "albert-base-v2", "microsoft/mpnet-base"]
 PIPELINE_MODELS = ["roberta-large"]
 # TODO- TEST IF MPNET SOLO WILL WORK WITH PIPELINE
