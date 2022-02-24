@@ -1,4 +1,4 @@
-import sys, filecmp, os
+import sys, filecmp, os, shutil
 from gpt2.src.gpt_encoder import gpt_encode
 from gpt2.src.gpt_decoder import gpt_decode
 from pipeline.encoder import pipeline_encode
@@ -13,6 +13,7 @@ TEST_FOLDERS = [
 
 progressf = "runprogress.txt"
 WINDOW = 5
+TOP_K = 40
 failf = "failures.txt"
 # PIPELINE_MODELS = ["roberta-large", "google/electra-large-generator", "albert-base-v2", "microsoft/mpnet-base"]
 PIPELINE_MODELS = ["roberta-large"]
@@ -23,22 +24,26 @@ def run_gpt():
         for folder in TEST_FOLDERS:
             pf.write('Running GPT test on ' + folder + "\n")
             pf.flush()
-            gpt_encode(["tests/" + folder + "/" + folder + ".txt", str(WINDOW)])
-            gpt_decode(["tests/" + folder + "/" + folder + ".txt.comp"])
+            newfolderstr = "MgptW" + str(WINDOW) + "K" + str(TOP_K)
+            newfolder = "tests/" + folder + "/" + newfolderstr
+            os.mkdir(newfolder)
+            shutil.copy("tests/" + folder + "/" + folder + ".txt", newfolder)
+            gpt_encode([newfolder + "/" + folder + ".txt", str(WINDOW), str(TOP_K)])
+            gpt_decode([newfolder + "/" + folder + ".txt.comp", str(TOP_K)])
             comparison = filecmp.cmp(
-                "tests" + "/" + folder + "/" + folder + ".txt", "tests" + "/" + folder + "/" + folder + ".txt.comp.plaintext", shallow=False
+                newfolder + "/" + folder + ".txt", newfolder + "/" + folder + ".txt.comp.plaintext", shallow=False
             )
             if not comparison:
                 with open(failf, 'a') as ff:
-                    ff.write("Failure with model gpt on folder "  + folder +  "with a top_k of ? and a window of " + str(WINDOW))
+                    ff.write("Failure with model gpt on folder "  + folder +  "with a top_k of " + str(TOP_K) + " and a window of " + str(WINDOW))
                 pf.write("Diff test failed on " + folder + "\n")
                 pf.flush()
         pf.write("GPT tests complete!\n")
         pf.flush()
 
-def clear_files():
-    for f in glob('./tests/*/*.txt.*'):
-        os.remove(f)
+# def clear_files():
+#     for f in glob('./tests/*/*.txt.*'):
+#         os.remove(f)
 
 def basic_test_gpt():
     with open(progressf, 'a') as pf:
@@ -46,14 +51,16 @@ def basic_test_gpt():
         pf.write('Running GPT test on ' + folder + "\n")
         print('Running GPT test on ' + folder + "\n")
         pf.flush()
-        gpt_encode(["tests/" + folder + "/" + folder + ".txt", str(WINDOW)])
-        gpt_decode(["tests/" + folder + "/" + folder + ".txt.comp"])
-        comparison = filecmp.cmp(
-                "tests/" + folder + "/" + folder + ".txt", "tests/" + folder + "/" + folder + ".txt.comp.plaintext", shallow=False
-            )
+        newfolderstr = "MgptW" + str(WINDOW) + "K" + str(TOP_K)
+        newfolder = "tests/" + folder + "/" + newfolderstr
+        os.mkdir(newfolder)
+        shutil.copy("tests/" + folder + "/" + folder + ".txt", newfolder)
+        gpt_encode([newfolder + "/" + folder + ".txt", str(WINDOW), str(TOP_K)])
+        gpt_decode([newfolder + "/" + folder + ".txt.comp", str(TOP_K)])
+        comparison = filecmp.cmp(newfolder + "/" + folder + ".txt", newfolder + "/" + folder + ".txt.comp.plaintext", shallow=False)
         if not comparison:
             with open(failf, 'a') as ff:
-                ff.write("Failure with model gpt on folder "  + folder +  "with a top_k of ? and a window of " + str(WINDOW))
+                ff.write("Failure with model gpt on folder "  + folder +  "with a top_k of " + str(TOP_K) + " and a window of " + str(WINDOW))
             pf.write("Diff test failed on " + folder + "\n")
             pf.flush()
         pf.write("GPT tests complete!\n")
@@ -66,11 +73,13 @@ def run_pipeline():
             for folder in TEST_FOLDERS:
                 pf.write('Running ' + model + ' test on ' + folder + "\n")
                 pf.flush()
+                newfolderstr = "M" + model + str(WINDOW) + "K" + str(TOP_K)
+                newfolder = "tests/" + folder + "/" + newfolderstr
+                os.mkdir(newfolder)
+                shutil.copy("tests/" + folder + "/" + folder + ".txt", newfolder)
                 pipeline_encode(["tests/" + folder + "/" + folder + ".txt", model, str(WINDOW)])
                 pipeline_decode(["tests/" + folder + "/" + folder + ".txt.comp", model])
-                comparison = filecmp.cmp(
-                "tests/" + folder + "/" + folder + ".txt", "tests/" + folder + "/" + folder + ".txt.comp.plaintext", shallow=False
-                )
+                comparison = filecmp.cmp(newfolder + "/" + folder + ".txt", newfolder + "/" + folder + ".txt.comp.plaintext", shallow=False)
                 if not comparison:
                     with open(failf, 'a') as ff:
                         ff.write("Failure with model " + model + " on folder "  + folder +  "with a top_k of ? and a window of " + str(WINDOW))
@@ -81,19 +90,16 @@ def run_pipeline():
 
 def main(argv):
     with open(progressf, 'a') as pf:
-        clear_files()
         pf.write('Running GPT tests\n')
         pf.flush()
         # basic_test_gpt()
         run_gpt()
         pf.write('Clearing files...\n')
         pf.flush()
-        clear_files()
         pf.write('Running pipeline tests\n')
         pf.flush()
         run_pipeline()
         # pf.write('Clearing files...')
-       # clear_files()
         pf.write('All tests complete!')
 
 if __name__ == "__main__":

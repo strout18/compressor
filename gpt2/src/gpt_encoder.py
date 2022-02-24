@@ -4,7 +4,6 @@ import regex as re
 from gpt2.src import intermediateencoding as ie
 
 statfile = "allstats.txt"
-TOP_K = 40
 
 # TODO trim off final comma?
 
@@ -52,7 +51,8 @@ def gpt_encode(argv):
     print ("HERE 123")
 
     infile = argv[0]    # file name
-    window = argv[1] if len(argv) == 2 else "1"  # window of prev words (0 = from last period?)  
+    window = argv[1] if len(argv) == 2 else "1"  # window of prev words (0 = from last period?)
+    TOP_K = argv[2] if len(argv) >= 3 else "40"  
     # should prob error check command line args
     out_intermfile = infile + ".interm"  # file name
     with open(infile, 'r') as inf:
@@ -69,7 +69,7 @@ def gpt_encode(argv):
             # global guessct, incorrect, total, compressed
             # print ("The current word is " + wd + "and the previous word is " + prev)
             if prev:
-                guess = ics.run_model(prev, length=1, top_k=TOP_K)
+                guess = ics.run_model(prev, length=1, top_k=int(TOP_K))
                 # print ("The guess is " + guess)
             if prev and guess == wd:
                 # print ("Guess was correct")

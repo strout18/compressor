@@ -12,6 +12,7 @@ def read_window(txt):
 def gpt_decode(argv):
     total_decoding = ""
     infile = argv[0]    # file name
+    TOP_K = argv[2] if len(argv) >= 3 else "40"  
     # window = int(argv[1])    # do error checking
     outfile = infile + ".plaintext"  # file name
     ftxt = ie.uncrunch_bz2(infile)
@@ -49,7 +50,7 @@ def gpt_decode(argv):
                 print ("decoding arr " + str(decoding_arr))
                 prev = ics.slice_window(window, decoding_arr, len(decoding_arr))
                 print ("Running with prev " + prev)
-                guess = ics.run_model(prev, length=1, top_k=40)
+                guess = ics.run_model(prev, length=1, top_k=int(TOP_K))
                 print ("Guess is " + guess)
                 total_decoding += guess
                 # print ("Total decoding now " + total_decoding)
