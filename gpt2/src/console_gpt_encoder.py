@@ -4,7 +4,7 @@ import regex as re
 import intermediateencoding as ie
 
 # statfile = "allstats.txt"
-TOP_K = 40
+TOP_K = 20
 
 # TODO trim off final comma?
 
