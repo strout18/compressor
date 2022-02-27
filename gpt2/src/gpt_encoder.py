@@ -51,7 +51,7 @@ def gpt_encode(argv):
     print ("HERE 123")
 
     infile = argv[0]    # file name
-    window = argv[1] if len(argv) == 2 else "1"  # window of prev words (0 = from last period?)
+    window = argv[1] if len(argv) >= 2 else "1"  # window of prev words (0 = from last period?)
     TOP_K = argv[2] if len(argv) >= 3 else "40"  
     # should prob error check command line args
     out_intermfile = infile + ".interm"  # file name
