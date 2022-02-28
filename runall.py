@@ -8,12 +8,12 @@ from glob import glob
 TEST_FOLDERS = [
     "dde_unspeech", "gpt_gen_small_w8", "random_small", "random_med", "falklands_wiki", "mlk_vietnam",
     "sherlock_bpp", "frederick_wiki", "obama_inaug", "simple_custom", "gatsby_intro", 
-    "orwell_af", "woolf_essays"
+    "orwell_af", "woolf_essays", "gpt_med_w8_v5"
 ]
 
 progressf = "runprogress.txt"
-WINDOW = 5
-TOP_K = 40
+WINDOW = 8
+TOP_K = 50
 failf = "failures.txt"
 # PIPELINE_MODELS = ["roberta-large", "google/electra-large-generator", "albert-base-v2", "microsoft/mpnet-base"]
 PIPELINE_MODELS = ["roberta-large"]
@@ -94,12 +94,9 @@ def main(argv):
         pf.flush()
         # basic_test_gpt()
         run_gpt()
-        pf.write('Clearing files...\n')
-        pf.flush()
-        pf.write('Running pipeline tests\n')
-        pf.flush()
-        run_pipeline()
-        # pf.write('Clearing files...')
+        # pf.write('Running pipeline tests\n')
+        # pf.flush()
+        # run_pipeline()
         pf.write('All tests complete!')
 
 if __name__ == "__main__":
