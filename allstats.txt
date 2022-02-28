@@ -90,4 +90,3 @@ roberta-large,tests/orwell_af/orwell_af.txt,16,5,2749,17729,73708,82878,26119,24
 roberta-large,tests/woolf_essays/woolf_essays.txt,16,5,3522,22275,99466,111204,35729,33836
 gpt,tests/gatsby_intro/gatsby_intro.txt,5,40,1002,7281,36907,40728,14458,13524
 gpt,tests/orwell_af/orwell_af.txt,5,40,1572,14896,73708,79079,25638,24121
-gpt,tests/gatsby_intro/MgptW8K20/gatsby_intro.txt,1,20,428,7855,36907,39076,14198,13524
