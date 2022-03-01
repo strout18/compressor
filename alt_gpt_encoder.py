@@ -6,22 +6,27 @@ from gpt2.src import intermediateencoding as ie
 statfile = "teststats.txt"
 window = 8
 TOP_K = 40
+declare_length = True
 
 # TODO trim off final comma?
 
 def on_correct(incorrect, numbers):
+    global declare_length
     # dump the buffer of incorrects into encoding
-    if len(incorrect) > 0:
+    if declare_length:
         txt = '0,'
         txt += str(len(incorrect)) + ","
         print ("Length of incorrect is " + str(len(incorrect)))
         print ("Str with guess and len: " + txt)
         numbers += txt
+        declare_length = False
         # print ("Extending from incorrect. Total encoding is now " + total_encoding)
     return numbers
 
 def on_incorrect(guessct, numbers):
     # how much to pad to?
+    global declare_length
+    declare_length = True
     if guessct > 0:
         numbers += str(guessct) + ","
         # print ("Total encoding now " + total_encoding)
