@@ -3,7 +3,7 @@ from gpt2.src import ics_api as ics
 import regex as re
 from gpt2.src import intermediateencoding as ie
 
-statfile = "teststats.txt"
+statfile = "altstats.txt"
 window = 8
 TOP_K = 40
 declare_length = True

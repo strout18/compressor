@@ -20,7 +20,7 @@ def gpt_decode(argv):
     # print ("reading window as " + str(window))
     numpointer = 0
     tkpointer = 0
-    encodingsplit = ftxt.find('/n') # division between numbers and incorrect
+    encodingsplit = ftxt.find('\n') # division between numbers and incorrect
     numbers = ftxt[:encodingsplit]
     incorrect = ftxt[encodingsplit+1:]
     print ("numbers are ")
