@@ -12,7 +12,7 @@ def read_window(txt):
 def gpt_decode(argv):
     total_decoding = ""
     infile = argv[0]    # file name
-    TOP_K = argv[2] if len(argv) >= 3 else "40"  
+    TOP_K = argv[1] if len(argv) >= 2 else "40"  
     # window = int(argv[1])    # do error checking
     outfile = infile + ".plaintext"  # file name
     ftxt = ie.uncrunch_bz2(infile)
