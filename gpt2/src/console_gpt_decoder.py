@@ -17,7 +17,7 @@ def gpt_decode(argv):
     ftxt = ie.uncrunch_bz2(infile)
     # with open(infile, 'r') as inf:
     #     ftxt = inf.read()
-    # print (ftxt)
+    print (ftxt)
     window = read_window(ftxt)
     # print ("reading window as " + str(window))
     pointer = len(str(window)) + 1  # trailing comma
