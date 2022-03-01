@@ -90,16 +90,3 @@ roberta-large,tests/orwell_af/orwell_af.txt,16,5,2749,17729,73708,82878,26119,24
 roberta-large,tests/woolf_essays/woolf_essays.txt,16,5,3522,22275,99466,111204,35729,33836
 gpt,tests/gatsby_intro/gatsby_intro.txt,5,40,1002,7281,36907,40728,14458,13524
 gpt,tests/orwell_af/orwell_af.txt,5,40,1572,14896,73708,79079,25638,24121
-gpt,tests/dde_unspeech/MgptW8K20/dde_unspeech.txt,8,20,615,2925,18174,19572,6834,6484
-gpt,tests/gpt_gen_small_w8/MgptW8K20/gpt_gen_small_w8.txt,8,20,9,16,120,138,126,121
-gpt,tests/random_small/MgptW8K20/random_small.txt,8,20,0,24,165,174,165,152
-gpt,tests/dde_unspeech/MgptW8K50/dde_unspeech.txt,8,50,557,2983,18174,19600,6838,6484
-gpt,tests/gpt_gen_small_w8/MgptW8K50/gpt_gen_small_w8.txt,8,50,18,7,120,68,87,121
-gpt,tests/random_small/MgptW8K50/random_small.txt,8,50,0,24,165,174,165,152
-gpt,tests/random_med/MgptW8K20/random_med.txt,8,20,57,4292,23721,24148,8749,8528
-gpt,tests/random_med/MgptW8K50/random_med.txt,8,50,46,4303,23721,24075,8709,8528
-gpt,tests/falklands_wiki/MgptW8K20/falklands_wiki.txt,8,20,290,1409,9668,10422,4057,3902
-gpt,tests/gpt_gen_small_w8_test/MgptW8K50/gpt_gen_small_w8_test.txt,8,50,18,7,120,68,87,121
-gpt,tests/gpt_gen_small_w8_test/MgptW8K50/gpt_gen_small_w8_test.txt,8,50,18,7,120,68,87,121
-gpt,tests/falklands_wiki/MgptW8K50/falklands_wiki.txt,8,50,248,1451,9668,10361,4049,3902
-gpt,tests/gpt_gen_small_w8_test/MgptW8K50/gpt_gen_small_w8_test.txt,8,50,18,7,120,68,87,121
