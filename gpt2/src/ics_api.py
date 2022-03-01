@@ -41,6 +41,8 @@ def run_model(
      :models_dir : path to parent folder containing model subfolders
      (i.e. contains the <model_name> folder)
     """
+    print("Running with top_k " + str(top_k))
+    print (txt)
     models_dir = os.path.expanduser(os.path.expandvars(models_dir))
     if batch_size is None:
         batch_size = 1
@@ -84,6 +86,8 @@ def slice_window(winlen, txtarr, index):
     # todo deal with when winlen = 0
     # if index == 0:
     #     return txtarr[0]
+    print("winlen " + str(winlen))
+    print("index " + str(index))
     if index < winlen:  # slice from start of line til word if line (up til word) is shorter than window
         return "".join(txtarr[:index])
     else:

@@ -42,6 +42,8 @@ def run_model(
      :models_dir : path to parent folder containing model subfolders
      (i.e. contains the <model_name> folder)
     """
+    print("Running with top_k " + str(top_k))
+    print (txt)
     models_dir = os.path.expanduser(os.path.expandvars(models_dir))
     if batch_size is None:
         batch_size = 1
