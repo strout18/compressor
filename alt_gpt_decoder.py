@@ -21,12 +21,12 @@ def gpt_decode(argv):
     numpointer = 0
     tkpointer = 0
     encodingsplit = ftxt.find('/n') # division between numbers and incorrect
+    numbers = ftxt[:encodingsplit]
+    incorrect = ftxt[encodingsplit+1:]
     print ("numbers are ")
     print (numbers)
     print ("incorrect")
     print (incorrect)
-    numbers = ftxt[:encodingsplit]
-    incorrect = ftxt[encodingsplit+1:]
     while numpointer < len(numbers):
         guess_cutoff = numbers.index(',', numpointer)
         guessc = numbers[numpointer:guess_cutoff]
