@@ -21,6 +21,10 @@ def gpt_decode(argv):
     numpointer = 0
     tkpointer = 0
     encodingsplit = ftxt.find('/n') # division between numbers and incorrect
+    print ("numbers are ")
+    print (numbers)
+    print ("incorrect")
+    print (incorrect)
     numbers = ftxt[:encodingsplit]
     incorrect = ftxt[encodingsplit+1:]
     while numpointer < len(numbers):
@@ -34,7 +38,7 @@ def gpt_decode(argv):
             lenchars = numbers[numpointer:len_cutoff]
             print ("lenchars are " + lenchars)
             txtlen = int(lenchars)    # gives num of chars in current chunk of unguessed text
-            print("txtlen " + txtlen)
+            print("txtlen " + str(txtlen))
             numpointer += len(lenchars) + 1
             txtchars = incorrect[tkpointer:tkpointer+txtlen]    # chunk of unguessed text
             print("decoded as " + txtchars)
