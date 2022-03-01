@@ -62,6 +62,7 @@ def gpt_encode(argv):
         #print("Writing window")
         total_encoding = write_window(window, total_encoding)
         #print ("Encoding now " + total_encoding)
+        print ("window is " + window) 
         splat = cleansplit(ftxt)
         print(splat)
         for ct, wd in enumerate(splat):  

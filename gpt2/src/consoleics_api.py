@@ -85,6 +85,9 @@ def slice_window(winlen, txtarr, index):
     # todo deal with when winlen = 0
     # if index == 0:
     #     return txtarr[0]
+    print("winlen " + str(winlen))
+    print("index " + str(index))
+    print(txtarr)
     if index < winlen:  # slice from start of line til word if line (up til word) is shorter than window
         return "".join(txtarr[:index])
     else:
