@@ -10,18 +10,20 @@ declare_length = True
 
 # TODO trim off final comma?
 
-def on_correct(incorrect, numbers):
+def on_correct(curr_incorrect, numbers):
     global declare_length
     # dump the buffer of incorrects into encoding
     if declare_length:
         txt = '0,'
-        txt += str(len(incorrect)) + ","
-        print ("Length of incorrect is " + str(len(incorrect)))
+        txt += str(len(curr_incorrect)) + ","
+        print("curr_incorrect is " + curr_incorrect)
+        print ("Length of incorrect is " + str(len(curr_incorrect)))
         print ("Str with guess and len: " + txt)
         numbers += txt
         declare_length = False
+        curr_incorrect = ""
         # print ("Extending from incorrect. Total encoding is now " + total_encoding)
-    return numbers
+    return curr_incorrect, numbers
 
 def on_incorrect(guessct, numbers):
     # how much to pad to?
@@ -50,6 +52,7 @@ def gpt_encode(argv):
     guessct = 0
     compressed = 0
     total = 0
+    curr_incorrect = ""
 
     infile = argv[0]    # file name 
     # should prob error check command line args
@@ -77,7 +80,7 @@ def gpt_encode(argv):
                 # print ("Dumping incorrect")
                 # print (incorrect)
                 print("Dumping incorrect, guess was correct")
-                numbers = on_correct(incorrect, numbers)  # clear out incorrect buffer before logging correct
+                curr_incorrect, numbers = on_correct(curr_incorrect, numbers)  # clear out incorrect buffer before logging correct
                 print ("numbers is now " + numbers)
             else:
                 print ("Guess was incorrect")
@@ -85,6 +88,7 @@ def gpt_encode(argv):
                 print ("Dumping correct")
                 guessct, numbers = on_incorrect(guessct, numbers)
                 incorrect += wd
+                curr_incorrect += wd
                 print ("incorrect is now " + incorrect)
                 total += 1
             # extend_encoding(wd, prev, guessct, incorrect, total, compressed)  # bitarray
