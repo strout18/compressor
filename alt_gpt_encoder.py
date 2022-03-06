@@ -93,7 +93,7 @@ def gpt_encode(argv):
                 total += 1
             # extend_encoding(wd, prev, guessct, incorrect, total, compressed)  # bitarray
         #print ("Final dump of correct")
-        numbers = on_correct(incorrect, numbers)
+        curr_incorrect, numbers = on_correct(curr_incorrect, numbers)
         #print ("Final dump of incorrect")
         guessct, numbers = on_incorrect(guessct, numbers) # clear buffer after each line
 
