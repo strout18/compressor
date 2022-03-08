@@ -3,7 +3,6 @@ from alt_gpt_encoder import gpt_encode
 from alt_gpt_decoder import gpt_decode
 from pipeline.encoder import pipeline_encode
 from pipeline.decoder import pipeline_decode
-from glob import glob
 
 TEST_FOLDERS = [
     "dde_unspeech", "gpt_gen_small_w8", "random_small", "random_med", "falklands_wiki", "mlk_vietnam",
@@ -11,9 +10,9 @@ TEST_FOLDERS = [
     "orwell_af", "woolf_essays", "gpt_med_w8_v5"
 ]
 
-progressf = "altrunprogress.txt"
-WINDOW = 8
+WINDOW = 10
 TOP_K = 40
+progressf = "ALT/failures/altrunprogressW" + str(WINDOW) + "K" + str(TOP_K) + ".txt"
 failf = "altfailures.txt"
 # PIPELINE_MODELS = ["roberta-large", "google/electra-large-generator", "albert-base-v2", "microsoft/mpnet-base"]
 # PIPELINE_MODELS = ["roberta-large"]
@@ -21,7 +20,7 @@ PIPELINE_MODELS = []
 # TODO- TEST IF MPNET SOLO WILL WORK WITH PIPELINE
 
 def run_gpt():
-    with open(progressf, 'a') as pf:
+    with open(progressf, 'a+') as pf:
         for folder in TEST_FOLDERS:
             pf.write('Running GPT test on ' + folder + "\n")
             pf.flush()
@@ -95,9 +94,9 @@ def main(argv):
         pf.flush()
         # basic_test_gpt()
         run_gpt()
-        # pf.write('Running pipeline tests\n')
-        # pf.flush()
-        # run_pipeline()
+        pf.write('Running pipeline tests\n')
+        pf.flush()
+        run_pipeline()
         pf.write('All tests complete!')
 
 if __name__ == "__main__":
