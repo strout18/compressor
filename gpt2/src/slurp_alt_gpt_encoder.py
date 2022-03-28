@@ -1,7 +1,7 @@
 import sys, os, csv
-from gpt2.src import ics_api as ics
+import consoleics_api as ics
 import regex as re
-from gpt2.src import intermediateencoding as ie
+import intermediateencoding as ie
 
 statfile = "slurpstats.txt"
 # window = 8
