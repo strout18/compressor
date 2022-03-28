@@ -1,8 +1,8 @@
 import sys, filecmp, os, shutil
 from alt_gpt_encoder import gpt_encode
 from alt_gpt_decoder import gpt_decode
-from pipeline.encoder import pipeline_encode
-from pipeline.decoder import pipeline_decode
+from pipeline.altencoder import pipeline_encode
+from pipeline.altdecoder import pipeline_decode
 
 TEST_FOLDERS = [
     "dde_unspeech", "gpt_gen_small_w8", "random_small", "random_med", "falklands_wiki", "mlk_vietnam",
@@ -15,8 +15,8 @@ TOP_K = 40
 progressf = "ALT/failures/altrunprogressW" + str(WINDOW) + "K" + str(TOP_K) + ".txt"
 failf = "altfailures.txt"
 # PIPELINE_MODELS = ["roberta-large", "google/electra-large-generator", "albert-base-v2", "microsoft/mpnet-base"]
-# PIPELINE_MODELS = ["roberta-large"]
-PIPELINE_MODELS = []
+PIPELINE_MODELS = ["roberta-large"]
+# PIPELINE_MODELS = []
 # TODO- TEST IF MPNET SOLO WILL WORK WITH PIPELINE
 
 def run_gpt():
@@ -28,8 +28,8 @@ def run_gpt():
             newfolder = "tests/" + folder + "/" + newfolderstr
             os.mkdir(newfolder)
             shutil.copy("tests/" + folder + "/" + folder + ".txt", newfolder)
-            gpt_encode([newfolder + "/" + folder + ".txt"])
-            gpt_decode([newfolder + "/" + folder + ".txt.comp"])
+            gpt_encode([newfolder + "/" + folder + ".txt", WINDOW, TOP_K])
+            gpt_decode([newfolder + "/" + folder + ".txt.comp", WINDOW, TOP_K])
             comparison = filecmp.cmp(
                 newfolder + "/" + folder + ".txt", newfolder + "/" + folder + ".txt.comp.plaintext", shallow=False
             )
@@ -73,12 +73,12 @@ def run_pipeline():
             for folder in TEST_FOLDERS:
                 pf.write('Running ' + model + ' test on ' + folder + "\n")
                 pf.flush()
-                newfolderstr = "M" + model + str(WINDOW) + "K" + str(TOP_K)
+                newfolderstr = "ALT_M" + model + str(WINDOW) + "K" + str(TOP_K)
                 newfolder = "tests/" + folder + "/" + newfolderstr
                 os.mkdir(newfolder)
                 shutil.copy("tests/" + folder + "/" + folder + ".txt", newfolder)
-                pipeline_encode(["tests/" + folder + "/" + folder + ".txt", model, str(WINDOW)])
-                pipeline_decode(["tests/" + folder + "/" + folder + ".txt.comp", model])
+                pipeline_encode([newfolder + "/" + folder + ".txt", model, str(WINDOW)])
+                pipeline_decode([newfolder + "/" + folder + ".txt.comp", model, str(WINDOW)])
                 comparison = filecmp.cmp(newfolder + "/" + folder + ".txt", newfolder + "/" + folder + ".txt.comp.plaintext", shallow=False)
                 if not comparison:
                     with open(failf, 'a') as ff:

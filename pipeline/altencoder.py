@@ -1,14 +1,13 @@
-import sys, os, csv
-from gpt2.src import ics_api as ics
-import regex as re
-from gpt2.src import intermediateencoding as ie
+from transformers import pipeline
+import os, sys, csv
+from pipeline import intermediateencoding as ie # make sure it's not confused
+from pipeline import window as utils
 
+# TO DO DECIDE TOP K
 statfile = "altstats.txt"
-# window = 8
-# TOP_K = 40
+TOP_K = 5
 declare_length = True
 
-# TODO trim off final comma?
 
 def on_correct(curr_incorrect, numbers):
     global declare_length
@@ -35,15 +34,8 @@ def on_incorrect(guessct, numbers):
         guessct = 0
     return guessct, numbers
 
-# splits array according to decided standards - talk about this in thesis?
-def cleansplit(txtstr):
-    pat = re.compile(r"""'s|'t|'re|'ve|'m|'ll|\n|'d| ?\p{L}+| ?\p{N}+| ?[^\s\p{L}\p{N}]+|\s+(?!\S)|\s+""") # from encoder.py
-    return re.findall(pat, txtstr)
-
-# NOTE : test file that ends in new line
-
 # args = infile, window
-def gpt_encode(argv):
+def pipeline_encode(argv):
     # global total_encoding, incorrect, guessct, compressed, total
     #reset globals
     # global window, TOP_K
@@ -55,26 +47,28 @@ def gpt_encode(argv):
     curr_incorrect = ""
 
     infile = argv[0]    # file name 
-    window = argv[1]
-    TOP_K = argv[2]
+    modelname = argv[1]
+    window = argv[2]
     # should prob error check command line args
     out_intermfile = infile + ".interm"  # file name
+    unmasker = pipeline('fill-mask', model=modelname)
     with open(infile, 'r') as inf:
         ftxt = inf.read()
         #print("Writing window")
         #print ("Encoding now " + total_encoding)
-        splat = cleansplit(ftxt)
-        print(splat)
-        for ct, wd in enumerate(splat):  
-            prev = ics.slice_window(int(window), splat, ct) #preceding text
+        tkzer = utils.get_tkzer(modelname)
+        splat = tkzer.tokenize(ftxt)
+        # print(splat)
+        for ct, tk in enumerate(splat):  
+            prev = utils.slice_window(int(window), splat, ct, tkzer) #preceding text
             # print("#" * 40)
-            print("Calling extend_encoding on wd \"" + wd + "\" with prev \"" + prev)
+            # print("Calling extend_encoding on wd \"" + wd + "\" with prev \"" + prev)
             # global guessct, incorrect, total, compressed
             # print ("The current word is " + wd + "and the previous word is " + prev)
             if prev:
-                guess = ics.run_model(prev, length=1, top_k=int(TOP_K))
+                guess = unmasker(prev + f"{tkzer.mask_token}")[0]["token_str"]
                 # print ("The guess is " + guess)
-            if prev and guess == wd:
+            if prev and guess == tkzer.convert_tokens_to_string([tk]):
                 # print ("Guess was correct")
                 guessct += 1
                 compressed += 1
@@ -89,8 +83,8 @@ def gpt_encode(argv):
                 # print ("Guess count:" + str(guessct))
                 print ("Dumping correct")
                 guessct, numbers = on_incorrect(guessct, numbers)
-                incorrect += wd
-                curr_incorrect += wd
+                incorrect += tkzer.convert_tokens_to_string([tk])
+                curr_incorrect += tkzer.convert_tokens_to_string([tk])
                 print ("incorrect is now " + incorrect)
                 total += 1
             # extend_encoding(wd, prev, guessct, incorrect, total, compressed)  # bitarray
@@ -123,10 +117,10 @@ def gpt_encode(argv):
     # Model,Test,Window,Top_K,Correct Gs,Total Gs,OG size,Interm size,Final size,Bzip OG size
     with open(statfile, 'a') as csvfile:
         csvwriter = csv.writer(csvfile)
-        csvwriter.writerow(["gpt", infile, window, TOP_K, compressed, total, ogsize, intermsize, finalsize, bzogsize])
+        csvwriter.writerow([modelname, infile, window, TOP_K, compressed, total, ogsize, intermsize, finalsize, bzogsize])
 
     
 
 
 if __name__ == "__main__":
-    gpt_encode(sys.argv[1:])
+    pipeline_encode(sys.argv[1:])

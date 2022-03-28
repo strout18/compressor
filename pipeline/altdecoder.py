@@ -1,20 +1,21 @@
+from transformers import pipeline
 import sys
-from gpt2.src import ics_api as ics
-import regex as re
-from gpt2.src import intermediateencoding as ie
+from pipeline import intermediateencoding as ie
+from pipeline import window as utils
  
 
 # window = 8
 # TOP_K = 40
 
-def gpt_decode(argv):
+def pipeline_decode(argv):
     # global window, TOP_K
     total_decoding = ""
     infile = argv[0]    # file name
-    window = argv[1]
-    TOP_K = argv[2]
+    modelname = argv[1]
+    window = argv[2]
     # window = int(argv[1])    # do error checking
     outfile = infile + ".plaintext"  # file name
+    tkzer = utils.get_tkzer(modelname)
     ftxt = ie.uncrunch_bz2(infile)
     # with open(infile, 'r') as inf:
     #     ftxt = inf.read()
@@ -22,6 +23,8 @@ def gpt_decode(argv):
     # print ("reading window as " + str(window))
     numpointer = 0
     tkpointer = 0
+    mask_token = tkzer.mask_token
+    unmasker = pipeline('fill-mask', model=modelname)
     encodingsplit = ftxt.find('\n') # division between numbers and incorrect
     numbers = ftxt[:encodingsplit]
     incorrect = ftxt[encodingsplit+1:]
@@ -48,13 +51,12 @@ def gpt_decode(argv):
             tkpointer += txtlen
         else:
             print ("Guess char was " + guessc)
-            pat = re.compile(r"""'s|'t|'re|'ve|'m|'ll|\n|'d| ?\p{L}+| ?\p{N}+| ?[^\s\p{L}\p{N}]+|\s+(?!\S)|\s+""") # from encoder.py
             for _ in range(int(guessc)):
-                decoding_arr = re.findall(pat, total_decoding)
+                decoding_arr = tkzer.tokenize(total_decoding)
                 print ("decoding arr " + str(decoding_arr))
-                prev = ics.slice_window(window, decoding_arr, len(decoding_arr))
+                prev = utils.slice_window(window, decoding_arr, len(decoding_arr), tkzer)
                 print ("Running with prev " + prev)
-                guess = ics.run_model(prev, length=1, top_k=int(TOP_K))
+                guess = unmasker(prev + f"{mask_token}")[0]["token_str"]
                 print ("Guess is " + guess)
                 total_decoding += guess
                 # print ("Total decoding now " + total_decoding)
@@ -65,4 +67,4 @@ def gpt_decode(argv):
 
 
 if __name__ == "__main__":
-    gpt_decode(sys.argv[1:])
+    pipeline_decode(sys.argv[1:])
