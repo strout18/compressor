@@ -54,7 +54,7 @@ def pipeline_decode(argv):
             for _ in range(int(guessc)):
                 decoding_arr = tkzer.tokenize(total_decoding)
                 print ("decoding arr " + str(decoding_arr))
-                prev = utils.slice_window(window, decoding_arr, len(decoding_arr), tkzer)
+                prev = utils.slice_window(int(window), decoding_arr, len(decoding_arr), tkzer)
                 print ("Running with prev " + prev)
                 guess = unmasker(prev + f"{mask_token}")[0]["token_str"]
                 print ("Guess is " + guess)
