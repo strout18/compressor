@@ -31,7 +31,8 @@ def on_incorrect(guessct, numbers):
     global declare_length
     declare_length = True
     if guessct > 0:
-        numbers += str(guessct) + ","
+        if guessct > 1:
+            numbers += str(guessct) + ","
         print ("numbers is now " + numbers)
         # print ("Total encoding now " + total_encoding)
         guessct = 0
