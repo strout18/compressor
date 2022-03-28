@@ -20,6 +20,7 @@ def on_correct(curr_incorrect, numbers):
         print ("Length of incorrect is " + str(len(curr_incorrect)))
         print ("Str with guess and len: " + txt)
         numbers += txt
+        print ("numbers is now " + numbers)
         declare_length = False
         curr_incorrect = ""
         # print ("Extending from incorrect. Total encoding is now " + total_encoding)
@@ -31,6 +32,7 @@ def on_incorrect(guessct, numbers):
     declare_length = True
     if guessct > 0:
         numbers += str(guessct) + ","
+        print ("numbers is now " + numbers)
         # print ("Total encoding now " + total_encoding)
         guessct = 0
     return guessct, numbers
@@ -74,13 +76,14 @@ def gpt_encode(argv):
             # print ("The current word is " + wd + "and the previous word is " + prev)
             if prev:
                 guess = ics.run_model(prev, length=1, top_k=int(TOP_K))
-                # print ("The guess is " + guess)
+                print ("The guess is " + guess)
             if prev and guess == wd:
-                # print ("Guess was correct")
+                print ("Guess was correct")
                 guessct += 1
                 compressed += 1
                 if guessct == 1:    # slurp unless guessct >= 2
                     correctbuffer += guess
+                    print ("adding to cbuff")
                 else:
                     correctbuffer = ""
                     # print ("Guesscount " + str(guessct))
@@ -98,6 +101,9 @@ def gpt_encode(argv):
                     incorrect += correctbuffer + wd
                     curr_incorrect += correctbuffer + wd
                     correctbuffer = ""
+                    print ("incorrect is now " + incorrect)
+                    print ("curr_inc is now " + curr_incorrect)
+                    print ("resetting buffer")
                 else:
                     incorrect += wd
                     curr_incorrect += wd
