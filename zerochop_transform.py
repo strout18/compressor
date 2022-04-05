@@ -1,4 +1,5 @@
 import sys
+from gpt2.src import intermediateencoding as ie
 def transform(argv):
     intermfile = argv[0]
     transintermfile = argv[1]
@@ -22,8 +23,10 @@ def transform(argv):
                 newnums += sliced_corr
                 numpointer += len(sliced_corr)
                 curr_inc = True
-    with open(transintermfile, 'w') as outf:
-        outf.write(newnums + "\n" + incorrect)
+    # with open(transintermfile, 'w') as outf:
+    total_encoding = newnums + "\n" + incorrect
+    ie.crunch_bz2(total_encoding, transintermfile)
+        # outf.write(newnums + "\n" + incorrect)
 
 if __name__ == "__main__":
     transform(sys.argv[1:])
