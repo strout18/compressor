@@ -11,7 +11,6 @@ def untransform(argv):
         while numpointer < len(numbers):
             if curr_inc:
                 newnums += "0,"
-                numpointer += 2 # skip 0,
                 len_cutoff = numbers.index(',', numpointer)
                 sliced_inc = numbers[numpointer:len_cutoff + 1]
                 newnums += sliced_inc
