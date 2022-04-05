@@ -11,9 +11,10 @@ TEST_FOLDERS = [
     "orwell_af", "woolf_essays", "gpt_med_w8_v5"
 ]
 
-progressf = "runprogress.txt"
+
 WINDOW = 8
 TOP_K = 50
+progressf = "NORM/progress/runprogressW" + str(WINDOW) + "K" + str(TOP_K) + ".txt"
 failf = "failures.txt"
 # PIPELINE_MODELS = ["roberta-large", "google/electra-large-generator", "albert-base-v2", "microsoft/mpnet-base"]
 PIPELINE_MODELS = ["roberta-large"]
@@ -90,13 +91,13 @@ def run_pipeline():
 
 def main(argv):
     with open(progressf, 'a') as pf:
-        pf.write('Running GPT tests\n')
-        pf.flush()
-        # basic_test_gpt()
-        run_gpt()
-        # pf.write('Running pipeline tests\n')
+        # pf.write('Running GPT tests\n')
         # pf.flush()
-        # run_pipeline()
+        # basic_test_gpt()
+        # run_gpt()
+        pf.write('Running pipeline tests\n')
+        pf.flush()
+        run_pipeline()
         pf.write('All tests complete!')
 
 if __name__ == "__main__":
