@@ -30,15 +30,17 @@ def run_gpt():
             os.mkdir(newfolder)
             shutil.copy("tests/" + folder + "/" + folder + ".txt", newfolder)
             gpt_encode([newfolder + "/" + folder + ".txt", str(WINDOW), str(TOP_K)])
-            gpt_decode([newfolder + "/" + folder + ".txt.comp", str(TOP_K)])
-            comparison = filecmp.cmp(
-                newfolder + "/" + folder + ".txt", newfolder + "/" + folder + ".txt.comp.plaintext", shallow=False
-            )
-            if not comparison:
-                with open(failf, 'a') as ff:
-                    ff.write("Failure with model gpt on folder "  + folder +  "with a top_k of " + str(TOP_K) + " and a window of " + str(WINDOW))
-                pf.write("Diff test failed on " + folder + "\n")
-                pf.flush()
+            # gpt_decode([newfolder + "/" + folder + ".txt.comp", str(TOP_K)])
+            # comparison = filecmp.cmp(
+            #     newfolder + "/" + folder + ".txt", newfolder + "/" + folder + ".txt.comp.plaintext", shallow=False
+            # )
+            pf.write("Remember, this is undecompressed and unchecked!")
+            pf.flush()
+            # if not comparison:
+            #     with open(failf, 'a') as ff:
+            #         ff.write("Failure with model gpt on folder "  + folder +  "with a top_k of " + str(TOP_K) + " and a window of " + str(WINDOW))
+            #     pf.write("Diff test failed on " + folder + "\n")
+            #     pf.flush()
         pf.write("GPT tests complete!\n")
         pf.flush()
 
@@ -79,13 +81,15 @@ def run_pipeline():
                 os.mkdir(newfolder)
                 shutil.copy("tests/" + folder + "/" + folder + ".txt", newfolder)
                 pipeline_encode(["tests/" + folder + "/" + folder + ".txt", model, str(WINDOW)])
-                pipeline_decode(["tests/" + folder + "/" + folder + ".txt.comp", model])
-                comparison = filecmp.cmp(newfolder + "/" + folder + ".txt", newfolder + "/" + folder + ".txt.comp.plaintext", shallow=False)
-                if not comparison:
-                    with open(failf, 'a') as ff:
-                        ff.write("Failure with model " + model + " on folder "  + folder +  "with a top_k of ? and a window of " + str(WINDOW))
-                    pf.write("Diff test failed on " + folder + "\n")
-                    pf.flush()
+                # pipeline_decode(["tests/" + folder + "/" + folder + ".txt.comp", model])
+                # comparison = filecmp.cmp(newfolder + "/" + folder + ".txt", newfolder + "/" + folder + ".txt.comp.plaintext", shallow=False)
+                # if not comparison:
+                #     with open(failf, 'a') as ff:
+                #         ff.write("Failure with model " + model + " on folder "  + folder +  "with a top_k of ? and a window of " + str(WINDOW))
+                #     pf.write("Diff test failed on " + folder + "\n")
+                #     pf.flush()
+        pf.write("Remember, this is undecompressed and unchecked!")
+        pf.flush()
         pf.write("Pipeline tests complete!\n")
 
 
