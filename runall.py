@@ -13,7 +13,7 @@ TEST_FOLDERS = [
 
 
 WINDOW = 8
-TOP_K = 50
+TOP_K = 5
 progressf = "NORM/progress/runprogressW" + str(WINDOW) + "K" + str(TOP_K) + ".txt"
 failf = "failures.txt"
 # PIPELINE_MODELS = ["roberta-large", "google/electra-large-generator", "albert-base-v2", "microsoft/mpnet-base"]
