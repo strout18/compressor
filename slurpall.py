@@ -4,14 +4,17 @@ from alt_gpt_decoder import gpt_decode
 from pipeline.slurp_altencoder import pipeline_encode
 from pipeline.altdecoder import pipeline_decode
 
-TEST_FOLDERS = [
-    "dde_unspeech", "gpt_gen_small_w8", "random_small", "random_med", "falklands_wiki", "mlk_vietnam",
-    "sherlock_bpp", "frederick_wiki", "obama_inaug", "simple_custom", "gatsby_intro", 
+# TEST_FOLDERS = [
+#     "dde_unspeech", "gpt_gen_small_w8", "random_small", "random_med", "falklands_wiki", "mlk_vietnam",
+#     "sherlock_bpp", "frederick_wiki", "obama_inaug", "simple_custom", "gatsby_intro", 
+#     "orwell_af", "woolf_essays", "gpt_med_w8_v5"
+# ]
+TEST_FOLDERS = ["gatsby_intro", 
     "orwell_af", "woolf_essays", "gpt_med_w8_v5"
 ]
 
 WINDOW = 10
-TOP_K = 20
+TOP_K = 5
 progressf = "SLURP/failures/slurp_runprogressW" + str(WINDOW) + "K" + str(TOP_K) + ".txt"
 failf = "slurpfailures.txt"
 # PIPELINE_MODELS = ["roberta-large", "google/electra-large-generator", "albert-base-v2", "microsoft/mpnet-base"]
@@ -90,10 +93,10 @@ def run_pipeline():
 
 def main(argv):
     with open(progressf, 'a') as pf:
-        pf.write('Running GPT tests\n')
-        pf.flush()
-        # basic_test_gpt()
-        run_gpt()
+        # pf.write('Running GPT tests\n')
+        # pf.flush()
+        # # basic_test_gpt()
+        # run_gpt()
         pf.write('Running pipeline tests\n')
         pf.flush()
         run_pipeline()
