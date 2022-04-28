@@ -7,4 +7,4 @@ The equivalent for RoBERTa (and applicable to all models available from Hugginfa
 
 The `tests` directory contains the test files used on our compressor. 
 
-Code used to run the tests is accessible in files such as `runall.py` and `altrunall.py`, which differ in the compressor's level of optimization. 
+Code used to run the tests include files like `runall.py` and `altrunall.py`, which differ in the compressor's level of optimization. 
